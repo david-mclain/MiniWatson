@@ -1,4 +1,5 @@
 Main.class
 Normalizer.class
-Indexer.class
 Tokenizer.class
+QueryEngine.class
+Indexer.class
