@@ -87,8 +87,8 @@ public class IndexBuilder {
             }
 
             // remove markers from subsection headings
-            if (line.startsWith("=="))
-                line = line.substring(2, line.length() - 2);
+            if (isSubsectionHeader(line))
+                line = line.replace("=", "");
 
             // to avoid newline character in the beginning of the body
             body = body.equals("")? line : body + "\n" + line;
@@ -111,6 +111,9 @@ public class IndexBuilder {
         return line.startsWith("CATEGORIES:");
     }
 
+    boolean isSubsectionHeader(String line) {
+        return line.startsWith("=") && line.endsWith("=");
+    }
     void addDocIdAndTitle(Document doc, int docId, String title) {
         doc.add(new StringField("docId", Integer.toString(docId), Field.Store.YES));
         doc.add(new TextField("title", title, Field.Store.YES));
