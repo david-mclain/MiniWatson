@@ -63,7 +63,7 @@ public class IndexBuilder {
                 continue;
 
             if (isTitle(line)) {
-                // Add last document to index
+                // Write previous document to index
                 if (docId > 0) {
                     addBodyAndWrite(doc, body, writer);
                 }
