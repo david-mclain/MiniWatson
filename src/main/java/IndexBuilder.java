@@ -16,20 +16,43 @@ import java.util.Scanner;
 
 public class IndexBuilder {
     //private boolean indexExists = false;
-    private String wikiDataPath;
+    private static final String WIKI_DIRECTORY_PATH  = "wiki-data";
     private StandardAnalyzer analyzer;
     private static Directory index;
+    private static IndexWriterConfig config;
+    private static IndexWriter writer;
+    private int docId;  // For the current document
 
-    public IndexBuilder(String wikiDataPath) {
-        this.wikiDataPath = wikiDataPath;
+    public IndexBuilder() {
         analyzer = new StandardAnalyzer();
         index = new ByteBuffersDirectory();
+        config = new IndexWriterConfig(analyzer);
 
+        // for indexing the wiki-example file
         try {
-            buildIndex(wikiDataPath);
+            writer = new IndexWriter(index, config);
+            addToIndex(new File("src/main/resources/wiki-example.txt"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        // Uncomment below code to index all files in the wiki data
+        /*
+        File wikiFolder = new File(WIKI_DIRECTORY_PATH);
+        File[] wikiFiles = wikiFolder.listFiles();
+
+
+        try {
+            writer = new IndexWriter(index, config);
+            for (File f : wikiFiles) {
+                System.out.println("***********INDEXING FILE: " + f.getName() + "***********");
+                addToIndex(f);
+            }
+            writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+         */
     }
 
     /**
@@ -37,26 +60,31 @@ public class IndexBuilder {
      * @param args
      */
     public static void main(String args[]) {
-        IndexBuilder x = new IndexBuilder("src/main/resources/wiki-example.txt");
+        IndexBuilder builder = new IndexBuilder();
 
+        // Uncomment below code to print the index
+        /*
         try {
             printIndex();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+         */
     }
-    void buildIndex(String wikiDataPath) throws IOException {
+    void addToIndex(File wikiFile) throws IOException {
         // template for each document
         Document doc = new Document();
-        int docId = 0;
+
         String title = "";
         String body = "";
         String categories = "";
 
-        IndexWriterConfig config = new IndexWriterConfig(analyzer);
-        IndexWriter writer = new IndexWriter(index, config);
+        //IndexWriterConfig config = new IndexWriterConfig(analyzer);
+        //IndexWriter writer = new IndexWriter(index, config);
 
-        Scanner sc = new Scanner(new File(wikiDataPath));
+        boolean parsingFirstDoc = true;
+
+        Scanner sc = new Scanner(wikiFile);
         while (sc.hasNextLine()) {
             String line = sc.nextLine().strip();
             if (line.isBlank())
@@ -64,7 +92,7 @@ public class IndexBuilder {
 
             if (isTitle(line)) {
                 // Write previous document to index
-                if (docId > 0) {
+                if (!parsingFirstDoc) {
                     addBodyAndWrite(doc, body, writer);
                 }
 
@@ -76,6 +104,7 @@ public class IndexBuilder {
                 addDocIdAndTitle(doc, docId, title);
 
                 docId++;
+                parsingFirstDoc = false;
 
                 continue;
             }
@@ -99,7 +128,6 @@ public class IndexBuilder {
         writer.addDocument(doc);
 
         writer.commit();
-        writer.close();
         sc.close();
     }
 
