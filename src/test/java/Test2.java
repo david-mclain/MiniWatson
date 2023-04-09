@@ -7,9 +7,10 @@ public class Test2 {
     @Test
     public void testDocs() {
         try {
-            Main.main(null);
+            QueryEngine.main(null);
         }
-        catch(Exception e){
+        catch(Exception e) {
+            e.printStackTrace();
             System.out.println("exeption");
         }
     }
