@@ -7,6 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class Test1 {
     //@Test
     public void testDocs() {
-        Indexer.main(null);
+        IndexBuilder.main(null);
     }
 }

@@ -1,0 +1,1180 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for edu.arizona.cs:MiniWatson:jar:1.0-SNAPSHOT
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36medu.arizona.cs:MiniWatson[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding MiniWatson 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 184 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 6 source files to /home/david/CSC483/MiniWatson/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/david/CSC483/MiniWatson/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running [1mTest2[m
+Question 1: the washington post
+Title Al-Quds Al-Arabi found at position: 1
+Title Sun-Sentinel found at position: 2
+Title The Hutchinson News found at position: 3
+Title The New York Sun found at position: 4
+Title Irish Independent found at position: 5
+Title Media of the United States found at position: 6
+Title Bunker Hill Gazette-News found at position: 7
+Title Yellow journalism found at position: 8
+Title Star Tribune found at position: 9
+Title List of newspapers in Hong Kong found at position: 10
+Question 2: taiwan
+Title Kinmen found at position: 1
+Title One-China policy found at position: 2
+Title United Nations General Assembly Resolution 505 found at position: 3
+Title History of the Republic of China found at position: 4
+Document hit for Taiwanat position: 5
+Title Taiwan found at position: 5
+Title Republic of China presidential election, 2004 found at position: 6
+Title Annette Lu found at position: 7
+Title Lin Sen found at position: 8
+Title Yoronjima found at position: 9
+Title Political status of Taiwan found at position: 10
+Question 3: the wall street journal
+Document hit for The Wall Street Journalat position: 1
+Title The Wall Street Journal found at position: 1
+Title The Atlanta Journal-Constitution found at position: 2
+Title The Hutchinson News found at position: 3
+Title The Baltimore Sun found at position: 4
+Title Hedrick Smith found at position: 5
+Title Kidder, Peabody & Co. found at position: 6
+Title True crime found at position: 7
+Title Yellow journalism found at position: 8
+Title Donald Margulies found at position: 9
+Title White-collar crime found at position: 10
+Question 4: my funny valentine
+Title Haifa (musician) found at position: 1
+Title Night (band) found at position: 2
+Title National anthem of Yemen found at position: 3
+Title If— found at position: 4
+Title A Brisk Young Sailor Courted Me found at position: 5
+Title Beautiful Dreamer found at position: 6
+Title Tracie Spencer found at position: 7
+Title The Four Spiritual Laws found at position: 8
+Title Hello, I Love You found at position: 9
+Title An Invitation to Lubberland found at position: 10
+Question 5: the salvation army|salvation army
+Title The Salvation Army found at position: 1
+Title Change ringing found at position: 2
+Title Campanology found at position: 3
+Title Capital (radio network) found at position: 4
+Title Donation found at position: 5
+Title Kenyans for Kenya found at position: 6
+Title CFPL-DT found at position: 7
+Title Chadlington found at position: 8
+Title Bell-Northern Research found at position: 9
+Title Deg Tegh Fateh found at position: 10
+Question 6: florida
+Title Jen Stark found at position: 1
+Title Konrad Grob found at position: 2
+Title Gaspar Roomer found at position: 3
+Title Luca Giordano found at position: 4
+Title Eduardo Dalbono found at position: 5
+Title Karl Jakob Weber found at position: 6
+Title Ferruccio Zambonini found at position: 7
+Title Antonello da Messina found at position: 8
+Title Antonio Rossellino found at position: 9
+Title Naples underground geothermal zone found at position: 10
+Question 7: tintoretto
+Title Master of the Khanenko Adoration found at position: 1
+Title Taddeo Zuccari found at position: 2
+Title Lorenzo Monaco found at position: 3
+Title Carlo Dolci found at position: 4
+Title Nicola Cianfanelli found at position: 5
+Title Pieter Codde found at position: 6
+Document hit for Tintorettoat position: 7
+Title Tintoretto found at position: 7
+Title Giorgio Vasari found at position: 8
+Title Pieter Donker found at position: 9
+Title Nicolas Poussin found at position: 10
+Question 8: jackie joyner-kersee
+Document hit for Jackie Joyner-Kerseeat position: 1
+Title Jackie Joyner-Kersee found at position: 1
+Title Algodão found at position: 2
+Title Ruy de Freitas found at position: 3
+Title Fernando Romay found at position: 4
+Title George Wilson (basketball, born 1942) found at position: 5
+Title List of Olympic medalists in basketball found at position: 6
+Title Omar Browning found at position: 7
+Title George Stanich found at position: 8
+Title Wilma Rudolph found at position: 9
+Title Cy Young (athlete) found at position: 10
+Question 9: rotary international
+Title De Poelen, Dronrijp found at position: 1
+Title Spoke found at position: 2
+Title De Mearmin, Dokkum found at position: 3
+Title Wheel found at position: 4
+Title Webster's Mill, Framsden found at position: 5
+Title Nooitgedacht, Veenoord found at position: 6
+Title Shiremark Mill, Capel found at position: 7
+Title Molen van Vledder found at position: 8
+Title Penny-farthing found at position: 9
+Title Corima found at position: 10
+Question 10: cairo
+Title Khartoum found at position: 1
+Document hit for Cairoat position: 2
+Title Cairo found at position: 2
+Title Nile found at position: 3
+Title Kosti, Sudan found at position: 4
+Title Omdurman found at position: 5
+Title Soba (city) found at position: 6
+Title Faiyum Oasis found at position: 7
+Title Sultanate of Darfur found at position: 8
+Title Blue Nile found at position: 9
+Title Toriel found at position: 10
+Question 11: charles de gaulle|de gaulle
+Title Anglo-French Supreme War Council found at position: 1
+Title Philippe Pétain found at position: 2
+Title Charles V of France found at position: 3
+Title Operation Ariel found at position: 4
+Title Free French Forces found at position: 5
+Title Fall Rot found at position: 6
+Title Lorraine (duchy) found at position: 7
+Title Hubert Lyautey found at position: 8
+Title Polish contribution to World War II found at position: 9
+Title Stanisław Maczek found at position: 10
+Question 12: ohio
+Title Frederick W. Garber found at position: 1
+Title Anders Zorn found at position: 2
+Title Lytle Tunnel found at position: 3
+Title Eyedrum found at position: 4
+Title Kingsley A. Taft found at position: 5
+Title William Howard Taft IV found at position: 6
+Title William Howard Taft found at position: 7
+Title Bob Taft found at position: 8
+Title Sculpture of the United States found at position: 9
+Title Robert Taft found at position: 10
+Question 13: arlington national cemetery|arlington cemetery
+Title USS Arizona Memorial found at position: 1
+Title Thomas W. Lawson (ship) found at position: 2
+Title George Henry Preble found at position: 3
+Title USS Sabine (1855) found at position: 4
+Title German destroyer Lütjens (D185) found at position: 5
+Title Jamestown (ship) found at position: 6
+Title Frank Newcomb found at position: 7
+Title USCGC Mohawk (WPG-78) found at position: 8
+Title USS Bonhomme Richard (LHD-6) found at position: 9
+Title Edwin M. Shepard found at position: 10
+Question 14: heath ledger
+Title Mark Hamill found at position: 1
+Title Joker (playing card) found at position: 2
+Title The Dark Knight (soundtrack) found at position: 3
+Title Christmas With the Joker found at position: 4
+Title Alfred Ntombela found at position: 5
+Title Batman and Son found at position: 6
+Title 18th National Film Awards found at position: 7
+Title Khwaja Ahmad Abbas found at position: 8
+Title Lowball (poker) found at position: 9
+Title Wild card (card games) found at position: 10
+Question 15: iberia|iberian peninsula
+Title Vicente Genaro de Quesada found at position: 1
+Title Godfrey Macdonald, 3rd Baron Macdonald of Slate found at position: 2
+Title Alexander Gordon (British cavalry officer) found at position: 3
+Title Battle of Roliça found at position: 4
+Title Ferdinand VII of Spain found at position: 5
+Title War of the Sixth Coalition found at position: 6
+Title Napoleonic Wars found at position: 7
+Title Edward John Eliot found at position: 8
+Title FitzRoy Somerset, 1st Baron Raglan found at position: 9
+Title Duke of Wellington (title) found at position: 10
+Question 16: panda|giant panda
+Title Wolong Temple found at position: 1
+Title Wolong Panda Reserve found at position: 2
+Title Wolong Nature Reserve found at position: 3
+Title Edward J. Grug III found at position: 4
+Title Xiang Xiang (giant panda) found at position: 5
+Title Forest Preserve District of DuPage County found at position: 6
+Title China Medical Board found at position: 7
+Title Toei Fushigi Comedy Series found at position: 8
+Title Monteverde Cloud Forest Reserve found at position: 9
+Title Endangered Wolf Center found at position: 10
+Question 17: george michael
+Title Zhang Shubin found at position: 1
+Title Željka Čižmešija found at position: 2
+Title Besti squat found at position: 3
+Title Zhao Nanqi found at position: 4
+Title Belgium at the 1988 Winter Olympics found at position: 5
+Title Christine Brennan found at position: 6
+Title China at the 1988 Winter Olympics found at position: 7
+Title Nam Nguyen found at position: 8
+Title Tommy Steenberg found at position: 9
+Title Poland at the 1988 Winter Olympics found at position: 10
+Question 18: the help
+Title Heartbreakers (2001 film) found at position: 1
+Title Naomi Watts found at position: 2
+Title My Girl 2 found at position: 3
+Title Shirley Jones found at position: 4
+Title Ellie Darcey-Alden found at position: 5
+Title Mars Needs Moms found at position: 6
+Title Shirley MacLaine found at position: 7
+Title Coraline found at position: 8
+Title A Woman Under the Influence found at position: 9
+Title My Mother's Castle (film) found at position: 10
+Question 19: knights of columbus
+Document hit for Knights of Columbusat position: 1
+Title Knights of Columbus found at position: 1
+Title Franz Xaver Witt found at position: 2
+Title Theodosius Florentini found at position: 3
+Title Lay abbot found at position: 4
+Title Sacred Heart Catholic Church (McCartyville, Ohio) found at position: 5
+Title Order of Chosen Friends found at position: 6
+Title Chi Psi found at position: 7
+Title William George Ward found at position: 8
+Title St. George Jackson Mivart found at position: 9
+Title Josephite Fathers found at position: 10
+Question 20: world wide fund|world wide fund for nature
+Title Red Falcons found at position: 1
+Title Steve Lombardi found at position: 2
+Title United States Fish and Wildlife Service found at position: 3
+Title Hugo Wolf found at position: 4
+Title Interstate 99 found at position: 5
+Title Bogue Chitto National Wildlife Refuge found at position: 6
+Title AIESEC found at position: 7
+Title Great Baikal Trail found at position: 8
+Title The Fair at Sorochyntsi found at position: 9
+Title Little Red Riding Hood found at position: 10
+Question 21: komodo dragon
+Title Common basilisk found at position: 1
+Title Dragon (Middle-earth) found at position: 2
+Title Lizard Head Wilderness found at position: 3
+Title Tocantins found at position: 4
+Title Wishmaster (film) found at position: 5
+Title ElcomSoft found at position: 6
+Title DNIX found at position: 7
+Title Gamera found at position: 8
+Title Second United Indonesia Cabinet found at position: 9
+Title Cape Grass Lizard found at position: 10
+Question 22: richard byrd|richard e. byrd
+Title Missing man formation found at position: 1
+Title Home Fleet found at position: 2
+Title George Hyde (admiral) found at position: 3
+Title David Murray Anderson found at position: 4
+Title Robert H. Reed found at position: 5
+Title Sandy Woodward found at position: 6
+Title Keith Park found at position: 7
+Title Wilbraham Ford found at position: 8
+Title Kantarō Suzuki found at position: 9
+Title Greg Grunberg found at position: 10
+Question 23: boot hill
+Document hit for Boot Hillat position: 1
+Title Boot Hill found at position: 1
+Title William S. Gregory found at position: 2
+Title List of people from Dodge City, Kansas found at position: 3
+Title Panteón de Dolores found at position: 4
+Title Edwin M. Shepard found at position: 5
+Title Doc Holliday found at position: 6
+Title Almon Brown Strowger found at position: 7
+Title Dodge City (1939 film) found at position: 8
+Title Late-May 2008 tornado outbreak sequence found at position: 9
+Title John Graham Chambers found at position: 10
+Question 24: france
+Title Politics of Cambodia found at position: 1
+Title Johann Friedrich Struensee found at position: 2
+Title Maria I of Portugal found at position: 3
+Title Leopold II of Belgium found at position: 4
+Title History of Lesotho found at position: 5
+Title History of Nepal found at position: 6
+Title History of Buda Castle found at position: 7
+Title Osman Mahamuud found at position: 8
+Title Carol I of Romania found at position: 9
+Title Neustria found at position: 10
+Question 25: confucius
+Title 5th century BC found at position: 1
+Title Timeline of telescopes, observatories, and observing technology found at position: 2
+Title 400s BC (decade) found at position: 3
+Title King Zhending of Zhou found at position: 4
+Title Alexandre Deulofeu found at position: 5
+Title Chinese calendar found at position: 6
+Title Rhinoceroses in ancient China found at position: 7
+Title Chinese astrology found at position: 8
+Title Julia the Elder found at position: 9
+Title Chinese mythology found at position: 10
+Question 26: o'hare|o'hare international airport
+Title Bessie Coleman found at position: 1
+Title Jean Burns found at position: 2
+Title Catherine O'Leary found at position: 3
+Title Pilot (aeronautics) found at position: 4
+Title Hélène Dutrieu found at position: 5
+Title Eileen Collins found at position: 6
+Title Diamond Bessie found at position: 7
+Title Brenda Starr, Reporter found at position: 8
+Title Lassie Goodbread-Black found at position: 9
+Title Ida Cox found at position: 10
+Question 27: jordan
+Title Rabbah found at position: 1
+Title Assyrian conquest of Aram found at position: 2
+Title Timeline of telescopes, observatories, and observing technology found at position: 3
+Title 1200s BC found at position: 4
+Title 1209-1200 BC found at position: 5
+Title 1200s BC (decade) found at position: 6
+Title 1200 BC found at position: 7
+Title Ammonoidea found at position: 8
+Title Cincinnatus found at position: 9
+Title Hae Buru of Dongbuyeo found at position: 10
+Question 28: ben affleck
+Title I. A. L. Diamond found at position: 1
+Title Zero-sum game found at position: 2
+Title Norman Jewison found at position: 3
+Title Dean Pitchford found at position: 4
+Title Norman Granz found at position: 5
+Title William Wyler found at position: 6
+Title Chris Moore (film producer) found at position: 7
+Title John Douglas, 9th Marquess of Queensberry found at position: 8
+Title Morović found at position: 9
+Title What's Cookin' Doc? found at position: 10
+Question 29: roe v. wade
+Title Morris Pashman found at position: 1
+Title Wesberry v. Sanders found at position: 2
+Title R. v. Owen found at position: 3
+Title Miller v. California found at position: 4
+Title Canada v. Schmidt found at position: 5
+Title Griswold v. Connecticut found at position: 6
+Title J. Edward Lumbard found at position: 7
+Title Time shifting found at position: 8
+Title Ford v. Quebec (Attorney General) found at position: 9
+Title Baker v. Carr found at position: 10
+Question 30: knights templar
+Title Philip IV of France found at position: 1
+Document hit for Knights Templarat position: 2
+Title Knights Templar found at position: 2
+Title Ferdinand IV of Castile found at position: 3
+Title Humbert de Pairaud found at position: 4
+Title James de Molay found at position: 5
+Title Tomar found at position: 6
+Title Froissart of Louis of Gruuthuse (BnF Fr 2643-6) found at position: 7
+Title Archduke Sigismund, Grand Duke of Tuscany found at position: 8
+Title Louis X of France found at position: 9
+Title Armand Charles de La Porte de La Meilleraye found at position: 10
+Question 31: new mexico
+Title Linda Emond found at position: 1
+Title Fort James Jackson found at position: 2
+Title National Museum of Commercial Aviation found at position: 3
+Title Old Governor's Mansion (Milledgeville, Georgia) found at position: 4
+Title Tullie Smith House found at position: 5
+Title Chattooga and Chickamauga Railway found at position: 6
+Title Louvre Atlanta found at position: 7
+Title Juliette Gordon Low Historic District found at position: 8
+Title Swan House (Atlanta, Georgia) found at position: 9
+Title Dan Budnik found at position: 10
+Question 32: casablanca
+Title Perejil Island found at position: 1
+Title Extremadura found at position: 2
+Title Ismail Ibn Sharif found at position: 3
+Title Flag of Morocco found at position: 4
+Title Tétouan found at position: 5
+Title Abdelkader Perez found at position: 6
+Title Melilla found at position: 7
+Title Demographics of Western Sahara found at position: 8
+Title Western Sahara found at position: 9
+Title Metro Tepalcates found at position: 10
+Question 33: kraft foods
+Title Reed Boucher found at position: 1
+Title Bedtime for Democracy found at position: 2
+Title Give Me Convenience or Give Me Death found at position: 3
+Title East Bay Ray found at position: 4
+Title California Über Alles found at position: 5
+Title Mary Jane's Not a Virgin Anymore found at position: 6
+Title Wrong Kind of Stone Age found at position: 7
+Title AK Press found at position: 8
+Title Tipper Gore found at position: 9
+Title D.H. Peligro found at position: 10
+Question 34: kelsey grammer
+Title Sid Bennett found at position: 1
+Title Philo Carpenter found at position: 2
+Title Larry Kane found at position: 3
+Title St. Charles, Illinois found at position: 4
+Title Linda Lusardi found at position: 5
+Title Samuel Kane found at position: 6
+Title Kid Durbin found at position: 7
+Title Citizen Kane found at position: 8
+Title Government of Milwaukee found at position: 9
+Title Tom Kleinschmidt found at position: 10
+Question 35: animal house
+Document hit for Animal Houseat position: 1
+Title Animal House found at position: 1
+Title Bluto found at position: 2
+Title Flounder found at position: 3
+Title Ford Pinto found at position: 4
+Title Gigging found at position: 5
+Title Cheech & Chong found at position: 6
+Title São Tomé and Príncipe presidential election, 2011 found at position: 7
+Title National Lampoon (magazine) found at position: 8
+Title Otter (theorem prover) found at position: 9
+Title José Maria Pedroto found at position: 10
+Question 36: mayim bialik
+Document hit for Mayim Bialikat position: 1
+Title Mayim Bialik found at position: 1
+Title Amy Fowler found at position: 2
+Title Howard Wolowitz found at position: 3
+Title Raj Koothrappali found at position: 4
+Title Jack McManus (singer) found at position: 5
+Title Blossom (TV series) found at position: 6
+Title Nucleosynthesis found at position: 7
+Title Anna Christina Nobre found at position: 8
+Title Big Bang nucleosynthesis found at position: 9
+Title John Stein (physiologist) found at position: 10
+Question 37: aaron burr
+Title Virginia dynasty found at position: 1
+Document hit for Aaron Burrat position: 2
+Title Aaron Burr found at position: 2
+Title George Clinton (vice president) found at position: 3
+Title Vice President of the United States found at position: 4
+Title John Breathitt found at position: 5
+Title Daniel D. Tompkins found at position: 6
+Title 1988 Republican National Convention found at position: 7
+Title Republic of China presidential election, 2000 found at position: 8
+Title Republican Party presidential primaries, 1976 found at position: 9
+Title List of Butuan city officials found at position: 10
+Question 38: vladimir putin|putin
+Title Keizō Obuchi found at position: 1
+Title Vladimir Alganov found at position: 2
+Title Boris Chochiev found at position: 3
+Title Prime Minister of France found at position: 4
+Title Ivan Goremykin found at position: 5
+Title Gaston Thorn found at position: 6
+Title Takahashi Korekiyo found at position: 7
+Title Jerzy Hryniewski found at position: 8
+Title Prime Minister of Rhodesia found at position: 9
+Title List of Prime Ministers of the United Arab Emirates found at position: 10
+Question 39: michelle obama
+Title The Great Mom Swap found at position: 1
+Title Lady of all Nations found at position: 2
+Title Liz Malia found at position: 3
+Title Gertrud Månsson found at position: 4
+Title The Third Eye (novel) found at position: 5
+Title Alexandrine of Mecklenburg-Schwerin found at position: 6
+Title Ahsaas Channa found at position: 7
+Title Naima Wifstrand found at position: 8
+Title Kate Jackson found at position: 9
+Title Nightmare as a Child found at position: 10
+Question 40: edna st. vincent millay
+Title Orobas found at position: 1
+Title Mihri Hatun found at position: 2
+Title Madama Butterfly found at position: 3
+Title National anthem of Yemen found at position: 4
+Title Joan Sims found at position: 5
+Title Feste found at position: 6
+Title The Falcon Takes Over found at position: 7
+Title Don Giovanni found at position: 8
+Title Sonnet 133 found at position: 9
+Title Ellie Darcey-Alden found at position: 10
+Question 41: helsinki
+Title Savonlinna found at position: 1
+Title Porvoo found at position: 2
+Title Mikael Agricola found at position: 3
+Title Finnish Orthodox Church found at position: 4
+Title Espoo found at position: 5
+Title Katajanokka found at position: 6
+Title Lauri Ingman found at position: 7
+Title Tampere found at position: 8
+Title Laestadian Lutheran Church found at position: 9
+Title Martin Luther Cathedral, Daugavpils found at position: 10
+Question 42: hasbro
+Title Microvision found at position: 1
+Title Axis & Allies found at position: 2
+Title Battleship (game) found at position: 3
+Title Vectrex found at position: 4
+Title Snakes and Ladders found at position: 5
+Title Shawn Bradley found at position: 6
+Document hit for Hasbroat position: 7
+Title Hasbro found at position: 7
+Title Australia at the 1992 Winter Paralympics found at position: 8
+Title Matt Bradley found at position: 9
+Title Snake (video game) found at position: 10
+Question 43: the alien and sedition acts
+Title Kentucky and Virginia Resolutions found at position: 1
+Title List of United States federal legislation found at position: 2
+Title Patrick Henry found at position: 3
+Title Intolerable Acts found at position: 4
+Title Second Continental Congress found at position: 5
+Title Continental Congress found at position: 6
+Title Stamp Act 1765 found at position: 7
+Title 105th United States Congress found at position: 8
+Title History of slavery in Indiana found at position: 9
+Title 67th United States Congress found at position: 10
+Question 44: michael jackson
+Title 1983 BDO World Darts Championship found at position: 1
+Title Loser Gone Wild found at position: 2
+Title Beat Forster found at position: 3
+Title K-Rob found at position: 4
+Title Estádio Vila Olímpica found at position: 5
+Title Hamilton Ventura found at position: 6
+Title Kelowna Spartans found at position: 7
+Title Charles Addis found at position: 8
+Title Juan López Fontana found at position: 9
+Title Change the World (Bone Thugs-n-Harmony song) found at position: 10
+Question 45: anna paquin
+Title True Blood found at position: 1
+Document hit for Anna Paquinat position: 2
+Title Anna Paquin found at position: 2
+Title Jim O'Neal found at position: 3
+Title Sooke found at position: 4
+Title Your Business found at position: 5
+Title Bardiya found at position: 6
+Title Laskar Jihad found at position: 7
+Title Chondrus crispus found at position: 8
+Title 2009 in Irish music found at position: 9
+Title Serbia in the Eurovision Song Contest 2009 found at position: 10
+Question 46: henry kissinger
+Title Helmut Sturm found at position: 1
+Title 1st government of Turkey found at position: 2
+Title John H. Ray found at position: 3
+Title William B. Saxbe found at position: 4
+Document hit for Henry Kissingerat position: 5
+Title Henry Kissinger found at position: 5
+Title Guilford Dudley (ambassador) found at position: 6
+Title Anton Grylewicz found at position: 7
+Title Gerhard Schröder (CDU) found at position: 8
+Title Carl Albert found at position: 9
+Title 3rd government of Turkey found at position: 10
+Question 47: edinburgh
+Title John Knox found at position: 1
+Title Stobo Kirk found at position: 2
+Title Glasgow Cathedral found at position: 3
+Title Queen's Hall, Edinburgh found at position: 4
+Title Church of Scotland found at position: 5
+Title Giles of Assisi found at position: 6
+Title John Urquhart Cameron found at position: 7
+Title Rivers of Life, Oxford found at position: 8
+Title Knox Grammar School found at position: 9
+Title John Frush Knox found at position: 10
+Question 48: james dean
+Title Peter Reckell found at position: 1
+Title Richard Thomas (actor) found at position: 2
+Title Lyall Brooks found at position: 3
+Title Michael Crawford found at position: 4
+Title Jamie King (actor) found at position: 5
+Title Jeff Roop found at position: 6
+Title Dan Shor found at position: 7
+Title Understudy found at position: 8
+Title David Anders found at position: 9
+Title Rebel Without a Cause found at position: 10
+Question 49: mattel
+Title Sex toy found at position: 1
+Title The Wild Puffalumps found at position: 2
+Title Lekotek found at position: 3
+Title Transformers (film) toy line found at position: 4
+Title Dangerous Toys (album) found at position: 5
+Title Donald Kaufman (collector) found at position: 6
+Title Biomechanical Toy found at position: 7
+Title Learning Express Toys found at position: 8
+Title Spin Fighters found at position: 9
+Title Small Soldiers found at position: 10
+Question 50: richard nixon|nixon
+Title American National Exhibition found at position: 1
+Title Cuban missile crisis found at position: 2
+Title Yuri Zhukov (journalist) found at position: 3
+Title Vittorio De Sica found at position: 4
+Title The Book of Salt found at position: 5
+Title Augustus Frederick Sherman found at position: 6
+Title Aleksandr Vasilevsky found at position: 7
+Title Ray Conniff found at position: 8
+Title Robert Frank found at position: 9
+Title Esfir Shub found at position: 10
+Question 51: henry wadsworth longfellow
+Title William Dawes found at position: 1
+Title Paul Revere found at position: 2
+Title Third Nephi found at position: 3
+Title Oswald Eve found at position: 4
+Title Sterling silver found at position: 5
+Title Paul Revere & the Raiders found at position: 6
+Title Óláfs saga Tryggvasonar found at position: 7
+Title Sullivan Ballou found at position: 8
+Title But to bring a sword found at position: 9
+Title Jealousy in religion found at position: 10
+Question 52: game change
+Title Junket Whore found at position: 1
+Title Safe (1995 film) found at position: 2
+Title Project Greenlight found at position: 3
+Title Steven Knight found at position: 4
+Title My Best Friend's Wedding found at position: 5
+Title The Green Berets (book) found at position: 6
+Title Robin Moore found at position: 7
+Title Amphibian Man found at position: 8
+Title Hannibal (film) found at position: 9
+Title Michael Moore found at position: 10
+Question 53: ncis
+Title Rocky Carroll found at position: 1
+Title The Defenders (1961 TV series) found at position: 2
+Title Fate Is the Hunter (film) found at position: 3
+Title Alicia Coppola found at position: 4
+Title Incident in a Small Town found at position: 5
+Title Mark Iddon found at position: 6
+Title Darrell M. Smith found at position: 7
+Title Mill Valley High School found at position: 8
+Title Japanese television drama found at position: 9
+Title Sara Stewart found at position: 10
+Question 54: cape town
+Title Bạc Liêu found at position: 1
+Title British Columbia Highway 14 found at position: 2
+Title Saint Peter Port found at position: 3
+Title Tea Gardens, New South Wales found at position: 4
+Title Corinth found at position: 5
+Title Cahill Stadium found at position: 6
+Title Kharga Oasis found at position: 7
+Title Wapping Dock found at position: 8
+Title Border, San Diego found at position: 9
+Title Transport in Eritrea found at position: 10
+Question 55: the faerie queene
+Title John Keats found at position: 1
+Title Edmund Spenser found at position: 2
+Title Ode found at position: 3
+Document hit for The Faerie Queeneat position: 4
+Title The Faerie Queene found at position: 4
+Title Ozymandias found at position: 5
+Title La Belle Dame sans Merci found at position: 6
+Title Hyperion (poem) found at position: 7
+Title Ode to the West Wind found at position: 8
+Title Spenserian stanza found at position: 9
+Title Hymn to Intellectual Beauty found at position: 10
+Question 56: lord byron
+Title John Keats found at position: 1
+Title La Belle Dame sans Merci found at position: 2
+Title Hyperion (poem) found at position: 3
+Title Adonis found at position: 4
+Title Richard Monckton Milnes, 1st Baron Houghton found at position: 5
+Title Thomas Moore found at position: 6
+Title William McGonagall found at position: 7
+Title Edmund Spenser found at position: 8
+Document hit for Lord Byronat position: 9
+Title Lord Byron found at position: 9
+Title Patrick Hamilton (poet) found at position: 10
+Question 57: ouzo
+Title Liqueur found at position: 1
+Document hit for Ouzoat position: 2
+Title Ouzo found at position: 2
+Title List of cocktails found at position: 3
+Title Anise found at position: 4
+Title White Russian (cocktail) found at position: 5
+Title Azurite found at position: 6
+Title List of coffee beverages found at position: 7
+Title Ocean turbidity found at position: 8
+Title Show jumping found at position: 9
+Title Feta found at position: 10
+Question 58: slavery|slavery in the united states
+Title Emancipation Proclamation found at position: 1
+Title Governor of South Carolina found at position: 2
+Title Pledge of Allegiance found at position: 3
+Title Equal Rights Amendment found at position: 4
+Title Initiative found at position: 5
+Title Freedom of religion in the United States found at position: 6
+Title Lee Slater Overman found at position: 7
+Title List of Governors of Georgia found at position: 8
+Title Convention to propose amendments to the United States Constitution found at position: 9
+Title Federal Marriage Amendment found at position: 10
+Question 59: governor general of canada
+Document hit for Governor General of Canadaat position: 1
+Title Governor General of Canada found at position: 1
+Title David Lee (politician) found at position: 2
+Title John David Burnes found at position: 3
+Title William B. Bankhead found at position: 4
+Title John Peter McArthur found at position: 5
+Title Roble Olhaye found at position: 6
+Title 100 Huntley Street found at position: 7
+Title Jules Léger found at position: 8
+Title At Her Majesty's pleasure found at position: 9
+Title Frederic Storm found at position: 10
+Question 60: george martin
+Title Fifth Beatle found at position: 1
+Title Please Please Me found at position: 2
+Document hit for George Martinat position: 3
+Title George Martin found at position: 3
+Title The Beatles (album) found at position: 4
+Title Rubber Soul found at position: 5
+Title Revolver (Beatles album) found at position: 6
+Title Love (The Beatles album) found at position: 7
+Title Help! (album) found at position: 8
+Title Beatles for Sale found at position: 9
+Title Jeff Lynne found at position: 10
+Question 61: san francisco
+Title Bret Harte found at position: 1
+Title Bret Harte Union High School found at position: 2
+Title KKBN found at position: 3
+Title 1860 Wiyot Massacre found at position: 4
+Title Joaquin Miller found at position: 5
+Title Bret Harte High School found at position: 6
+Title Lost Cement Mine found at position: 7
+Title Adventures of Huckleberry Finn found at position: 8
+Title Harte Hanks found at position: 9
+Title Homosexuality in China found at position: 10
+Question 62: kangaroo
+Title Broad-faced potoroo found at position: 1
+Title Marsupial mole found at position: 2
+Title Pitchout found at position: 3
+Title Calgary Courts Centre found at position: 4
+Title Yungavolucris found at position: 5
+Title Rainbow Falls (Horsepasture River) found at position: 6
+Title Big Platte Lake found at position: 7
+Title Stejneger's beaked whale found at position: 8
+Title Honey possum found at position: 9
+Title Image:Studiob.jpg|thumb|bottom|Control Room B found at position: 10
+Question 63: feta
+Document hit for Fetaat position: 1
+Title Feta found at position: 1
+Title Caerphilly cheese found at position: 2
+Title Norwegian cuisine found at position: 3
+Title Pecorino found at position: 4
+Title Mozzarella found at position: 5
+Title List of cheeses found at position: 6
+Title Quark (dairy product) found at position: 7
+Title Gouda cheese found at position: 8
+Title Grana (cheese) found at position: 9
+Title Wensleydale cheese found at position: 10
+Question 64: jack dempsey
+Document hit for Jack Dempseyat position: 1
+Title Jack Dempsey found at position: 1
+Title New Jersey Route 37 found at position: 2
+Title MIM-46 Mauler found at position: 3
+Title Robin Tunney found at position: 4
+Title Dan Minor found at position: 5
+Title Tommy Gibbons found at position: 6
+Title Squaring the square found at position: 7
+Title Vehicle registration plates of Italy found at position: 8
+Title Tunney found at position: 9
+Title Eddie "Lockjaw" Davis found at position: 10
+Question 65: duce
+Document hit for Duceat position: 1
+Title Duce found at position: 1
+Title Fascist and anti-Fascist violence in Italy (1919–26) found at position: 2
+Title Clara Petacci found at position: 3
+Title Predappio found at position: 4
+Title Alessandra Mussolini found at position: 5
+Title Esercito Nazionale Repubblicano found at position: 6
+Title Romano Mussolini found at position: 7
+Title Fascism in Europe found at position: 8
+Title Social Alternative found at position: 9
+Title Michele Bianchi found at position: 10
+Question 66: michigan
+Title Kalamazoo Kings found at position: 1
+Title Kalamazoo/Battle Creek International Airport found at position: 2
+Title Portage Northern High School found at position: 3
+Title Douglas Den Uyl found at position: 4
+Title List of California Institute of the Arts people found at position: 5
+Title Reynolds and Reynolds found at position: 6
+Title Kalamazoo Kangaroos found at position: 7
+Title InIVA found at position: 8
+Title Liverpool Institute for Performing Arts found at position: 9
+Title Jacques d'Amboise (dancer) found at position: 10
+Question 67: idaho
+Title Sun Valley High School (North Carolina) found at position: 1
+Title Hayward City Hall found at position: 2
+Title Central Guoshu Institute found at position: 3
+Title Sun-Maid found at position: 4
+Title Ohio Valley Career and Technical Center found at position: 5
+Title Anni Rossi found at position: 6
+Title Ajalon found at position: 7
+Title Grand Valley State University found at position: 8
+Title Ntala Skinner found at position: 9
+Title Ayers Saint Gross found at position: 10
+Question 68: joe tinker
+Document hit for Joe Tinkerat position: 1
+Title Joe Tinker found at position: 1
+Title Hughie Jennings found at position: 2
+Title Use–mention distinction found at position: 3
+Title Medgar Evers found at position: 4
+Title Charles Evers found at position: 5
+Title William L. Pollard found at position: 6
+Title Nelson Norman found at position: 7
+Title Tony "Duke" Evers found at position: 8
+Title Willie Horton found at position: 9
+Title Muhammad ibn Isa at-Tirmidhi found at position: 10
+Question 69: william henry harrison
+Title Horace Greeley found at position: 1
+Title Schuyler Colfax found at position: 2
+Title The Day (New London) found at position: 3
+Title Anti-Masonic Party found at position: 4
+Title Willie Person Mangum found at position: 5
+Title Sun-Sentinel found at position: 6
+Document hit for William Henry Harrisonat position: 7
+Title William Henry Harrison found at position: 7
+Title Austin Blair found at position: 8
+Title John H. McHenry found at position: 9
+Title William Andrew Quarles found at position: 10
+Question 70: joan of arc|jeanne d'arc
+Title Roman Catholic Diocese of Beauvais found at position: 1
+Title Joan of Arc found at position: 2
+Title Beauvais found at position: 3
+Title Medieval Inquisition found at position: 4
+Title Jean Houymet found at position: 5
+Title William Elphinstone found at position: 6
+Title Mount Pelée found at position: 7
+Title Clermont-Ferrand Cathedral found at position: 8
+Title Judoc found at position: 9
+Title Wilfried Louisy-Daniel found at position: 10
+Question 71: madison
+Title Hearst Island found at position: 1
+Title Yosemite Valley found at position: 2
+Title Saint Isaac's Cathedral found at position: 3
+Title Granite City, British Columbia found at position: 4
+Title Volkshalle found at position: 5
+Title El Capitolio found at position: 6
+Title Subotica Synagogue found at position: 7
+Title Royal Gorge found at position: 8
+Title Corcovado found at position: 9
+Title Granite Mountain (Texas) found at position: 10
+Question 72: the atlanta journal-constitution
+Document hit for The Atlanta Journal-Constitutionat position: 1
+Title The Atlanta Journal-Constitution found at position: 1
+Title Stylish Century found at position: 2
+Title AJC found at position: 3
+Title Rome News-Tribune found at position: 4
+Title Jacques Futrelle found at position: 5
+Title Jack Chertok found at position: 6
+Title Tinatin Chulukhadze found at position: 7
+Title Central State Hospital (Milledgeville, Georgia) found at position: 8
+Title Irakli Charkviani found at position: 9
+Title Coleman River found at position: 10
+Question 73: monrovia
+Title Americo-Liberian found at position: 1
+Title Bozhentsi found at position: 2
+Title Foreign relations of Liberia found at position: 3
+Title Economy of Liberia found at position: 4
+Title History of Liberia found at position: 5
+Title Empress Dowager Wenming tomb found at position: 6
+Title Prince Johnson found at position: 7
+Title Liberia found at position: 8
+Title Musa Shannon found at position: 9
+Title Armed Forces of Liberia found at position: 10
+Question 74: mercedes-benz superdome|the superdome
+Title Preservation Hall Jazz Band found at position: 1
+Title Louis Armstrong New Orleans International Airport found at position: 2
+Title Children's Hospital of New Orleans found at position: 3
+Title New Orleans Jazz Museum found at position: 4
+Title Snug Harbor (jazz club) found at position: 5
+Title Saenger Theatre (New Orleans, Louisiana) found at position: 6
+Title Wesley Barrow Stadium found at position: 7
+Title Robert Smallwood found at position: 8
+Title Shrewsbury, Louisiana found at position: 9
+Title Mount Carmel Academy (Louisiana) found at position: 10
+Question 75: alec baldwin
+Title 30 Rock (season 6) found at position: 1
+Title Plunkett Donaghy found at position: 2
+Title Malice (film) found at position: 3
+Document hit for Alec Baldwinat position: 4
+Title Alec Baldwin found at position: 4
+Title Greg Scarnici found at position: 5
+Title Chris Rock found at position: 6
+Title Jack Billingham found at position: 7
+Title Wolfman Jack found at position: 8
+Title Cabela's Big Game Hunter 2010 found at position: 9
+Title William Baldwin found at position: 10
+Question 76: rosa parks
+Title Not Waving but Drowning found at position: 1
+Title Joshua Beckman found at position: 2
+Title Equation (poem) found at position: 3
+Title Silk Stalkings found at position: 4
+Title Asukai Gayū found at position: 5
+Title William Wordsworth found at position: 6
+Title Poems (Hesse) found at position: 7
+Title Maria Rita Lorenzetti found at position: 8
+Title Will Success Spoil Rock Hunter? found at position: 9
+Title Armand Lanusse found at position: 10
+Question 77: harrison ford
+Title HES Unidaptor found at position: 1
+Title Peter Kenny found at position: 2
+Title Freedom Force (2002 video game) found at position: 3
+Title Hypertext Editing System found at position: 4
+Title Samuel Witwer found at position: 5
+Title Trinity (role-playing game) found at position: 6
+Title Maia (video game) found at position: 7
+Title Junpei Takiguchi found at position: 8
+Title FirstEnergy Stadium (Cleveland) found at position: 9
+Title Ozark Patriots found at position: 10
+Question 78: dome of the rock
+Title Timeline of telescopes, observatories, and observing technology found at position: 1
+Title Caracol found at position: 2
+Title Dos Pilas found at position: 3
+Title Lake Nemi found at position: 4
+Title Cantus firmus found at position: 5
+Title Neath Abbey found at position: 6
+Title Rio Grande Glaze Ware found at position: 7
+Title Giovanni Priuli found at position: 8
+Title Joseph Perry (bishop) found at position: 9
+Title Rodez Cathedral found at position: 10
+Question 79: michael jackson
+Title The Crystal Palace (novel) found at position: 1
+Title Mirror Image (The Twilight Zone) found at position: 2
+Title Arthur Porges found at position: 3
+Title Wolfgang Hoppe found at position: 4
+Title Travis Mayweather found at position: 5
+Title Flag of Paraguay found at position: 6
+Title Detlef Richter found at position: 7
+Title Zhu Shijie found at position: 8
+Title Bernhard Lehmann found at position: 9
+Title Ekkehard Fasser found at position: 10
+Question 80: budapest
+Title History of Buda Castle found at position: 1
+Title Votive Church, Vienna found at position: 2
+Title Saint Matthias found at position: 3
+Title Mayerling found at position: 4
+Title Franz Xaver Witt found at position: 5
+Title Huedin found at position: 6
+Title Matthias Corvinus found at position: 7
+Title Commemorative medal of the Mexico Expedition found at position: 8
+Title John Moore (Methodist bishop) found at position: 9
+Title Roman Catholic Archdiocese of Abuja found at position: 10
+Question 81: rob reiner
+Title Ron Pitts found at position: 1
+Document hit for Rob Reinerat position: 2
+Title Rob Reiner found at position: 2
+Title Animal Crackers (film) found at position: 3
+Title Kareem Abdul-Jabbar found at position: 4
+Title Les Charlots found at position: 5
+Title Richard Simmons (actor) found at position: 6
+Title Grant Show found at position: 7
+Title Jason Bell (American football) found at position: 8
+Title George Stanich found at position: 9
+Title Matt Taylor (American soccer) found at position: 10
+Question 82: hogan's heroes
+Document hit for Hogan's Heroesat position: 1
+Title Hogan's Heroes found at position: 1
+Title John Carter (ER) found at position: 2
+Title Spin City found at position: 3
+Title Nell Carter found at position: 4
+Title Stalag VIII-F found at position: 5
+Title Carter the Unstoppable Sex Machine found at position: 6
+Title Talk show found at position: 7
+Title Max Headroom (TV series) found at position: 8
+Title Teen idol found at position: 9
+Title Big Brother Brasil 4 found at position: 10
+Question 83: calvin coolidge
+Title Power nap found at position: 1
+Title Santa's Little Helper found at position: 2
+Title Matt Kalil found at position: 3
+Title Qian Haiyan found at position: 4
+Title Lee Jong-wook found at position: 5
+Title Pappy Sherrill found at position: 6
+Title 2009 European Touring Car Cup found at position: 7
+Title Steve Hilton found at position: 8
+Title Sleep deprivation found at position: 9
+Title Africa Cup of Nations found at position: 10
+Question 84: martin sheen
+Title Authorization for Use of Military Force Against Terrorists found at position: 1
+Title Susan Jeske found at position: 2
+Title Conaco found at position: 3
+Title Kenneth E. BeLieu found at position: 4
+Title A Child's Wish found at position: 5
+Title State of the Union address found at position: 6
+Title Oh Yeah! Cartoons found at position: 7
+Title Víctor J. Montilla found at position: 8
+Title 1975 State of the Union Address found at position: 9
+Title George W. Bush's first term as President of the United States found at position: 10
+Question 85: janet jackson
+Title I Love the '80s Strikes Back found at position: 1
+Title Erin Holland found at position: 2
+Title Jean Burns found at position: 3
+Title Miss You (Yuna Ito song) found at position: 4
+Title Joshua Allen found at position: 5
+Title Bullet Records found at position: 6
+Title Cathy Garcia-Molina found at position: 7
+Title Gwendoline Ruais found at position: 8
+Title Temptation Island (1980 film) found at position: 9
+Title Annie (musical) found at position: 10
+Question 86: ottoman empire
+Title 6th century found at position: 1
+Title Liberalism in Turkey found at position: 2
+Title 6th century BC found at position: 3
+Title Kilkis (regional unit) found at position: 4
+Title Far Eastern Republic found at position: 5
+Title Austro-Turkish War (1663–64) found at position: 6
+Title Galactic Empire (Star Wars) found at position: 7
+Title History of Armenia found at position: 8
+Title Christophor Araratov found at position: 9
+Title Abdülmecid I found at position: 10
+Question 87: procter & gamble
+Title Crest (toothpaste) found at position: 1
+Title Toothpaste found at position: 2
+Title Crest Capital found at position: 3
+Title Nyctosaurus found at position: 4
+Title Crest of the Stars found at position: 5
+Title Deja Vu (The Outer Limits) found at position: 6
+Title Cedar Crest (Faunsdale, Alabama) found at position: 7
+Title Fern Crest Village, Florida found at position: 8
+Title Shuqun Secondary School found at position: 9
+Title Deep circumflex iliac artery found at position: 10
+Question 88: otto von bismarck|von bismarck
+Title Reichstag Fire Decree found at position: 1
+Title Conversations with God found at position: 2
+Title Fear and Trembling found at position: 3
+Title John of Cappadocia found at position: 4
+Title Enabling Act of 1933 found at position: 5
+Title Anglo-German naval arms race found at position: 6
+Title Wilhelm II, German Emperor found at position: 7
+Title Fritz Sauckel found at position: 8
+Title Inuit mythology found at position: 9
+Title Georg Michaelis found at position: 10
+Question 89: william wordsworth
+Title John Peter Gandy found at position: 1
+Title Nonnus found at position: 2
+Title Andrei Mureșanu found at position: 3
+Title Ozymandias found at position: 4
+Title In a Station of the Metro found at position: 5
+Title João Guilherme found at position: 6
+Title Telemachus found at position: 7
+Title William Lily (grammarian) found at position: 8
+Title Bliss Carman found at position: 9
+Title The Sorrows of Young Werther found at position: 10
+Question 90: khmer language
+Title Politics of Cambodia found at position: 1
+Title Olympic Stadium (Phnom Penh) found at position: 2
+Title History of Cambodia found at position: 3
+Title Sala Krau District found at position: 4
+Title Economy of Cambodia found at position: 5
+Title Virachey National Park found at position: 6
+Title Pailin District found at position: 7
+Title Cambodia National and Provincial Resources Data Bank found at position: 8
+Title Kampong Speu (town) found at position: 9
+Title Kampong Thom (city) found at position: 10
+Question 91: rickshaw
+Title Cycle rickshaw found at position: 1
+Title Olympic Stadium (Phnom Penh) found at position: 2
+Title Auto-Wheel found at position: 3
+Title Burette found at position: 4
+Title Transport in Cambodia found at position: 5
+Document hit for Rickshawat position: 6
+Title Rickshaw found at position: 6
+Title Notorious MSG found at position: 7
+Title Phnom Kulen National Park found at position: 8
+Title Gridlock found at position: 9
+Title Tricycle found at position: 10
+Question 92: michael jackson
+Title Rocky Burnette found at position: 1
+Title Night (band) found at position: 2
+Title Closer (Joy Division album) found at position: 3
+Title Sheena & The Rokkets found at position: 4
+Title Hi Infidelity found at position: 5
+Title The Long Run (Eagles album) found at position: 6
+Title Unai Expósito found at position: 7
+Title D.E. 7th found at position: 8
+Title Do You Wanna Touch Me found at position: 9
+Title Solaris (band) found at position: 10
+Question 93: jfk|john f. kennedy
+Title United States Senate Watergate Committee found at position: 1
+Title United States presidential election in Massachusetts, 1972 found at position: 2
+Title Colin R. McMillan found at position: 3
+Title Lloyd Bentsen found at position: 4
+Title United States presidential election in Rhode Island, 1964 found at position: 5
+Title Wilton Persons found at position: 6
+Title David Plouffe found at position: 7
+Title Joe Lockhart found at position: 8
+Title Eduardo Frei Ruiz-Tagle found at position: 9
+Title Timeline of the presidency of John F. Kennedy found at position: 10
+Question 94: b'nai b'rith
+Title Jacob and Esau found at position: 1
+Document hit for B'nai B'rithat position: 2
+Title B'nai B'rith found at position: 2
+Title Christianity and Judaism found at position: 3
+Title Shekhinah found at position: 4
+Title Ishtori Haparchi found at position: 5
+Title Alice Heine found at position: 6
+Title Cave of the Patriarchs found at position: 7
+Title Epistle of Barnabas found at position: 8
+Title Rosh Pinah Primary School found at position: 9
+Title Book of Exodus found at position: 10
+Question 95: three's company
+Title Don Knotts found at position: 1
+Document hit for Three's Companyat position: 2
+Title Three's Company found at position: 2
+Title Tim Conway found at position: 3
+Title Matlock (TV series) found at position: 4
+Title Tandem Productions found at position: 5
+Title Funk metal found at position: 6
+Title How Not to Live Your Life found at position: 7
+Title Lyon's Inn found at position: 8
+Title ELP Communications found at position: 9
+Title San Pedro, Laguna found at position: 10
+Question 96: the six day war
+Title Golan Heights found at position: 1
+Title Annexation found at position: 2
+Title Camp David Accords found at position: 3
+Title History of the Israel Defense Forces found at position: 4
+Title Israel and legitimacy found at position: 5
+Title Israeli–Palestinian conflict found at position: 6
+Title 1949 Armistice Agreements found at position: 7
+Title All-Palestine Government found at position: 8
+Title West Bank found at position: 9
+Title Politics of the Palestinian National Authority found at position: 10
+Question 97: heather locklear
+Title Melrose Place found at position: 1
+Document hit for Heather Locklearat position: 2
+Title Heather Locklear found at position: 2
+Title Amy Lalonde found at position: 3
+Title Thomas Calabro found at position: 4
+Title Grant Show found at position: 5
+Title Legally Blonde (musical) found at position: 6
+Title Lisa Rinna found at position: 7
+Title Courtney Thorne-Smith found at position: 8
+Title Maxwell Caulfield found at position: 9
+Title The Real Blonde found at position: 10
+Question 98: souvlaki
+Document hit for Souvlakiat position: 1
+Title Souvlaki found at position: 1
+Title Akçaabat meatballs found at position: 2
+Title Tzatziki found at position: 3
+Title Awadhi cuisine found at position: 4
+Title Ayam bakar found at position: 5
+Title Lountza found at position: 6
+Title Jingisukan found at position: 7
+Title Culture of Iraq found at position: 8
+Title Short ribs found at position: 9
+Title Mechado found at position: 10
+Question 99: 3m
+Title Seychellois rupee found at position: 1
+Title Eighth note found at position: 2
+Title Banknotes of the Norwegian krone found at position: 3
+Title Banknotes of the pound sterling found at position: 4
+Title Macmillan Co. v. King found at position: 5
+Title Colombian peso found at position: 6
+Title Next Left Notes found at position: 7
+Title John Peel Sessions (The Moondogs album) found at position: 8
+Title Color (medieval music) found at position: 9
+Title Legato found at position: 10
+Question 100: robert downey, jr.
+Title Irene Adler found at position: 1
+Title Sherlock Holmes found at position: 2
+Title The Five Orange Pips found at position: 3
+Title Jeremy Brett found at position: 4
+Title Edward Hardwicke found at position: 5
+Title List of actors who have played Sherlock Holmes found at position: 6
+Title Harry Arthur Saintsbury found at position: 7
+Title The Adventure of the Musgrave Ritual found at position: 8
+Title Basil Rathbone found at position: 9
+Title Reichenbach Falls found at position: 10
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.834 s - in [1mTest2[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.791 s
+[[1;34mINFO[m] Finished at: 2023-04-15T11:25:10-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

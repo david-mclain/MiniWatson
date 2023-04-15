@@ -29,9 +29,11 @@ public class QueryEngine {
         Directory index = null;
         // Open directory containing indexed files
         try {
-            index = FSDirectory.open(new File("test").toPath());
+            index = FSDirectory.open(new File("src/main/resources/standard-indexed-documents").toPath());
         }
-        catch(Exception e){}
+        catch(IOException e) {
+            throw new RuntimeException(e);
+        }
         Scanner input = null;
         IndexReader reader = DirectoryReader.open(index);
         IndexSearcher searcher = new IndexSearcher(reader);
@@ -56,7 +58,10 @@ public class QueryEngine {
             for(int i = 0; i < hits.length; ++i) {
                 int docId = hits[i].doc;
                 Document d = searcher.doc(docId);
-                System.out.println("Document position: " + (i + 1) + " ; Title: " + d.get("title").replaceAll("\\[|\\]", "").toLowerCase());
+                if (answer.toLowerCase().equals(d.get("title").replaceAll("\\[|\\]", "").toLowerCase())) {
+                    System.out.println("Document hit for " + answer + "at position: " + (i + 1));
+                }
+                System.out.println("Title " + d.get("title") + " found at position: " + (i + 1));
                 //System.out.println((i + 1) + ". " + d.get("title") + "\t" + d.get("categories"));
             }
             j++;

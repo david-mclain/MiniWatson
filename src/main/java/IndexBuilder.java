@@ -9,39 +9,39 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.Directory;
-
+import org.apache.lucene.store.FSDirectory;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class IndexBuilder {
     //private boolean indexExists = false;
-    private static final String WIKI_DIRECTORY_PATH  = "wiki-data";
+    private static final String WIKI_DIRECTORY_PATH  = "src/main/resources/wiki-data";
     private StandardAnalyzer analyzer;
     private static Directory index;
     private static IndexWriterConfig config;
     private static IndexWriter writer;
     private int docId;  // For the current document
-
     public IndexBuilder() {
-        analyzer = new StandardAnalyzer();
-        index = new ByteBuffersDirectory();
-        config = new IndexWriterConfig(analyzer);
-
-        // for indexing the wiki-example file
+        try {
+            analyzer = new StandardAnalyzer();
+            index = FSDirectory.open(new File("src/main/resources/standard-indexed-documents").toPath());
+            config = new IndexWriterConfig(analyzer);
+        }
+        catch(IOException e) {
+            throw new RuntimeException(e);
+        }
+        // CODE FOR TESTING ON WIKI-EXAMPLE
+        /*
         try {
             writer = new IndexWriter(index, config);
             addToIndex(new File("src/main/resources/wiki-example.txt"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        // Uncomment below code to index all files in the wiki data
-        /*
+        */
         File wikiFolder = new File(WIKI_DIRECTORY_PATH);
         File[] wikiFiles = wikiFolder.listFiles();
-
-
         try {
             writer = new IndexWriter(index, config);
             for (File f : wikiFiles) {
@@ -52,7 +52,6 @@ public class IndexBuilder {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-         */
     }
 
     /**
@@ -69,7 +68,7 @@ public class IndexBuilder {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-         */
+        */
     }
     void addToIndex(File wikiFile) throws IOException {
         // template for each document
@@ -78,9 +77,6 @@ public class IndexBuilder {
         String title = "";
         String body = "";
         String categories = "";
-
-        //IndexWriterConfig config = new IndexWriterConfig(analyzer);
-        //IndexWriter writer = new IndexWriter(index, config);
 
         boolean parsingFirstDoc = true;
 
@@ -116,11 +112,12 @@ public class IndexBuilder {
             }
 
             // remove markers from subsection headings
-            if (isSubsectionHeader(line))
+            if (isSubsectionHeader(line)) {
                 line = line.replace("=", "");
+            }
 
             // to avoid newline character in the beginning of the body
-            body = body.equals("")? line : body + "\n" + line;
+            body = body.equals("") ? line : body + "\n" + line;
         }
 
         // Add the last document
