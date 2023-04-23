@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Test1" time="96.476" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Test1" time="97.249" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-oracle/lib"/>
-    <property name="sun.java.command" value="/home/david/CSC483/MiniWatson/target/surefire/surefirebooter7575701414012902403.jar /home/david/CSC483/MiniWatson/target/surefire 2023-04-15T11-16-54_871-jvmRun1 surefire59195022562377535tmp surefire_06032920171817526334tmp"/>
+    <property name="sun.java.command" value="/home/david/CSC483/MiniWatson/target/surefire/surefirebooter14943626153965270666.jar /home/david/CSC483/MiniWatson/target/surefire 2023-04-23T14-17-29_256-jvmRun1 surefire8733246654209950648tmp surefire_012257000856310263127tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/david/CSC483/MiniWatson/target/test-classes:/home/david/CSC483/MiniWatson/target/classes:/home/david/.m2/repository/org/apache/lucene/lucene-core/7.7.1/lucene-core-7.7.1.jar:/home/david/.m2/repository/org/apache/lucene/lucene-queryparser/7.7.1/lucene-queryparser-7.7.1.jar:/home/david/.m2/repository/org/apache/lucene/lucene-queries/7.7.1/lucene-queries-7.7.1.jar:/home/david/.m2/repository/org/apache/lucene/lucene-sandbox/7.7.1/lucene-sandbox-7.7.1.jar:/home/david/.m2/repository/org/apache/lucene/lucene-analyzers-common/7.7.1/lucene-analyzers-common-7.7.1.jar:/home/david/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.3.1/junit-jupiter-engine-5.3.1.jar:/home/david/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/david/.m2/repository/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.jar:/home/david/.m2/repository/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar:/home/david/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/david/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/david/CSC483/MiniWatson/target/surefire/surefirebooter7575701414012902403.jar"/>
+    <property name="surefire.real.class.path" value="/home/david/CSC483/MiniWatson/target/surefire/surefirebooter14943626153965270666.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.5+9-LTS-191"/>
     <property name="user.name" value="david"/>
@@ -50,5 +50,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testDocs" classname="Test1" time="96.474"/>
+  <testcase name="testDocs" classname="Test1" time="97.246"/>
 </testsuite>

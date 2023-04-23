@@ -1,6 +1,3 @@
-Normalizer.class
-IndexBuilder.class
 Indexer.class
-Tokenizer.class
-Main.class
 QueryEngine.class
+IndexBuilder.class

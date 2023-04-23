@@ -107,8 +107,9 @@ public class IndexBuilder {
 
             if (isCategory(line)) {
                 line = line.substring("CATEGORIES: ".length(), line.length());
-                categories = line;
-                doc.add(new TextField("categories", categories, Field.Store.YES));
+                body = body.equals("") ? line : body + "\n" + line;
+                //categories = line;
+                //doc.add(new TextField("categories", categories, Field.Store.YES));
             }
 
             // remove markers from subsection headings
