@@ -10,6 +10,7 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -43,29 +44,37 @@ public class QueryEngine {
         }
         catch(Exception e) {}
         int j = 1;
+        int matches = 0;
+        int hitsAtOne = 0;
         // Loop through every clue and answer in file and print the results of each query with top 10 docs
         while (input.hasNextLine()) {
             String category = input.nextLine();
             String clue = input.nextLine();
             String answer = input.nextLine();
             input.nextLine();
-            Query q = new QueryParser("body", analyzer).parse(clue.replaceAll("[^a-zA-Z0-9 ]", ""));
-            int hitsPerPage = 10;
-            TopDocs docs = searcher.search(q, hitsPerPage);
+            String queryString = clue.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase() + 
+                " " + category.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase();
+            QueryParser queryParser = new QueryParser("body", analyzer);
+            int hitsPerPage = 20;
+            TopDocs docs = searcher.search(queryParser.parse(queryString), hitsPerPage);
             ScoreDoc[] hits = docs.scoreDocs;
             System.out.println("Question " + j + ": " + answer.toLowerCase());
             // 4. display results
             for(int i = 0; i < hits.length; ++i) {
                 int docId = hits[i].doc;
                 Document d = searcher.doc(docId);
-                if (answer.toLowerCase().equals(d.get("title").replaceAll("\\[|\\]", "").toLowerCase())) {
-                    System.out.println("Document hit for " + answer + "at position: " + (i + 1));
+                if ((d.get("title").replaceAll("\\[|\\]", "").toLowerCase().matches(answer.toLowerCase()))) {
+                    System.out.println("Document hit for " + answer + " at position: " + (i + 1));
+                    matches++;
+                    hitsAtOne = i == 0 ? hitsAtOne + 1 : hitsAtOne;
                 }
                 System.out.println("Title " + d.get("title") + " found at position: " + (i + 1));
                 //System.out.println((i + 1) + ". " + d.get("title") + "\t" + d.get("categories"));
             }
             j++;
         }
+        System.out.println("Total hits in top 20 docs: " + matches);
+        System.out.println("P@1: " + (hitsAtOne / 100.0));
         reader.close();
     }
 }
