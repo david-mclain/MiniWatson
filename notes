@@ -1,4 +1,10 @@
 Error Analysis:
 Standard Analyzer (no changes) -
 P@1: 19%
-Doc in top 20: 52
+Docs in top 10: 41
+Docs in top 20: 52
+
+Standard Analyzer (tf-idf scoring) -
+P@1: 27%
+Docs in top 10: 59
+Docs in top 20: 68

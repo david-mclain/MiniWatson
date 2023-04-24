@@ -1,0 +1,2743 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for edu.arizona.cs:MiniWatson:jar:1.0-SNAPSHOT
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36medu.arizona.cs:MiniWatson[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding MiniWatson 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 184 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/david/CSC483/MiniWatson/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/david/CSC483/MiniWatson/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.0:test[m [1m(default-test)[m @ [36mMiniWatson[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running [1mTest2[m
+Question 1: the washington post
+Title Globalization found at position: 1
+Title Confederate States of America found at position: 2
+Title Pakistan found at position: 3
+Title Hamas found at position: 4
+Title Vietnam War found at position: 5
+Title Culture of Italy found at position: 6
+Title William Randolph Hearst found at position: 7
+Title Goldman Sachs found at position: 8
+Title France found at position: 9
+Title Warren G. Harding found at position: 10
+Title History of Cuba found at position: 11
+Title Malta found at position: 12
+Title Virginia found at position: 13
+Title Puerto Rico found at position: 14
+Title 2000s (decade) found at position: 15
+Title The Wall Street Journal found at position: 16
+Title China found at position: 17
+Title Foreign relations of China found at position: 18
+Title Taiwan found at position: 19
+Title Tiananmen Square protests of 1989 found at position: 20
+Title Russia found at position: 21
+Title Nigeria found at position: 22
+Title Enoch Powell found at position: 23
+Title Sri Lanka found at position: 24
+Title Jordan found at position: 25
+Question 2: taiwan
+Document hit for Taiwan at position: 1
+Title Taiwan found at position: 1
+Title China–United States relations found at position: 2
+Title Puerto Rico found at position: 3
+Title Korean War found at position: 4
+Title Iran–Iraq War found at position: 5
+Title Political status of Taiwan found at position: 6
+Title History of the Republic of China found at position: 7
+Title Madagascar found at position: 8
+Title Communist Party of China found at position: 9
+Title Foreign relations of India found at position: 10
+Title Lockheed U-2 found at position: 11
+Title Sri Lanka found at position: 12
+Title History of socialism found at position: 13
+Title Suez Crisis found at position: 14
+Title Chinese Indonesians found at position: 15
+Title Tiananmen Square protests of 1989 found at position: 16
+Title History of Cuba found at position: 17
+Title Vietnam War found at position: 18
+Title Zhou Enlai found at position: 19
+Title George McGovern found at position: 20
+Title Hawaii found at position: 21
+Title Cultural Revolution found at position: 22
+Title Jawaharlal Nehru found at position: 23
+Title Vladimir Putin found at position: 24
+Title Portugal found at position: 25
+Question 3: the wall street journal
+Document hit for The Wall Street Journal at position: 1
+Title The Wall Street Journal found at position: 1
+Title Goldman Sachs found at position: 2
+Title Oscar Wilde found at position: 3
+Title James Stewart found at position: 4
+Title Manitoba found at position: 5
+Title Stanley Kubrick found at position: 6
+Title Hedge fund found at position: 7
+Title Sainsbury's found at position: 8
+Title The Atlanta Journal-Constitution found at position: 9
+Title Joe Biden found at position: 10
+Title The Washington Post found at position: 11
+Title American frontier found at position: 12
+Title The Baltimore Sun found at position: 13
+Title Orson Welles found at position: 14
+Title William Randolph Hearst found at position: 15
+Title Yellow journalism found at position: 16
+Title Rent (musical) found at position: 17
+Title Rudy Giuliani found at position: 18
+Title Ronald Reagan found at position: 19
+Title J. D. Salinger found at position: 20
+Title Oklahoma City bombing found at position: 21
+Title Stephen Crane found at position: 22
+Title Manhattan found at position: 23
+Title Gary Doer found at position: 24
+Title Red Skelton found at position: 25
+Question 4: my funny valentine
+Title Hair (musical) found at position: 1
+Title Janet Jackson found at position: 2
+Title Irving Berlin found at position: 3
+Title Starlight Express found at position: 4
+Title Born This Way (song) found at position: 5
+Title The Taming of the Shrew found at position: 6
+Title Wu-Tang Clan found at position: 7
+Title John Mellencamp found at position: 8
+Title Whitney Houston found at position: 9
+Title Kylie Minogue found at position: 10
+Title Jennifer Lopez found at position: 11
+Title "Weird Al" Yankovic found at position: 12
+Title Jim Steinman found at position: 13
+Title Carole King found at position: 14
+Title Jerome Kern found at position: 15
+Title Courtney Love found at position: 16
+Title Joni Mitchell found at position: 17
+Title Van Morrison found at position: 18
+Title Musical theatre found at position: 19
+Title Ferris Bueller's Day Off found at position: 20
+Title Todd Manning found at position: 21
+Title Perry Como found at position: 22
+Title Chess (musical) found at position: 23
+Title Rent (musical) found at position: 24
+Title In the Zone found at position: 25
+Question 5: the salvation army|salvation army
+Document hit for The Salvation Army|Salvation Army at position: 1
+Title The Salvation Army found at position: 1
+Title Change ringing found at position: 2
+Title Born This Way (song) found at position: 3
+Title NBC found at position: 4
+Title Nortel found at position: 5
+Title Canadian Broadcasting Corporation found at position: 6
+Title Rangers F.C. found at position: 7
+Title Yankees–Red Sox rivalry found at position: 8
+Title Hamas found at position: 9
+Title GiveWell found at position: 10
+Title Canadian Pacific Railway found at position: 11
+Title Public library found at position: 12
+Title ITunes Store found at position: 13
+Title Taco Bell found at position: 14
+Title Amnesty International found at position: 15
+Title Gramophone record found at position: 16
+Title "Weird Al" Yankovic found at position: 17
+Title Talk That Talk found at position: 18
+Title Jennifer Lopez found at position: 19
+Title Vladimir Putin found at position: 20
+Title Kate Bush found at position: 21
+Title Product placement found at position: 22
+Title CTV Television Network found at position: 23
+Title 2000s (decade) found at position: 24
+Title 3D film found at position: 25
+Question 6: florida
+Title History of painting found at position: 1
+Title Culture of Italy found at position: 2
+Title List of Madagascar (franchise) characters found at position: 3
+Title Yoko Ono found at position: 4
+Title Chicago found at position: 5
+Title Winston Churchill found at position: 6
+Title John the Baptist found at position: 7
+Title Tracey Emin found at position: 8
+Title Phoenix, Arizona found at position: 9
+Title Jesse Ventura found at position: 10
+Title Stanley Kubrick found at position: 11
+Title Louisiana State University found at position: 12
+Title Marc Chagall found at position: 13
+Title Silvio Berlusconi found at position: 14
+Title Janet Jackson found at position: 15
+Title Caravaggio found at position: 16
+Title Nativity scene found at position: 17
+Title Iowa State University found at position: 18
+Title Cristiano Ronaldo found at position: 19
+Title Wilhelm Furtwängler found at position: 20
+Title Jimi Hendrix found at position: 21
+Title Metropolitan Museum of Art found at position: 22
+Title Penang found at position: 23
+Title Alan Moore found at position: 24
+Title Italy found at position: 25
+Question 7: tintoretto
+Title Leonardo da Vinci found at position: 1
+Title History of painting found at position: 2
+Title Roman Empire found at position: 3
+Title Golden Eagle found at position: 4
+Document hit for Tintoretto at position: 5
+Title Tintoretto found at position: 5
+Title Diego Velázquez found at position: 6
+Title Caravaggio found at position: 7
+Title Culture of Italy found at position: 8
+Title Raphael found at position: 9
+Title Catholic Church and women found at position: 10
+Title Italy found at position: 11
+Title Gray wolf found at position: 12
+Title Sculpture found at position: 13
+Title History of the Netherlands found at position: 14
+Title Henry Fonda found at position: 15
+Title List of Donald Duck universe characters found at position: 16
+Title Icon found at position: 17
+Title Lesbian found at position: 18
+Title Édouard Manet found at position: 19
+Title Romanticism found at position: 20
+Title LGBT themes in speculative fiction found at position: 21
+Title Nicolas Poussin found at position: 22
+Title Sophia Loren found at position: 23
+Title Musical theatre found at position: 24
+Title American frontier found at position: 25
+Question 8: jackie joyner-kersee
+Title University of California, Los Angeles found at position: 1
+Title Michael Jordan found at position: 2
+Title Kobe Bryant found at position: 3
+Title Magic Johnson found at position: 4
+Title Kevin Love found at position: 5
+Title University of Virginia found at position: 6
+Title Kareem Abdul-Jabbar found at position: 7
+Title Shaquille O'Neal found at position: 8
+Title Serena Williams found at position: 9
+Title Dennis Rodman found at position: 10
+Title Michigan Wolverines found at position: 11
+Title NC State Wolfpack men's basketball found at position: 12
+Title University of North Carolina at Chapel Hill found at position: 13
+Title Wilt Chamberlain found at position: 14
+Title Jackie Robinson found at position: 15
+Title Karl Malone found at position: 16
+Title Cristiano Ronaldo found at position: 17
+Document hit for Jackie Joyner-Kersee at position: 18
+Title Jackie Joyner-Kersee found at position: 18
+Title Jennie Finch found at position: 19
+Title Bob Knight found at position: 20
+Title Janet Jackson found at position: 21
+Title Bob Costas found at position: 22
+Title Baltimore City College found at position: 23
+Title United States men's national basketball team found at position: 24
+Title Reggie Miller found at position: 25
+Question 9: rotary international
+Title Pontiac found at position: 1
+Title American Motors found at position: 2
+Title Chevrolet Impala found at position: 3
+Title Oregon Trail found at position: 4
+Title Honda Accord found at position: 5
+Title Metropolitan Railway found at position: 6
+Title AMC Matador found at position: 7
+Document hit for Rotary International at position: 8
+Title Rotary International found at position: 8
+Title Land Rover found at position: 9
+Title Spoke found at position: 10
+Title History of the Netherlands found at position: 11
+Title Wheel found at position: 12
+Title Hamas found at position: 13
+Title National Security Agency found at position: 14
+Title American frontier found at position: 15
+Title Sheffield found at position: 16
+Title Chrysler New Yorker found at position: 17
+Title NBC found at position: 18
+Title Wheel of Fortune (U.S. game show) found at position: 19
+Title Copenhagen found at position: 20
+Title Independent Scout and Scout-like organizations in the United States found at position: 21
+Title Volkswagen Beetle found at position: 22
+Title Walmart found at position: 23
+Title Juventus F.C. found at position: 24
+Title Paris found at position: 25
+Question 10: cairo
+Document hit for Cairo at position: 1
+Title Cairo found at position: 1
+Title Nile found at position: 2
+Title Yom Kippur War found at position: 3
+Title History of Africa found at position: 4
+Title Puerto Rico found at position: 5
+Title Tunis found at position: 6
+Title Khartoum found at position: 7
+Title Iran–Iraq War found at position: 8
+Title El Salvador found at position: 9
+Title Chiapas found at position: 10
+Title Marrakesh found at position: 11
+Title Veracruz found at position: 12
+Title Portugal found at position: 13
+Title Glasgow found at position: 14
+Title Tenerife found at position: 15
+Title Paris found at position: 16
+Title San Salvador found at position: 17
+Title Rome found at position: 18
+Title California found at position: 19
+Title Timbuktu found at position: 20
+Title Omaha, Nebraska found at position: 21
+Title Montevideo found at position: 22
+Title Erwin Rommel found at position: 23
+Title Manhattan found at position: 24
+Title First Transcontinental Railroad found at position: 25
+Question 11: charles de gaulle|de gaulle
+Document hit for Charles de Gaulle|de Gaulle at position: 1
+Title Charles de Gaulle found at position: 1
+Title History of France found at position: 2
+Title John French, 1st Earl of Ypres found at position: 3
+Title Suez Crisis found at position: 4
+Title Napoleon III found at position: 5
+Title Winston Churchill found at position: 6
+Title Vietnam War found at position: 7
+Title History of the Netherlands found at position: 8
+Title Battle of Britain found at position: 9
+Title Erwin Rommel found at position: 10
+Title Sir Henry Wilson, 1st Baronet found at position: 11
+Title Joachim von Ribbentrop found at position: 12
+Title Operation Barbarossa found at position: 13
+Title Ion Antonescu found at position: 14
+Title History of Italy found at position: 15
+Title Neville Chamberlain found at position: 16
+Title History of Russia found at position: 17
+Title Enoch Powell found at position: 18
+Title Confederate States of America found at position: 19
+Title Eastern Front (World War II) found at position: 20
+Title Iran–Iraq War found at position: 21
+Title France found at position: 22
+Title History of Scotland found at position: 23
+Title Philippe Pétain found at position: 24
+Title Konrad Adenauer found at position: 25
+Question 12: ohio
+Title William Howard Taft found at position: 1
+Title History of painting found at position: 2
+Title Phoenix, Arizona found at position: 3
+Title Chicago found at position: 4
+Title List of Madagascar (franchise) characters found at position: 5
+Title Yoko Ono found at position: 6
+Title Stanley Kubrick found at position: 7
+Title Winston Churchill found at position: 8
+Title Bob Taft found at position: 9
+Title John the Baptist found at position: 10
+Title Richard Nixon found at position: 11
+Title Tracey Emin found at position: 12
+Title Jesse Ventura found at position: 13
+Title Louisiana State University found at position: 14
+Title Cooper Union found at position: 15
+Title Marc Chagall found at position: 16
+Title Robert Taft found at position: 17
+Title Janet Jackson found at position: 18
+Title Iowa State University found at position: 19
+Title Cristiano Ronaldo found at position: 20
+Title Wilhelm Furtwängler found at position: 21
+Title Jimi Hendrix found at position: 22
+Title Metropolitan Museum of Art found at position: 23
+Title Penang found at position: 24
+Title Alan Moore found at position: 25
+Question 13: arlington national cemetery|arlington cemetery
+Title USS Constitution found at position: 1
+Title USS Arizona Memorial found at position: 2
+Title London Necropolis Company found at position: 3
+Title USS Missouri (BB-63) found at position: 4
+Title USS Augusta (CA-31) found at position: 5
+Title Iowa-class battleship found at position: 6
+Title Mobile, Alabama found at position: 7
+Title Battle of the Coral Sea found at position: 8
+Title Airship found at position: 9
+Title Cemetery found at position: 10
+Title Battle of Midway found at position: 11
+Title Sutton Hoo found at position: 12
+Title Roberto Cofresí found at position: 13
+Title History of the United States Navy found at position: 14
+Title Great White Fleet found at position: 15
+Title HMS Endeavour found at position: 16
+Title Doolittle Raid found at position: 17
+Title Tomb of the Unknowns found at position: 18
+Title Battle of Hampton Roads found at position: 19
+Title Robert Ballard found at position: 20
+Title Tora! Tora! Tora! found at position: 21
+Title Littoral combat ship found at position: 22
+Title Ironclad warship found at position: 23
+Title Longship found at position: 24
+Title Thomas W. Lawson (ship) found at position: 25
+Question 14: heath ledger
+Document hit for Heath Ledger at position: 1
+Title Heath Ledger found at position: 1
+Title Meryl Streep found at position: 2
+Title Steven Spielberg found at position: 3
+Title Martin Scorsese found at position: 4
+Title Nicole Kidman found at position: 5
+Title Brad Pitt found at position: 6
+Title Jack Nicholson found at position: 7
+Title Jessica Lange found at position: 8
+Title Ben Affleck found at position: 9
+Title George Clooney found at position: 10
+Title Michelle Pfeiffer found at position: 11
+Title Michael Sheen found at position: 12
+Title Natalie Portman found at position: 13
+Title Warren Beatty found at position: 14
+Title Ang Lee found at position: 15
+Title Julia Roberts found at position: 16
+Title Michael Douglas found at position: 17
+Title Charlize Theron found at position: 18
+Title Russell Crowe found at position: 19
+Title Vanessa Redgrave found at position: 20
+Title Colin Firth found at position: 21
+Title Paul Newman found at position: 22
+Title Jon Voight found at position: 23
+Title Darren Aronofsky found at position: 24
+Title Robert Downey, Jr. found at position: 25
+Question 15: iberia|iberian peninsula
+Title Napoleonic Wars found at position: 1
+Title Image:CastillaLeon 1360.png|thumb|Iberian polities circa 1360. found at position: 2
+Title History of France found at position: 3
+Title Spain found at position: 4
+Title History of Italy found at position: 5
+Title Korean War found at position: 6
+Title History of the Royal Navy found at position: 7
+Title Valencia found at position: 8
+Title Napoleon III found at position: 9
+Title Ethnic Malays found at position: 10
+Title Army National Guard units with campaign credit for the War of 1812 found at position: 11
+Title History of India found at position: 12
+Title Confederate States of America found at position: 13
+Title Royal Navy found at position: 14
+Title History of the United States found at position: 15
+Title Italian unification found at position: 16
+Title History of Catalonia found at position: 17
+Title War of the Sixth Coalition found at position: 18
+Title American frontier found at position: 19
+Title History of Islam found at position: 20
+Title Slavery in the United States found at position: 21
+Title Norway found at position: 22
+Title History of the Netherlands found at position: 23
+Title Miscegenation found at position: 24
+Title Racism found at position: 25
+Question 16: panda|giant panda
+Title Chengdu found at position: 1
+Title Golden Eagle found at position: 2
+Title History of science found at position: 3
+Title Globalization found at position: 4
+Title List of Madagascar (franchise) characters found at position: 5
+Title Beijing found at position: 6
+Title Religion in China found at position: 7
+Title China found at position: 8
+Title Environmental movement found at position: 9
+Title Conservation movement found at position: 10
+Title History of physics found at position: 11
+Title Gray wolf found at position: 12
+Title Academy of Natural Sciences of Drexel University found at position: 13
+Title Russia found at position: 14
+Title Lion found at position: 15
+Title Taiwan found at position: 16
+Title Urban planning found at position: 17
+Title Phoenix, Arizona found at position: 18
+Title Socialism found at position: 19
+Title Iran–Iraq War found at position: 20
+Title Foreign relations of China found at position: 21
+Title History of socialism found at position: 22
+Title International Union for Conservation of Nature found at position: 23
+Title Libertarian socialism found at position: 24
+Title China–United States relations found at position: 25
+Question 17: george michael
+Document hit for George Michael at position: 1
+Title George Michael found at position: 1
+Title Alan Moore found at position: 2
+Title Moors murders found at position: 3
+Title ...And Justice for All (album) found at position: 4
+Title Edward II of England found at position: 5
+Title 1980s found at position: 6
+Title Hulk Hogan found at position: 7
+Title Michael Jackson found at position: 8
+Title Titus Andronicus found at position: 9
+Title Whitney Houston found at position: 10
+Title Citizen Kane found at position: 11
+Title Action figure found at position: 12
+Title Janet Jackson found at position: 13
+Title Karl Malone found at position: 14
+Title Ozzie Smith found at position: 15
+Title Edgar Degas found at position: 16
+Title Ruhollah Khomeini found at position: 17
+Title Oscar Wilde found at position: 18
+Title Oneness Pentecostalism found at position: 19
+Title Joe Biden found at position: 20
+Title Josiah Willard Gibbs found at position: 21
+Title Cammy Bell found at position: 22
+Title Marsyas found at position: 23
+Title Kosovo War found at position: 24
+Title Book of Love (band) found at position: 25
+Question 18: the help
+Title Whitney Houston found at position: 1
+Title Citizen Kane found at position: 2
+Title Janet Jackson found at position: 3
+Title Courtney Love found at position: 4
+Title Gloria Steinem found at position: 5
+Title Kate Beckinsale found at position: 6
+Title Emma Goldman found at position: 7
+Title Jennifer Lopez found at position: 8
+Title Kylie Minogue found at position: 9
+Title Mandy Moore found at position: 10
+Title Nancy Reagan found at position: 11
+Title Characters of Parks and Recreation found at position: 12
+Title Maria Callas found at position: 13
+Title Yoko Ono found at position: 14
+Title Mary Magdalene found at position: 15
+Title Naomi Watts found at position: 16
+Title Bette Davis found at position: 17
+Title Natalie Portman found at position: 18
+Title Ken Barlow found at position: 19
+Title Chloë Sevigny found at position: 20
+Title Jane Fonda found at position: 21
+Title Joni Mitchell found at position: 22
+Title Tracey Emin found at position: 23
+Title Rosie O'Donnell found at position: 24
+Title Gertrude Stein found at position: 25
+Question 19: knights of columbus
+Document hit for Knights of Columbus at position: 1
+Title Knights of Columbus found at position: 1
+Title Ku Klux Klan found at position: 2
+Title Georgetown University found at position: 3
+Title The Church of Jesus Christ of Latter-day Saints found at position: 4
+Title Catholic sex abuse cases found at position: 5
+Title Mobile, Alabama found at position: 6
+Title Socialism found at position: 7
+Title History of France found at position: 8
+Title History of Unitarianism found at position: 9
+Title Opus Dei found at position: 10
+Title Miscegenation found at position: 11
+Title Stanford University found at position: 12
+Title Christianity found at position: 13
+Title History of socialism found at position: 14
+Title Catholic Church and women found at position: 15
+Title Libertarian socialism found at position: 16
+Title Ion Antonescu found at position: 17
+Title University of Notre Dame found at position: 18
+Title Culture of the United Kingdom found at position: 19
+Title Omaha, Nebraska found at position: 20
+Title B'nai B'rith found at position: 21
+Title Toleration found at position: 22
+Title Dorothy Day found at position: 23
+Title Native Americans in the United States found at position: 24
+Title England found at position: 25
+Question 20: world wide fund|world wide fund for nature
+Title Golden Eagle found at position: 1
+Title Gray wolf found at position: 2
+Title Yellowstone National Park found at position: 3
+Title Pakistan found at position: 4
+Title Dingo found at position: 5
+Title Red wolf found at position: 6
+Title Hulk Hogan found at position: 7
+Title Virginia found at position: 8
+Title Falconry found at position: 9
+Title Great Seal of the United States found at position: 10
+Title Civilian Conservation Corps found at position: 11
+Title Unmanned aerial vehicle found at position: 12
+Title Massachusetts Institute of Technology found at position: 13
+Title Stone Cold Steve Austin found at position: 14
+Title Russia found at position: 15
+Title Boy Scouts of America found at position: 16
+Title Globalization found at position: 17
+Title Sea Shepherd Conservation Society operations found at position: 18
+Title American Broadcasting Company found at position: 19
+Title Red Skelton found at position: 20
+Title Biscayne National Park found at position: 21
+Title Coyote found at position: 22
+Title Duran Duran found at position: 23
+Title Grand Teton National Park found at position: 24
+Title Columbia River found at position: 25
+Question 21: komodo dragon
+Title Golden Eagle found at position: 1
+Title Yellowstone National Park found at position: 2
+Title List of Madagascar (franchise) characters found at position: 3
+Title List of Doctor Who villains found at position: 4
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 5
+Title Suez Crisis found at position: 6
+Title Grand Teton National Park found at position: 7
+Title Places in The Hitchhiker's Guide to the Galaxy found at position: 8
+Title Unmanned aerial vehicle found at position: 9
+Title Iran–Iraq War found at position: 10
+Title Gray wolf found at position: 11
+Title Søren Kierkegaard found at position: 12
+Title Dingo found at position: 13
+Title Manhattan found at position: 14
+Title African-American Civil Rights Movement (1954–68) found at position: 15
+Title Hamas found at position: 16
+Title Bengal tiger found at position: 17
+Title Cannon found at position: 18
+Title John French, 1st Earl of Ypres found at position: 19
+Title Charles de Gaulle found at position: 20
+Title Gunfight at the O.K. Corral found at position: 21
+Title Globalization found at position: 22
+Title Chiapas found at position: 23
+Title Maria Callas found at position: 24
+Title Goldman Sachs found at position: 25
+Question 22: richard byrd|richard e. byrd
+Title John French, 1st Earl of Ypres found at position: 1
+Title Sir Henry Wilson, 1st Baronet found at position: 2
+Title Winston Churchill found at position: 3
+Title John Jervis, 1st Earl of St Vincent found at position: 4
+Title Battle of the Coral Sea found at position: 5
+Title Suez Crisis found at position: 6
+Title Neil Armstrong found at position: 7
+Title Unmanned aerial vehicle found at position: 8
+Title Jeff Gordon found at position: 9
+Title Wright brothers found at position: 10
+Title Charles de Gaulle found at position: 11
+Title North Pole found at position: 12
+Title Prince Harry found at position: 13
+Title Ernest Shackleton found at position: 14
+Title Oakland, California found at position: 15
+Title George McGovern found at position: 16
+Title Foreign relations of India found at position: 17
+Title Concorde found at position: 18
+Title Sachin Tendulkar found at position: 19
+Title Northwest Passage found at position: 20
+Title History of painting found at position: 21
+Title Indigenous Australians found at position: 22
+Title Billy Bishop Toronto City Airport found at position: 23
+Title USS Missouri (BB-63) found at position: 24
+Title Ted Kennedy found at position: 25
+Question 23: boot hill
+Title London Necropolis Company found at position: 1
+Title Cemetery found at position: 2
+Title Doc Holliday found at position: 3
+Title Omaha, Nebraska found at position: 4
+Title Gertrude Stein found at position: 5
+Title Kansas found at position: 6
+Title Paris found at position: 7
+Document hit for Boot Hill at position: 8
+Title Boot Hill found at position: 8
+Title Cremation found at position: 9
+Title Montevideo found at position: 10
+Title First Transcontinental Railroad found at position: 11
+Title Mobile, Alabama found at position: 12
+Title Kansas City, Missouri found at position: 13
+Title Paris Commune found at position: 14
+Title Gunfight at the O.K. Corral found at position: 15
+Title Oklahoma City bombing found at position: 16
+Title Zentralfriedhof found at position: 17
+Title Oregon Trail found at position: 18
+Title Walt Disney found at position: 19
+Title Jackie Robinson found at position: 20
+Title Rudyard Kipling found at position: 21
+Title Romania found at position: 22
+Title American frontier found at position: 23
+Title Alice in Chains found at position: 24
+Title Jeff Gordon found at position: 25
+Question 24: france
+Title History of France found at position: 1
+Title Paris found at position: 2
+Title History of the Netherlands found at position: 3
+Title History of Poland found at position: 4
+Title Napoleon III found at position: 5
+Title Anglo-Saxons found at position: 6
+Title Khmer Rouge found at position: 7
+Title Poland found at position: 8
+Title Charles de Gaulle found at position: 9
+Title Roman Empire found at position: 10
+Title Safavid dynasty found at position: 11
+Document hit for France at position: 12
+Title France found at position: 12
+Title Culture of the United Kingdom found at position: 13
+Title Norway found at position: 14
+Title Scotland found at position: 15
+Title History of Scotland found at position: 16
+Title History of Islam found at position: 17
+Title Henry III of England found at position: 18
+Title Suez Crisis found at position: 19
+Title History of England found at position: 20
+Title Middle Ages found at position: 21
+Title Enoch Powell found at position: 22
+Title England found at position: 23
+Title Miscegenation found at position: 24
+Title Ion Antonescu found at position: 25
+Question 25: confucius
+Title History of the Netherlands found at position: 1
+Title Chinese calendar found at position: 2
+Title Culture of Italy found at position: 3
+Title Napoleon III found at position: 4
+Title History of France found at position: 5
+Title Paris found at position: 6
+Title History of Scotland found at position: 7
+Document hit for Confucius at position: 8
+Title Confucius found at position: 8
+Title Cicero found at position: 9
+Title Socialism found at position: 10
+Title History of China found at position: 11
+Title Sun Yat-sen found at position: 12
+Title History of Korea found at position: 13
+Title Miscegenation found at position: 14
+Title Hasmonean dynasty found at position: 15
+Title Racism found at position: 16
+Title History of science found at position: 17
+Title Plato found at position: 18
+Title Roman Empire found at position: 19
+Title Emma Goldman found at position: 20
+Title China found at position: 21
+Title Leon Trotsky found at position: 22
+Title History of Albania found at position: 23
+Title Dating creation found at position: 24
+Title Goguryeo found at position: 25
+Question 26: o'hare|o'hare international airport
+Title Bessie Coleman found at position: 1
+Title Janet Jackson found at position: 2
+Title Whitney Houston found at position: 3
+Title Chicago found at position: 4
+Title Billy Bishop Toronto City Airport found at position: 5
+Title Yoko Ono found at position: 6
+Title Michelle Obama found at position: 7
+Title List of NCIS characters found at position: 8
+Title Lesbian found at position: 9
+Document hit for O'Hare|O'Hare International Airport at position: 10
+Title O'Hare International Airport found at position: 10
+Title Oakland, California found at position: 11
+Title Patsy Cline found at position: 12
+Title Characters of Parks and Recreation found at position: 13
+Title Meryl Streep found at position: 14
+Title Mulholland Drive (film) found at position: 15
+Title Margaret Mitchell found at position: 16
+Title Jackson, Mississippi found at position: 17
+Title Ken Barlow found at position: 18
+Title Lambert–St. Louis International Airport found at position: 19
+Title Pilot (aeronautics) found at position: 20
+Title Columbus, Ohio found at position: 21
+Title Mary Magdalene found at position: 22
+Title George McGovern found at position: 23
+Title Louis Armstrong found at position: 24
+Title Neil Armstrong found at position: 25
+Question 27: jordan
+Title Culture of Italy found at position: 1
+Title History of the Netherlands found at position: 2
+Document hit for Jordan at position: 3
+Title Jordan found at position: 3
+Title Bahrain found at position: 4
+Title Semitic people found at position: 5
+Title History of Scotland found at position: 6
+Title History of Armenia found at position: 7
+Title History of England found at position: 8
+Title Paris found at position: 9
+Title Roman Empire found at position: 10
+Title Dacians found at position: 11
+Title History of Albania found at position: 12
+Title Hasmonean dynasty found at position: 13
+Title Beirut found at position: 14
+Title Roman Republic found at position: 15
+Title Sri Lanka found at position: 16
+Title Syria found at position: 17
+Title Tunis found at position: 18
+Title Plovdiv found at position: 19
+Title Rome found at position: 20
+Title History of Italy found at position: 21
+Title History of Islam found at position: 22
+Title Macedonia (region) found at position: 23
+Title Canaan found at position: 24
+Title Romania found at position: 25
+Question 28: ben affleck
+Document hit for Ben Affleck at position: 1
+Title Ben Affleck found at position: 1
+Title Stanley Kubrick found at position: 2
+Title Wilt Chamberlain found at position: 3
+Title Jack Kemp found at position: 4
+Title John Ford found at position: 5
+Title Washington Redskins found at position: 6
+Title Cleveland Browns found at position: 7
+Title Shaquille O'Neal found at position: 8
+Title Todd Manning found at position: 9
+Title Culture of the United Kingdom found at position: 10
+Title Derek Jeter found at position: 11
+Title Ethan Hawke found at position: 12
+Title 1947 English cricket season found at position: 13
+Title Yankees–Red Sox rivalry found at position: 14
+Title List of EastEnders characters (2010) found at position: 15
+Title Russell Crowe found at position: 16
+Title Jon Scheyer found at position: 17
+Title Nolan Ryan found at position: 18
+Title Albert Pujols found at position: 19
+Title John Constantine found at position: 20
+Title Characters of Parks and Recreation found at position: 21
+Title Humphrey Bogart found at position: 22
+Title List of New Zealand Test cricket victories found at position: 23
+Title Steven Spielberg found at position: 24
+Title Wayne Gretzky found at position: 25
+Question 29: roe v. wade
+Document hit for Roe v. Wade at position: 1
+Title Roe v. Wade found at position: 1
+Title William Rehnquist found at position: 2
+Title Regents of the University of California v. Bakke found at position: 3
+Title Sacco and Vanzetti found at position: 4
+Title Woodrow Wilson found at position: 5
+Title William Howard Taft found at position: 6
+Title Kenesaw Mountain Landis found at position: 7
+Title Same-sex marriage in the United States found at position: 8
+Title Brown v. Board of Education found at position: 9
+Title Charles Evans Hughes found at position: 10
+Title Muhammad Ali found at position: 11
+Title Precedent found at position: 12
+Title Same-sex marriage in California found at position: 13
+Title Scottsboro Boys found at position: 14
+Title Dreyfus affair found at position: 15
+Title Jury found at position: 16
+Title Weather Underground found at position: 17
+Title Augusto Pinochet found at position: 18
+Title Manhattan found at position: 19
+Title Freedom of religion in the United States found at position: 20
+Title Miranda warning found at position: 21
+Title Jackie Robinson found at position: 22
+Title José Padilla (prisoner) found at position: 23
+Title Kentucky found at position: 24
+Title Cult Awareness Network found at position: 25
+Question 30: knights templar
+Document hit for Knights Templar at position: 1
+Title Knights Templar found at position: 1
+Title Philip IV of France found at position: 2
+Title Paris found at position: 3
+Title List of Donald Duck universe characters found at position: 4
+Title History of France found at position: 5
+Title Louis XIV of France found at position: 6
+Title Charles de Gaulle found at position: 7
+Title France found at position: 8
+Title Titus Andronicus found at position: 9
+Title Edward II of England found at position: 10
+Title Jean Chrétien found at position: 11
+Title Napoleon III found at position: 12
+Title François Mitterrand found at position: 13
+Title Carnival found at position: 14
+Title Romansh language found at position: 15
+Title Candide found at position: 16
+Title Winston Churchill found at position: 17
+Title Konrad Adenauer found at position: 18
+Title Sovereign Military Order of Malta found at position: 19
+Title Paris Commune found at position: 20
+Title Catherine de' Medici found at position: 21
+Title Michael Schumacher found at position: 22
+Title Otto von Habsburg found at position: 23
+Title Jacques Lacan found at position: 24
+Title Voltaire found at position: 25
+Question 31: new mexico
+Title History of painting found at position: 1
+Title Georgia (U.S. state) found at position: 2
+Title Red Skelton found at position: 3
+Title List of Madagascar (franchise) characters found at position: 4
+Title Yoko Ono found at position: 5
+Title Whitney Houston found at position: 6
+Title Georgia (country) found at position: 7
+Title Cherokee found at position: 8
+Title U.S. Route 25 in Georgia found at position: 9
+Title Chicago found at position: 10
+Title Winston Churchill found at position: 11
+Title Narconon found at position: 12
+Title North Carolina found at position: 13
+Title John the Baptist found at position: 14
+Title Jimi Hendrix found at position: 15
+Title Alfred Stieglitz found at position: 16
+Title Tracey Emin found at position: 17
+Title Vladimir Putin found at position: 18
+Title Phoenix, Arizona found at position: 19
+Title Florida Museum of Natural History found at position: 20
+Title Jesse Ventura found at position: 21
+Title Stanley Kubrick found at position: 22
+Title John Mellencamp found at position: 23
+Title Libertarian socialism found at position: 24
+Title Louisiana State University found at position: 25
+Question 32: casablanca
+Title Marrakesh found at position: 1
+Title Western Sahara found at position: 2
+Title Spain found at position: 3
+Title Miscegenation found at position: 4
+Title Puerto Rico found at position: 5
+Document hit for Casablanca at position: 6
+Title Casablanca found at position: 6
+Title History of the Netherlands found at position: 7
+Title California found at position: 8
+Title Mobile, Alabama found at position: 9
+Title Colombia found at position: 10
+Title Timbuktu found at position: 11
+Title Chiapas found at position: 12
+Title Havana found at position: 13
+Title Oklahoma found at position: 14
+Title Louisiana found at position: 15
+Title Los Angeles found at position: 16
+Title Spanish language found at position: 17
+Title Image:CastillaLeon 1360.png|thumb|Iberian polities circa 1360. found at position: 18
+Title Languages of the United States found at position: 19
+Title Canary Islands found at position: 20
+Title Philadelphia found at position: 21
+Title Florida found at position: 22
+Title Veracruz found at position: 23
+Title Manhattan found at position: 24
+Title Chicago found at position: 25
+Question 33: kraft foods
+Title Jell-O found at position: 1
+Title CBS found at position: 2
+Title Parma F.C. found at position: 3
+Title US Foods found at position: 4
+Title NBC found at position: 5
+Title United Artists found at position: 6
+Title Sony found at position: 7
+Title Canadian Pacific Railway found at position: 8
+Title Marvel Comics found at position: 9
+Title KFC found at position: 10
+Title Nokia found at position: 11
+Title Amoco found at position: 12
+Title United Airlines found at position: 13
+Title American Broadcasting Company found at position: 14
+Title Polaroid Corporation found at position: 15
+Title Chevron Corporation found at position: 16
+Title Miscegenation found at position: 17
+Title Bell Canada found at position: 18
+Title Donruss found at position: 19
+Title Disney Channel found at position: 20
+Title Fiat found at position: 21
+Title Lamborghini found at position: 22
+Title East Bay Ray found at position: 23
+Title Metro-Goldwyn-Mayer found at position: 24
+Title Universal Studios found at position: 25
+Question 34: kelsey grammer
+Title Steven Spielberg found at position: 1
+Title Citizen Kane found at position: 2
+Title Meryl Streep found at position: 3
+Title Chicago found at position: 4
+Title Nicole Kidman found at position: 5
+Title Jessica Lange found at position: 6
+Title Brad Pitt found at position: 7
+Title Roger Ebert found at position: 8
+Title Yankees–Red Sox rivalry found at position: 9
+Title Michelle Pfeiffer found at position: 10
+Title Jack Layton found at position: 11
+Title Spencer Tracy found at position: 12
+Title Martin Scorsese found at position: 13
+Title Chicago Cubs found at position: 14
+Title Natalie Portman found at position: 15
+Title Jennifer Hudson found at position: 16
+Title Michael Sheen found at position: 17
+Title Julia Roberts found at position: 18
+Title Stanley Kubrick found at position: 19
+Title Chloë Sevigny found at position: 20
+Title CBS found at position: 21
+Title Colin Firth found at position: 22
+Title Hugh Grant found at position: 23
+Title American Beauty (film) found at position: 24
+Title Michael J. Fox found at position: 25
+Question 35: animal house
+Document hit for Animal House at position: 1
+Title Animal House found at position: 1
+Title Bluto found at position: 2
+Title Ford Pinto found at position: 3
+Title Columbia University found at position: 4
+Title Cleveland found at position: 5
+Title National Lampoon (magazine) found at position: 6
+Title Flounder found at position: 7
+Title Edinburgh found at position: 8
+Title University of North Carolina at Chapel Hill found at position: 9
+Title Ecology of the San Francisco Estuary found at position: 10
+Title List of Madagascar (franchise) characters found at position: 11
+Title Permanent residence (United States) found at position: 12
+Title Spain found at position: 13
+Title De Havilland Canada DHC-6 Twin Otter found at position: 14
+Title Gardner–Webb University found at position: 15
+Title Burwash Hall found at position: 16
+Title Identity document found at position: 17
+Title Herne Bay, Kent found at position: 18
+Title Paris found at position: 19
+Title Malacañang Palace found at position: 20
+Title Wellington found at position: 21
+Title Jeffrey Dahmer found at position: 22
+Title University of Oregon found at position: 23
+Title Gigging found at position: 24
+Title George Carlin found at position: 25
+Question 36: mayim bialik
+Document hit for Mayim Bialik at position: 1
+Title Mayim Bialik found at position: 1
+Title Howard Wolowitz found at position: 2
+Title Characters of Parks and Recreation found at position: 3
+Title Raj Koothrappali found at position: 4
+Title University of California, Los Angeles found at position: 5
+Title California Institute of Technology found at position: 6
+Title Meaning of life found at position: 7
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 8
+Title Courtney Love found at position: 9
+Title Creationism found at position: 10
+Title Lana Del Rey found at position: 11
+Title Massachusetts Institute of Technology found at position: 12
+Title List of Doctor Who villains found at position: 13
+Title Janet Jackson found at position: 14
+Title List of Big Brother 8 housemates (UK) found at position: 15
+Title Jennifer Lopez found at position: 16
+Title Stanford University found at position: 17
+Title Product placement found at position: 18
+Title Cosmic microwave background found at position: 19
+Title Brad Pitt found at position: 20
+Title Stephen Colbert found at position: 21
+Title Mandy Moore found at position: 22
+Title Nucleosynthesis found at position: 23
+Title Hugh Grant found at position: 24
+Title Whitney Houston found at position: 25
+Question 37: aaron burr
+Document hit for Aaron Burr at position: 1
+Title Aaron Burr found at position: 1
+Title Vietnam War found at position: 2
+Title Vice President of the United States found at position: 3
+Title Joe Biden found at position: 4
+Title Richard Nixon found at position: 5
+Title American frontier found at position: 6
+Title George McGovern found at position: 7
+Title Confederate States of America found at position: 8
+Title Ronald Reagan found at position: 9
+Title Jack Kemp found at position: 10
+Title William McKinley found at position: 11
+Title Ted Kennedy found at position: 12
+Title Jean Chrétien found at position: 13
+Title Richard Mentor Johnson found at position: 14
+Title History of the United States found at position: 15
+Title Warren G. Harding found at position: 16
+Title Herbert Hoover found at position: 17
+Title Woodrow Wilson found at position: 18
+Title William Henry Harrison found at position: 19
+Title Winston Churchill found at position: 20
+Title African-American Civil Rights Movement (1954–68) found at position: 21
+Title John C. Breckinridge found at position: 22
+Title Tet Offensive found at position: 23
+Title The West Wing found at position: 24
+Title Hugo Chávez found at position: 25
+Question 38: vladimir putin|putin
+Document hit for Vladimir Putin|Putin at position: 1
+Title Vladimir Putin found at position: 1
+Title Boris Berezovsky (businessman) found at position: 2
+Title Foreign relations of India found at position: 3
+Title Charles de Gaulle found at position: 4
+Title Sir Henry Wilson, 1st Baronet found at position: 5
+Title Jean Chrétien found at position: 6
+Title Mikhail Gorbachev found at position: 7
+Title Suez Crisis found at position: 8
+Title Napoleon III found at position: 9
+Title Winston Churchill found at position: 10
+Title Silvio Berlusconi found at position: 11
+Title Politics of Russia found at position: 12
+Title John French, 1st Earl of Ypres found at position: 13
+Title History of Israel found at position: 14
+Title Konrad Adenauer found at position: 15
+Title History of France found at position: 16
+Title Joseph Chamberlain found at position: 17
+Title Enoch Powell found at position: 18
+Title Ronald Reagan found at position: 19
+Title Alec Douglas-Home found at position: 20
+Title Stanley Baldwin found at position: 21
+Title Neville Chamberlain found at position: 22
+Title Yom Kippur War found at position: 23
+Title Foreign relations of Israel found at position: 24
+Title Rajiv Gandhi found at position: 25
+Question 39: michelle obama
+Document hit for Michelle Obama at position: 1
+Title Michelle Obama found at position: 1
+Title Sati (practice) found at position: 2
+Title Characters of Parks and Recreation found at position: 3
+Title Janet Jackson found at position: 4
+Title Whitney Houston found at position: 5
+Title Mary Magdalene found at position: 6
+Title Lesbian found at position: 7
+Title Silvio Berlusconi found at position: 8
+Title Srinagarindra found at position: 9
+Title Maria Callas found at position: 10
+Title Thérèse of Lisieux found at position: 11
+Title Courtney Love found at position: 12
+Title Rosie O'Donnell found at position: 13
+Title Tracey Emin found at position: 14
+Title Antony and Cleopatra found at position: 15
+Title List of NCIS characters found at position: 16
+Title Jennifer Lopez found at position: 17
+Title Martha Jones found at position: 18
+Title Miscegenation found at position: 19
+Title Hildegard of Bingen found at position: 20
+Title Todd Manning found at position: 21
+Title Emma Goldman found at position: 22
+Title Julia Gillard found at position: 23
+Title Christina, Queen of Sweden found at position: 24
+Title The Taming of the Shrew found at position: 25
+Question 40: edna st. vincent millay
+Title Søren Kierkegaard found at position: 1
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 2
+Title Titus Andronicus found at position: 3
+Title Kubla Khan found at position: 4
+Title Irish literature found at position: 5
+Title Anna Akhmatova found at position: 6
+Title Irish poetry found at position: 7
+Title Ezra Pound found at position: 8
+Title Emily Dickinson found at position: 9
+Title Thérèse of Lisieux found at position: 10
+Title Henry Wadsworth Longfellow found at position: 11
+Title John Keats found at position: 12
+Title Poetry found at position: 13
+Title Madama Butterfly found at position: 14
+Title The Taming of the Shrew found at position: 15
+Title Marina Tsvetaeva found at position: 16
+Title W. B. Yeats found at position: 17
+Title Evelyn Underhill found at position: 18
+Title Luis Cernuda found at position: 19
+Title Ovid found at position: 20
+Title Marc Chagall found at position: 21
+Title Maria Callas found at position: 22
+Title The Pirates of Penzance found at position: 23
+Title Yoko Ono found at position: 24
+Title Modernist poetry in English found at position: 25
+Question 41: helsinki
+Title Paris found at position: 1
+Title John the Baptist found at position: 2
+Title Pope found at position: 3
+Title Norway found at position: 4
+Title History of Christianity found at position: 5
+Title Moscow found at position: 6
+Title Eucharist found at position: 7
+Title Christianity found at position: 8
+Title Lutheran Church of Australia found at position: 9
+Title Evangelical Lutheran Church in America found at position: 10
+Title United Methodist Church found at position: 11
+Title History of Finland found at position: 12
+Title List of religious sites found at position: 13
+Title Liverpool found at position: 14
+Title St Paul's Cathedral found at position: 15
+Title Finnish Orthodox Church found at position: 16
+Title Edinburgh found at position: 17
+Title Romania found at position: 18
+Title Cardiff found at position: 19
+Title Columbus, Ohio found at position: 20
+Title Kraków found at position: 21
+Title Mary Magdalene found at position: 22
+Title Ash Wednesday found at position: 23
+Title Rome found at position: 24
+Title Russia found at position: 25
+Question 42: hasbro
+Title Axis & Allies found at position: 1
+Document hit for Hasbro at position: 2
+Title Hasbro found at position: 2
+Title The Price Is Right (U.S. game show) found at position: 3
+Title Vectrex found at position: 4
+Title NBC found at position: 5
+Title Handheld game console found at position: 6
+Title Milton Keynes found at position: 7
+Title Crayon found at position: 8
+Title Microvision found at position: 9
+Title Battleship (game) found at position: 10
+Title History of video games found at position: 11
+Title Snakes and Ladders found at position: 12
+Title Philadelphia Flyers found at position: 13
+Title LucasArts found at position: 14
+Title Neuro-linguistic programming found at position: 15
+Title Scooby-Doo found at position: 16
+Title John Milton found at position: 17
+Title Canadian Pacific Railway found at position: 18
+Title CBS found at position: 19
+Title Electronic Arts found at position: 20
+Title Shawn Bradley found at position: 21
+Title Marvel Comics found at position: 22
+Title Steven Spielberg found at position: 23
+Title Addie Joss found at position: 24
+Title Mickey Mouse found at position: 25
+Question 43: the alien and sedition acts
+Title Kentucky and Virginia Resolutions found at position: 1
+Title Confederate States of America found at position: 2
+Title History of the United States found at position: 3
+Title Stamp Act 1765 found at position: 4
+Title John C. Breckinridge found at position: 5
+Title West Virginia found at position: 6
+Title Slavery in the United States found at position: 7
+Title Emancipation Proclamation found at position: 8
+Title African-American Civil Rights Movement (1954–68) found at position: 9
+Title Chickamauga Wars (1776–94) found at position: 10
+Title History of the United States Navy found at position: 11
+Title American frontier found at position: 12
+Title Patrick Henry found at position: 13
+Title History of South Carolina found at position: 14
+Title Puerto Rico found at position: 15
+Title Jefferson Davis found at position: 16
+Title Kentucky found at position: 17
+Title History of socialism found at position: 18
+Title USS Constitution found at position: 19
+Title Thaddeus Stevens found at position: 20
+Title Virginia found at position: 21
+Title History of slavery in Indiana found at position: 22
+Title Richard Mentor Johnson found at position: 23
+Title Thomas F. Bayard found at position: 24
+Title William Henry Harrison found at position: 25
+Question 44: michael jackson
+Title Hip hop music found at position: 1
+Title Like a Virgin found at position: 2
+Title The Who found at position: 3
+Title Eurobeat found at position: 4
+Title Hulk Hogan found at position: 5
+Title Fred Davis (snooker player) found at position: 6
+Title House music found at position: 7
+Title King Crimson found at position: 8
+Title Book of Love (band) found at position: 9
+Title Orchestral Manoeuvres in the Dark found at position: 10
+Title Cleveland Browns found at position: 11
+Title New wave music found at position: 12
+Title Cammy Bell found at position: 13
+Document hit for Michael Jackson at position: 14
+Title Michael Jackson found at position: 14
+Title 1980s found at position: 15
+Title William S. Burroughs found at position: 16
+Title MTV found at position: 17
+Title Rhythm found at position: 18
+Title Washington Redskins found at position: 19
+Title Billie Jean found at position: 20
+Title Alan Moore found at position: 21
+Title Rock music found at position: 22
+Title John Spencer (snooker player) found at position: 23
+Title Psychedelic trance found at position: 24
+Title Beatnik found at position: 25
+Question 45: anna paquin
+Title True Blood found at position: 1
+Document hit for Anna Paquin at position: 2
+Title Anna Paquin found at position: 2
+Title Meryl Streep found at position: 3
+Title Jessica Lange found at position: 4
+Title Nicole Kidman found at position: 5
+Title Ben Affleck found at position: 6
+Title Brad Pitt found at position: 7
+Title Martin Scorsese found at position: 8
+Title George Clooney found at position: 9
+Title Steven Spielberg found at position: 10
+Title Warren Beatty found at position: 11
+Title Heath Ledger found at position: 12
+Title Michelle Pfeiffer found at position: 13
+Title Natalie Portman found at position: 14
+Title Michael Douglas found at position: 15
+Title Julia Roberts found at position: 16
+Title Charlize Theron found at position: 17
+Title Michael Sheen found at position: 18
+Title Vanessa Redgrave found at position: 19
+Title Paul Newman found at position: 20
+Title Liza Minnelli found at position: 21
+Title Jon Voight found at position: 22
+Title Ang Lee found at position: 23
+Title Ricky Gervais found at position: 24
+Title Jack Nicholson found at position: 25
+Question 46: henry kissinger
+Document hit for Henry Kissinger at position: 1
+Title Henry Kissinger found at position: 1
+Title Richard Nixon found at position: 2
+Title John Ford found at position: 3
+Title Henry Ford found at position: 4
+Title Ronald Reagan found at position: 5
+Title George McGovern found at position: 6
+Title Konrad Adenauer found at position: 7
+Title History of socialism found at position: 8
+Title History of the United States (1964–80) found at position: 9
+Title Warren G. Harding found at position: 10
+Title Zbigniew Brzezinski found at position: 11
+Title Willy Brandt found at position: 12
+Title Strom Thurmond found at position: 13
+Title Foreign relations of India found at position: 14
+Title Charles de Gaulle found at position: 15
+Title Vietnam War found at position: 16
+Title Woodrow Wilson found at position: 17
+Title Refugee found at position: 18
+Title Lincoln Motor Company found at position: 19
+Title History of the Netherlands found at position: 20
+Title Leon Trotsky found at position: 21
+Title Werner Heisenberg found at position: 22
+Title Socialism found at position: 23
+Title Harrison Ford found at position: 24
+Title Netherlands found at position: 25
+Question 47: edinburgh
+Title John Knox found at position: 1
+Title History of Scotland found at position: 2
+Document hit for Edinburgh at position: 3
+Title Edinburgh found at position: 3
+Title Scotland found at position: 4
+Title John the Baptist found at position: 5
+Title Paris found at position: 6
+Title Church of Scotland found at position: 7
+Title Vietnam War found at position: 8
+Title Pope found at position: 9
+Title History of Christianity found at position: 10
+Title Eucharist found at position: 11
+Title St Paul's Cathedral found at position: 12
+Title Rome found at position: 13
+Title Liverpool found at position: 14
+Title Corfu found at position: 15
+Title Napoleon III found at position: 16
+Title Norway found at position: 17
+Title Cardiff found at position: 18
+Title Romania found at position: 19
+Title Glasgow found at position: 20
+Title Hebron found at position: 21
+Title United Methodist Church found at position: 22
+Title Charles de Gaulle found at position: 23
+Title Christianity found at position: 24
+Title The Church of Jesus Christ of Latter-day Saints found at position: 25
+Question 48: james dean
+Title Humphrey Bogart found at position: 1
+Document hit for James Dean at position: 2
+Title James Dean found at position: 2
+Title Konrad Adenauer found at position: 3
+Title Janet Jackson found at position: 4
+Title University of California, Los Angeles found at position: 5
+Title Courtney Love found at position: 6
+Title Ted Kennedy found at position: 7
+Title John Huston found at position: 8
+Title Jackie Robinson found at position: 9
+Title Zhou Enlai found at position: 10
+Title Harold Pinter found at position: 11
+Title Suez Crisis found at position: 12
+Title Orson Welles found at position: 13
+Title Charles de Gaulle found at position: 14
+Title James Stewart found at position: 15
+Title Douglas MacArthur found at position: 16
+Title Korean War found at position: 17
+Title Kid Rock found at position: 18
+Title Clement Attlee found at position: 19
+Title Fidel Castro found at position: 20
+Title Luis Cernuda found at position: 21
+Title Sir Henry Wilson, 1st Baronet found at position: 22
+Title Napoleon III found at position: 23
+Title Jimi Hendrix found at position: 24
+Title Charlton Heston found at position: 25
+Question 49: mattel
+Title CBS found at position: 1
+Title Hasbro found at position: 2
+Title Transformers (toy line) found at position: 3
+Title Revell found at position: 4
+Title Meccano found at position: 5
+Title Lego found at position: 6
+Title Tekno (toy manufacturer) found at position: 7
+Title Power Rangers found at position: 8
+Title KFC found at position: 9
+Title Evel Knievel found at position: 10
+Title Tamagotchi found at position: 11
+Title Parma F.C. found at position: 12
+Document hit for Mattel at position: 13
+Title Mattel found at position: 13
+Title US Foods found at position: 14
+Title NBC found at position: 15
+Title United Artists found at position: 16
+Title Product placement found at position: 17
+Title Sony found at position: 18
+Title Canadian Pacific Railway found at position: 19
+Title Cabbage Patch Kids found at position: 20
+Title The Price Is Right (U.S. game show) found at position: 21
+Title Marvel Comics found at position: 22
+Title Toy Story 2 found at position: 23
+Title Dexter's Laboratory found at position: 24
+Title Starscream found at position: 25
+Question 50: richard nixon|nixon
+Title Cuban missile crisis found at position: 1
+Title Konrad Adenauer found at position: 2
+Title Charles de Gaulle found at position: 3
+Title Suez Crisis found at position: 4
+Title Vietnam War found at position: 5
+Title Miscegenation found at position: 6
+Title Stanley Kubrick found at position: 7
+Document hit for Richard Nixon|Nixon at position: 8
+Title Richard Nixon found at position: 8
+Title Socialism found at position: 9
+Title Fidel Castro found at position: 10
+Title Lee Harvey Oswald found at position: 11
+Title Ronald Reagan found at position: 12
+Title Native Americans in the United States found at position: 13
+Title History of socialism found at position: 14
+Title Enoch Powell found at position: 15
+Title Sacco and Vanzetti found at position: 16
+Title Winston Churchill found at position: 17
+Title Ezra Pound found at position: 18
+Title History of Russia found at position: 19
+Title Napoleon III found at position: 20
+Title Dolores Ibárruri found at position: 21
+Title Georgy Zhukov found at position: 22
+Title Zhou Enlai found at position: 23
+Title American frontier found at position: 24
+Title Criticism of Jehovah's Witnesses found at position: 25
+Question 51: henry wadsworth longfellow
+Title Paul Revere found at position: 1
+Title Søren Kierkegaard found at position: 2
+Document hit for Henry Wadsworth Longfellow at position: 3
+Title Henry Wadsworth Longfellow found at position: 3
+Title Titus Andronicus found at position: 4
+Title Van Morrison found at position: 5
+Title Irish poetry found at position: 6
+Title John Keats found at position: 7
+Title C. S. Lewis found at position: 8
+Title Kubla Khan found at position: 9
+Title The Taming of the Shrew found at position: 10
+Title Thérèse of Lisieux found at position: 11
+Title Ezra Pound found at position: 12
+Title John the Baptist found at position: 13
+Title Samuel Johnson found at position: 14
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 15
+Title Rudyard Kipling found at position: 16
+Title Irish literature found at position: 17
+Title James Russell Lowell found at position: 18
+Title W. B. Yeats found at position: 19
+Title Anna Laetitia Barbauld found at position: 20
+Title Michael Jackson found at position: 21
+Title Elijah found at position: 22
+Title Gil Scott-Heron found at position: 23
+Title George Crabbe found at position: 24
+Title Oscar Wilde found at position: 25
+Question 52: game change
+Title Hannibal (film) found at position: 1
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 2
+Title Hunter S. Thompson found at position: 3
+Title Jack Kemp found at position: 4
+Title Mandy Moore found at position: 5
+Title George McGovern found at position: 6
+Title American frontier found at position: 7
+Title Oregon Trail found at position: 8
+Title Joe Biden found at position: 9
+Title Stanley Kubrick found at position: 10
+Title Whitney Houston found at position: 11
+Title Being Erica found at position: 12
+Title Janet Jackson found at position: 13
+Title Richard Nixon found at position: 14
+Title Vietnam War found at position: 15
+Title Michael Crichton found at position: 16
+Title Billy Sunday found at position: 17
+Title True Blood found at position: 18
+Title Confederate States of America found at position: 19
+Title Ben Affleck found at position: 20
+Title Michael Moore found at position: 21
+Title Michael Jackson found at position: 22
+Title Richard Mentor Johnson found at position: 23
+Title MTV found at position: 24
+Title Movie theater found at position: 25
+Question 53: ncis
+Title List of NCIS characters found at position: 1
+Title Cold Feet found at position: 2
+Title Coronation Street found at position: 3
+Title The West Wing found at position: 4
+Title Law & Order found at position: 5
+Title The Price Is Right (U.S. game show) found at position: 6
+Title Soap opera found at position: 7
+Title Characters of Parks and Recreation found at position: 8
+Title Bart Simpson found at position: 9
+Title MTV found at position: 10
+Title Ken Barlow found at position: 11
+Title Fair City found at position: 12
+Title Ricky Gervais found at position: 13
+Title The Sopranos found at position: 14
+Title Brookside found at position: 15
+Title Gunsmoke found at position: 16
+Title Rod Serling found at position: 17
+Title Mark Hamill found at position: 18
+Title Prisoner (TV series) found at position: 19
+Title Wheel of Fortune (U.S. game show) found at position: 20
+Title Homer Simpson found at position: 21
+Title True Blood found at position: 22
+Title Characters of Carnivàle found at position: 23
+Title Stephen Fry found at position: 24
+Title Reality television found at position: 25
+Question 54: cape town
+Title Porto Alegre found at position: 1
+Document hit for Cape Town at position: 2
+Title Cape Town found at position: 2
+Title Rio de Janeiro found at position: 3
+Title Philadelphia found at position: 4
+Title Mobile, Alabama found at position: 5
+Title Cardiff found at position: 6
+Title London found at position: 7
+Title Wellington found at position: 8
+Title Montevideo found at position: 9
+Title Karachi found at position: 10
+Title History of the Netherlands found at position: 11
+Title Edinburgh found at position: 12
+Title Manhattan found at position: 13
+Title Houston found at position: 14
+Title Chicago found at position: 15
+Title Oakland, California found at position: 16
+Title Johannesburg found at position: 17
+Title Louisville, Kentucky found at position: 18
+Title Veracruz found at position: 19
+Title Maryland found at position: 20
+Title Illinois found at position: 21
+Title Virginia found at position: 22
+Title Newark, New Jersey found at position: 23
+Title Canary Islands found at position: 24
+Title Port of Spain found at position: 25
+Question 55: the faerie queene
+Title John Keats found at position: 1
+Document hit for The Faerie Queene at position: 2
+Title The Faerie Queene found at position: 2
+Title Edmund Spenser found at position: 3
+Title SS Edmund Fitzgerald found at position: 4
+Title W. B. Yeats found at position: 5
+Title Samuel Johnson found at position: 6
+Title Kubla Khan found at position: 7
+Title John Milton found at position: 8
+Title Romanticism found at position: 9
+Title Stanley Kubrick found at position: 10
+Title Ezra Pound found at position: 11
+Title Fanny Imlay found at position: 12
+Title Oxfordian theory of Shakespeare authorship found at position: 13
+Title Prometheus found at position: 14
+Title Anglo-Saxons found at position: 15
+Title Benjamin Britten found at position: 16
+Title Orion (mythology) found at position: 17
+Title Ozymandias found at position: 18
+Title W. H. R. Rivers found at position: 19
+Title Lord Byron found at position: 20
+Title English poetry found at position: 21
+Title Stephen Crane found at position: 22
+Title Rudyard Kipling found at position: 23
+Title Luis Cernuda found at position: 24
+Title Charles de Gaulle found at position: 25
+Question 56: lord byron
+Title John Keats found at position: 1
+Document hit for Lord Byron at position: 2
+Title Lord Byron found at position: 2
+Title Romanticism found at position: 3
+Title Luis Cernuda found at position: 4
+Title Kubla Khan found at position: 5
+Title History of painting found at position: 6
+Title John Ruskin found at position: 7
+Title Sir Henry Wilson, 1st Baronet found at position: 8
+Title Ezra Pound found at position: 9
+Title Titus Andronicus found at position: 10
+Title King's College London found at position: 11
+Title Orion (mythology) found at position: 12
+Title Giacomo Leopardi found at position: 13
+Title Oxfordian theory of Shakespeare authorship found at position: 14
+Title Ramsay MacDonald found at position: 15
+Title George Crabbe found at position: 16
+Title Emily Dickinson found at position: 17
+Title Walt Whitman found at position: 18
+Title Voltaire found at position: 19
+Title Horace found at position: 20
+Title John French, 1st Earl of Ypres found at position: 21
+Title Peterloo Massacre found at position: 22
+Title Benjamin Britten found at position: 23
+Title John Milton found at position: 24
+Title John Dryden found at position: 25
+Question 57: ouzo
+Title Golden Eagle found at position: 1
+Title List of coffee beverages found at position: 2
+Title Roman Empire found at position: 3
+Title Cider found at position: 4
+Title Nutrition found at position: 5
+Title English cuisine found at position: 6
+Title Dingo found at position: 7
+Title Mithraic mysteries found at position: 8
+Title Rice found at position: 9
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 10
+Title Pomegranate found at position: 11
+Title Korean cuisine found at position: 12
+Title Comma Johanneum found at position: 13
+Title Miscegenation found at position: 14
+Title Breakfast found at position: 15
+Title Emu found at position: 16
+Title Water found at position: 17
+Title Snakebite found at position: 18
+Title Gray wolf found at position: 19
+Title Anglo-Saxons found at position: 20
+Title Opium found at position: 21
+Title Cactus found at position: 22
+Title Oregon Trail found at position: 23
+Title Cocaine found at position: 24
+Title Sausage found at position: 25
+Question 58: slavery|slavery in the united states
+Document hit for Slavery|Slavery in the United States at position: 1
+Title Slavery in the United States found at position: 1
+Title Confederate States of America found at position: 2
+Title History of Cuba found at position: 3
+Title Emancipation Proclamation found at position: 4
+Title Ronald Reagan found at position: 5
+Title History of Israel found at position: 6
+Title History of the United States found at position: 7
+Title Puerto Rico found at position: 8
+Title Warren G. Harding found at position: 9
+Title George McGovern found at position: 10
+Title Enoch Powell found at position: 11
+Title Iran–Iraq War found at position: 12
+Title William McKinley found at position: 13
+Title Thaddeus Stevens found at position: 14
+Title Vietnam War found at position: 15
+Title Silvio Berlusconi found at position: 16
+Title Gulf War found at position: 17
+Title Napoleon III found at position: 18
+Title African-American history found at position: 19
+Title History of the United States Navy found at position: 20
+Title African-American Civil Rights Movement (1954–68) found at position: 21
+Title John C. Breckinridge found at position: 22
+Title Woodrow Wilson found at position: 23
+Title Ted Kennedy found at position: 24
+Title Konrad Adenauer found at position: 25
+Question 59: governor general of canada
+Document hit for Governor General of Canada at position: 1
+Title Governor General of Canada found at position: 1
+Title Rangers F.C. found at position: 2
+Title Head of state found at position: 3
+Title David Duke found at position: 4
+Title Jean Chrétien found at position: 5
+Title 2000s (decade) found at position: 6
+Title Vermont found at position: 7
+Title Manhattan found at position: 8
+Title History of Scotland found at position: 9
+Title Brian Mulroney found at position: 10
+Title Iceland found at position: 11
+Title Bob Rae found at position: 12
+Title Charles de Gaulle found at position: 13
+Title Charles Tupper found at position: 14
+Title Toronto found at position: 15
+Title Socialism found at position: 16
+Title Queens found at position: 17
+Title Canada–United States relations found at position: 18
+Title Dave Treen found at position: 19
+Title Foreign relations of Israel found at position: 20
+Title Commander-in-chief found at position: 21
+Title Massachusetts Institute of Technology found at position: 22
+Title Empress Matilda found at position: 23
+Title Netflix found at position: 24
+Title Peerage found at position: 25
+Question 60: george martin
+Title Fifth Beatle found at position: 1
+Title Ringo Starr found at position: 2
+Title Yoko Ono found at position: 3
+Document hit for George Martin at position: 4
+Title George Martin found at position: 4
+Title The Beatles (album) found at position: 5
+Title Sgt. Pepper's Lonely Hearts Club Band found at position: 6
+Title Rock music found at position: 7
+Title Monty Python found at position: 8
+Title Michael Jackson found at position: 9
+Title Jimi Hendrix found at position: 10
+Title Wu-Tang Clan found at position: 11
+Title Janet Jackson found at position: 12
+Title King Crimson found at position: 13
+Title Revolver (Beatles album) found at position: 14
+Title Whitney Houston found at position: 15
+Title Please Please Me found at position: 16
+Title Beatles for Sale found at position: 17
+Title Todd Rundgren found at position: 18
+Title Rubber Soul found at position: 19
+Title Roy Orbison found at position: 20
+Title Little Richard found at position: 21
+Title Jeff Lynne found at position: 22
+Title Music of the United States found at position: 23
+Title Capitol Records found at position: 24
+Title Metallica found at position: 25
+Question 61: san francisco
+Title Bret Harte found at position: 1
+Title Imperial Bedrooms found at position: 2
+Title Adventures of Huckleberry Finn found at position: 3
+Title George McGovern found at position: 4
+Title Citizen Kane found at position: 5
+Title California Gold Rush found at position: 6
+Title Red Skelton found at position: 7
+Title Joaquin Miller found at position: 8
+Title Harte Hanks found at position: 9
+Title American frontier found at position: 10
+Document hit for San Francisco at position: 11
+Title San Francisco found at position: 11
+Title William Randolph Hearst found at position: 12
+Title Whitney Houston found at position: 13
+Title Country music found at position: 14
+Title George Carlin found at position: 15
+Title Rod Serling found at position: 16
+Title Nigger found at position: 17
+Title Stan Lee found at position: 18
+Title L. Ron Hubbard found at position: 19
+Title Halley's Comet found at position: 20
+Title Brad Pitt found at position: 21
+Title Weather Underground found at position: 22
+Title Zodiac Killer found at position: 23
+Title Ernie Kovacs found at position: 24
+Title Larry Doby found at position: 25
+Question 62: kangaroo
+Title Gray wolf found at position: 1
+Title Golden Eagle found at position: 2
+Title Koala found at position: 3
+Title Frog found at position: 4
+Title Snakebite found at position: 5
+Title Dingo found at position: 6
+Document hit for Kangaroo at position: 7
+Title Kangaroo found at position: 7
+Title Tammar wallaby found at position: 8
+Title Wind power found at position: 9
+Title Eucalyptus found at position: 10
+Title Søren Kierkegaard found at position: 11
+Title Manhattan found at position: 12
+Title Florida Museum of Natural History found at position: 13
+Title Globalization found at position: 14
+Title United States Navy SEALs found at position: 15
+Title Adobe Creek (near Los Altos, California) found at position: 16
+Title Native Americans in the United States found at position: 17
+Title Miscegenation found at position: 18
+Title Elephant found at position: 19
+Title Soil found at position: 20
+Title American black bear found at position: 21
+Title Helium found at position: 22
+Title Emu found at position: 23
+Title China found at position: 24
+Title Michael Jackson found at position: 25
+Question 63: feta
+Title Breakfast found at position: 1
+Title English cuisine found at position: 2
+Title Norwegian cuisine found at position: 3
+Document hit for Feta at position: 4
+Title Feta found at position: 4
+Title Sausage found at position: 5
+Title Nutrition found at position: 6
+Title Mexican cuisine found at position: 7
+Title Butter found at position: 8
+Title List of coffee beverages found at position: 9
+Title Roman Empire found at position: 10
+Title Chocolate found at position: 11
+Title Bengali cuisine found at position: 12
+Title Chinese cuisine found at position: 13
+Title Olive found at position: 14
+Title Korean cuisine found at position: 15
+Title Sheep found at position: 16
+Title Beef found at position: 17
+Title Veganism found at position: 18
+Title Camel found at position: 19
+Title Cheddar cheese found at position: 20
+Title Quark (dairy product) found at position: 21
+Title Bread found at position: 22
+Title Garlic found at position: 23
+Title Bacon found at position: 24
+Title Cuisine of the Midwestern United States found at position: 25
+Question 64: jack dempsey
+Document hit for Jack Dempsey at position: 1
+Title Jack Dempsey found at position: 1
+Title Professional wrestling match types found at position: 2
+Title Yankees–Red Sox rivalry found at position: 3
+Title Flash memory found at position: 4
+Title Oakland, California found at position: 5
+Title Max Schmeling found at position: 6
+Title Warren G. Harding found at position: 7
+Title Hulk Hogan found at position: 8
+Title Chicago found at position: 9
+Title China found at position: 10
+Title Manhattan found at position: 11
+Title Cristiano Ronaldo found at position: 12
+Title Napoleon III found at position: 13
+Title Adobe Flash found at position: 14
+Title Jean Chrétien found at position: 15
+Title Star Trek found at position: 16
+Title Citizen Kane found at position: 17
+Title New Jersey Route 37 found at position: 18
+Title American Broadcasting Company found at position: 19
+Title Derek Jeter found at position: 20
+Title MIM-46 Mauler found at position: 21
+Title Earl Hines found at position: 22
+Title John Ford found at position: 23
+Title Giro d'Italia found at position: 24
+Title Charles de Gaulle found at position: 25
+Question 65: duce
+Title Silvio Berlusconi found at position: 1
+Title Italy found at position: 2
+Title History of Italy found at position: 3
+Title History of Albania found at position: 4
+Title Italian Empire found at position: 5
+Title Cult of personality found at position: 6
+Title Alessandra Mussolini found at position: 7
+Document hit for Duce at position: 8
+Title Duce found at position: 8
+Title Fascism in Europe found at position: 9
+Title Culture of Italy found at position: 10
+Title League of Nations found at position: 11
+Title Rome found at position: 12
+Title Pope Pius XI found at position: 13
+Title Vatican City found at position: 14
+Title Milan found at position: 15
+Title Joachim von Ribbentrop found at position: 16
+Title World War II found at position: 17
+Title Economy of Italy found at position: 18
+Title Napoleon III found at position: 19
+Title Bourgeoisie found at position: 20
+Title Ezra Pound found at position: 21
+Title Nazi Party found at position: 22
+Title Schutzstaffel found at position: 23
+Title Erwin Rommel found at position: 24
+Title Giro d'Italia found at position: 25
+Question 66: michigan
+Title History of painting found at position: 1
+Title Chicago found at position: 2
+Title Yoko Ono found at position: 3
+Title Massachusetts Institute of Technology found at position: 4
+Title Metropolitan Museum of Art found at position: 5
+Title Moscow found at position: 6
+Title Iowa State University found at position: 7
+Title Stanley Kubrick found at position: 8
+Title Mobile, Alabama found at position: 9
+Title Penang found at position: 10
+Title Phoenix, Arizona found at position: 11
+Title Terre Haute, Indiana found at position: 12
+Title Montevideo found at position: 13
+Title Tracey Emin found at position: 14
+Title Derek Jeter found at position: 15
+Title Manhattan found at position: 16
+Title Marc Chagall found at position: 17
+Title Louisiana State University found at position: 18
+Title Walt Disney found at position: 19
+Title Paris found at position: 20
+Title Royal Ontario Museum found at position: 21
+Title Cleveland found at position: 22
+Title Stanford University found at position: 23
+Title List of Madagascar (franchise) characters found at position: 24
+Title Memphis, Tennessee found at position: 25
+Question 67: idaho
+Title Phoenix, Arizona found at position: 1
+Title Chicago found at position: 2
+Title Stanford University found at position: 3
+Title History of painting found at position: 4
+Title Yoko Ono found at position: 5
+Title Cleveland found at position: 6
+Title Manhattan found at position: 7
+Title Louisiana State University found at position: 8
+Title Memphis, Tennessee found at position: 9
+Title Mobile, Alabama found at position: 10
+Title Mexico City found at position: 11
+Title Paris found at position: 12
+Title Terre Haute, Indiana found at position: 13
+Title San Francisco found at position: 14
+Title Binghamton, New York found at position: 15
+Title University of Massachusetts Amherst found at position: 16
+Title Tracey Emin found at position: 17
+Title Grand Valley State University found at position: 18
+Title 2000s (decade) found at position: 19
+Title List of Madagascar (franchise) characters found at position: 20
+Title Iowa State University found at position: 21
+Title Eugene, Oregon found at position: 22
+Title Kathmandu found at position: 23
+Title Roanoke, Virginia found at position: 24
+Title Omaha, Nebraska found at position: 25
+Question 68: joe tinker
+Document hit for Joe Tinker at position: 1
+Title Joe Tinker found at position: 1
+Title List of The Sopranos characters found at position: 2
+Title African-American Civil Rights Movement (1954–68) found at position: 3
+Title Derek Jeter found at position: 4
+Title Chicago Cubs found at position: 5
+Title The Prince found at position: 6
+Title Jean Chrétien found at position: 7
+Title John French, 1st Earl of Ypres found at position: 8
+Title Citizen Kane found at position: 9
+Title Justin Martyr found at position: 10
+Title Wu-Tang Clan found at position: 11
+Title Medgar Evers found at position: 12
+Title Ion Antonescu found at position: 13
+Title Ted Kennedy found at position: 14
+Title Larry Doby found at position: 15
+Title Charles de Gaulle found at position: 16
+Title March on Washington for Jobs and Freedom found at position: 17
+Title Kenesaw Mountain Landis found at position: 18
+Title Gunfight at the O.K. Corral found at position: 19
+Title Sammy Gravano found at position: 20
+Title Vicente Lim found at position: 21
+Title Søren Kierkegaard found at position: 22
+Title John Cage found at position: 23
+Title Ozzie Smith found at position: 24
+Title The Book of Five Rings found at position: 25
+Question 69: william henry harrison
+Title Horace Greeley found at position: 1
+Document hit for William Henry Harrison at position: 2
+Title William Henry Harrison found at position: 2
+Title William Lyon Mackenzie found at position: 3
+Title Thaddeus Stevens found at position: 4
+Title Woodrow Wilson found at position: 5
+Title American frontier found at position: 6
+Title Jean Chrétien found at position: 7
+Title Warren G. Harding found at position: 8
+Title Ted Kennedy found at position: 9
+Title Richard Nixon found at position: 10
+Title Joe Biden found at position: 11
+Title History of the United States found at position: 12
+Title Richard Mentor Johnson found at position: 13
+Title George McGovern found at position: 14
+Title Charles Sumner found at position: 15
+Title Texas annexation found at position: 16
+Title Perry Como found at position: 17
+Title John C. Breckinridge found at position: 18
+Title David Duke found at position: 19
+Title Silvio Berlusconi found at position: 20
+Title Napoleon III found at position: 21
+Title William Wilberforce found at position: 22
+Title African-American history found at position: 23
+Title Bob Rae found at position: 24
+Title Rupert Murdoch found at position: 25
+Question 70: joan of arc|jeanne d'arc
+Document hit for Joan of Arc|Jeanne d'Arc at position: 1
+Title Joan of Arc found at position: 1
+Title Napoleon III found at position: 2
+Title Catholic sex abuse cases found at position: 3
+Title Gunfight at the O.K. Corral found at position: 4
+Title Paris Commune found at position: 5
+Title Scottsboro Boys found at position: 6
+Title Thérèse of Lisieux found at position: 7
+Title Paris found at position: 8
+Title Characters of Parks and Recreation found at position: 9
+Title Silvio Berlusconi found at position: 10
+Title Whitney Houston found at position: 11
+Title Dreyfus affair found at position: 12
+Title Anglo-Saxons found at position: 13
+Title Jean Chrétien found at position: 14
+Title Giro d'Italia found at position: 15
+Title Caffeine found at position: 16
+Title List of The Sopranos characters found at position: 17
+Title Cristiano Ronaldo found at position: 18
+Title Moors murders found at position: 19
+Title Fidel Castro found at position: 20
+Title Jimi Hendrix found at position: 21
+Title Pope found at position: 22
+Title Charles de Gaulle found at position: 23
+Title Roman Empire found at position: 24
+Title Miscegenation found at position: 25
+Question 71: madison
+Title Madison, Wisconsin found at position: 1
+Title Temple Mount found at position: 2
+Title Al-Aqsa Mosque found at position: 3
+Title Western Wall found at position: 4
+Title St Paul's Cathedral found at position: 5
+Title Roman Empire found at position: 6
+Title History of Italy found at position: 7
+Title Paris found at position: 8
+Title Wisconsin found at position: 9
+Title American frontier found at position: 10
+Title Des Moines, Iowa found at position: 11
+Title Kubla Khan found at position: 12
+Title Cardiff found at position: 13
+Title Georgia (country) found at position: 14
+Title Socialism found at position: 15
+Title Topkapı Palace found at position: 16
+Title Damascus found at position: 17
+Title Curling found at position: 18
+Title Duluth, Minnesota found at position: 19
+Title Omaha, Nebraska found at position: 20
+Title Harley-Davidson found at position: 21
+Title First Transcontinental Railroad found at position: 22
+Title Pope found at position: 23
+Title Islamic architecture found at position: 24
+Title Yosemite Valley found at position: 25
+Question 72: the atlanta journal-constitution
+Document hit for The Atlanta Journal-Constitution at position: 1
+Title The Atlanta Journal-Constitution found at position: 1
+Title Red Skelton found at position: 2
+Title Abkhazia found at position: 3
+Title Georgia (U.S. state) found at position: 4
+Title Ernie Kovacs found at position: 5
+Title Georgia (country) found at position: 6
+Title Confederate States of America found at position: 7
+Title Narconon found at position: 8
+Title Ku Klux Klan found at position: 9
+Title History of British newspapers found at position: 10
+Title Cherokee language found at position: 11
+Title Margaret Mitchell found at position: 12
+Title James Reavis found at position: 13
+Title William Randolph Hearst found at position: 14
+Title Lester Maddox found at position: 15
+Title Karl Marx found at position: 16
+Title U.S. Route 25 in Georgia found at position: 17
+Title David Duke found at position: 18
+Title Ernest Shackleton found at position: 19
+Title Rod Serling found at position: 20
+Title Wright brothers found at position: 21
+Title Cold fusion found at position: 22
+Title Eufaula, Alabama found at position: 23
+Title Warren G. Harding found at position: 24
+Title Slavery in the United States found at position: 25
+Question 73: monrovia
+Title Liberia found at position: 1
+Title History of Liberia found at position: 2
+Title Paris found at position: 3
+Title Cape Town found at position: 4
+Title Puerto Rico found at position: 5
+Title London found at position: 6
+Title Florida found at position: 7
+Title Liverpool found at position: 8
+Title France found at position: 9
+Title South Korea found at position: 10
+Title Rhode Island found at position: 11
+Title Louisiana found at position: 12
+Title Columbus, Ohio found at position: 13
+Title Armed Forces of Liberia found at position: 14
+Title Portugal found at position: 15
+Title North Carolina found at position: 16
+Title Moscow found at position: 17
+Title Omaha, Nebraska found at position: 18
+Title Culture of Australia found at position: 19
+Title Johannesburg found at position: 20
+Title Indianapolis found at position: 21
+Title Raleigh, North Carolina found at position: 22
+Title Philadelphia found at position: 23
+Title Manhattan found at position: 24
+Title Norway found at position: 25
+Question 74: mercedes-benz superdome|the superdome
+Title Louis Armstrong New Orleans International Airport found at position: 1
+Title Culture of Italy found at position: 2
+Title New Orleans Saints found at position: 3
+Title Hulk Hogan found at position: 4
+Title Hair (musical) found at position: 5
+Title Battle of the Coral Sea found at position: 6
+Document hit for Mercedes-Benz Superdome|The Superdome at position: 7
+Title Mercedes-Benz Superdome found at position: 7
+Title Memphis, Tennessee found at position: 8
+Title Woody Allen found at position: 9
+Title Harry Shearer found at position: 10
+Title Louisiana found at position: 11
+Title Weymouth, Dorset found at position: 12
+Title Brad Pitt found at position: 13
+Title Lee Harvey Oswald found at position: 14
+Title Roman Empire found at position: 15
+Title 2000s (decade) found at position: 16
+Title David Duke found at position: 17
+Title Cambridge found at position: 18
+Title Kobe Bryant found at position: 19
+Title King's College London found at position: 20
+Title Oklahoma found at position: 21
+Title Ballarat found at position: 22
+Title Copenhagen found at position: 23
+Title Preservation Hall Jazz Band found at position: 24
+Title Paris found at position: 25
+Question 75: alec baldwin
+Title Red Hot Chili Peppers found at position: 1
+Title Yankees–Red Sox rivalry found at position: 2
+Title Jean Chrétien found at position: 3
+Title Characters of Parks and Recreation found at position: 4
+Title Culture of the United Kingdom found at position: 5
+Title Coronation Street found at position: 6
+Title Cleveland Browns found at position: 7
+Title Stanley Kubrick found at position: 8
+Title Washington Redskins found at position: 9
+Title Hulk Hogan found at position: 10
+Title Hair (musical) found at position: 11
+Document hit for Alec Baldwin at position: 12
+Title Alec Baldwin found at position: 12
+Title MTV found at position: 13
+Title Jack Kemp found at position: 14
+Title John Mellencamp found at position: 15
+Title Shaquille O'Neal found at position: 16
+Title Jeff Gordon found at position: 17
+Title Todd Manning found at position: 18
+Title "Weird Al" Yankovic found at position: 19
+Title Cleveland Indians found at position: 20
+Title The Who found at position: 21
+Title List of EastEnders characters (2010) found at position: 22
+Title Jennifer Lopez found at position: 23
+Title Neil Young found at position: 24
+Title Nolan Ryan found at position: 25
+Question 76: rosa parks
+Title Lesbian found at position: 1
+Title Mulholland Drive (film) found at position: 2
+Title D. H. Lawrence found at position: 3
+Title Alicia Keys found at position: 4
+Title Emily Dickinson found at position: 5
+Title Prisoner (TV series) found at position: 6
+Title Elizabeth Barrett Browning found at position: 7
+Document hit for Rosa Parks at position: 8
+Title Rosa Parks found at position: 8
+Title Ovid found at position: 9
+Title Yoko Ono found at position: 10
+Title Kubla Khan found at position: 11
+Title Luis Cernuda found at position: 12
+Title Anna Laetitia Barbauld found at position: 13
+Title Whitney Houston found at position: 14
+Title Ezra Pound found at position: 15
+Title Courtney Love found at position: 16
+Title Irish poetry found at position: 17
+Title Janet Jackson found at position: 18
+Title Anna Akhmatova found at position: 19
+Title Marina Tsvetaeva found at position: 20
+Title War rape found at position: 21
+Title Oliver Wendell Holmes, Sr. found at position: 22
+Title Characters of Parks and Recreation found at position: 23
+Title Lilith found at position: 24
+Title Gertrude Stein found at position: 25
+Question 77: harrison ford
+Title Washington Redskins found at position: 1
+Title Shaquille O'Neal found at position: 2
+Title Stanley Kubrick found at position: 3
+Title Jack Kemp found at position: 4
+Title Wilt Chamberlain found at position: 5
+Title List of Doctor Who villains found at position: 6
+Title Houston Astros found at position: 7
+Title Wayne Gretzky found at position: 8
+Title Cleveland Browns found at position: 9
+Title Chicago Cubs found at position: 10
+Document hit for Harrison Ford at position: 11
+Title Harrison Ford found at position: 11
+Title Culture of the United Kingdom found at position: 12
+Title Yankees–Red Sox rivalry found at position: 13
+Title List of NCIS characters found at position: 14
+Title Hair (musical) found at position: 15
+Title Albert Pujols found at position: 16
+Title Nolan Ryan found at position: 17
+Title Derek Jeter found at position: 18
+Title List of All That sketches found at position: 19
+Title Raiden (Metal Gear) found at position: 20
+Title Starscream found at position: 21
+Title Dennis Rodman found at position: 22
+Title Jackie Robinson found at position: 23
+Title Philadelphia Flyers found at position: 24
+Title Paris found at position: 25
+Question 78: dome of the rock
+Title Roman Empire found at position: 1
+Title Mithraic mysteries found at position: 2
+Title Caracol found at position: 3
+Title New Testament found at position: 4
+Title Dos Pilas found at position: 5
+Title Anglo-Saxons found at position: 6
+Title Janus found at position: 7
+Title History of Italy found at position: 8
+Title Celts found at position: 9
+Title Topkapı Palace found at position: 10
+Title Selinunte found at position: 11
+Title Chichen Itza found at position: 12
+Title History of Poland found at position: 13
+Title Paris found at position: 14
+Title Music found at position: 15
+Title History of Russia found at position: 16
+Title Al-Aqsa Mosque found at position: 17
+Title Canosa di Puglia found at position: 18
+Title History of Christianity found at position: 19
+Title Medina found at position: 20
+Title Comma Johanneum found at position: 21
+Title History of Islam found at position: 22
+Title History of Africa found at position: 23
+Title Dacians found at position: 24
+Title Culture of Italy found at position: 25
+Question 79: michael jackson
+Title Alan Moore found at position: 1
+Title Ken Barlow found at position: 2
+Title Hulk Hogan found at position: 3
+Title Nico found at position: 4
+Title The Man with the Golden Gun (film) found at position: 5
+Title Corey Haim found at position: 6
+Title George Michael found at position: 7
+Title Coronation Street found at position: 8
+Title 1980s found at position: 9
+Document hit for Michael Jackson at position: 10
+Title Michael Jackson found at position: 10
+Title The Taming of the Shrew found at position: 11
+Title Ian Fleming found at position: 12
+Title ...And Justice for All (album) found at position: 13
+Title Whitney Houston found at position: 14
+Title Rangers F.C. found at position: 15
+Title Parallel universe (fiction) found at position: 16
+Title Oscar Wilde found at position: 17
+Title Jean Chrétien found at position: 18
+Title Pac-Man found at position: 19
+Title House music found at position: 20
+Title 2000s (decade) found at position: 21
+Title Sugar Ray Leonard found at position: 22
+Title Iran–Iraq War found at position: 23
+Title Dannii Minogue found at position: 24
+Title Orchestral Manoeuvres in the Dark found at position: 25
+Question 80: budapest
+Title Paris found at position: 1
+Title Napoleon III found at position: 2
+Title Pope found at position: 3
+Title Hungary found at position: 4
+Title John the Baptist found at position: 5
+Title The Church of Jesus Christ of Latter-day Saints found at position: 6
+Title Franz Liszt found at position: 7
+Title Comma Johanneum found at position: 8
+Document hit for Budapest at position: 9
+Title Budapest found at position: 9
+Title Lviv found at position: 10
+Title History of Christianity found at position: 11
+Title Edinburgh found at position: 12
+Title Rome found at position: 13
+Title Romania found at position: 14
+Title Moscow found at position: 15
+Title List of Madagascar (franchise) characters found at position: 16
+Title Paris Commune found at position: 17
+Title History of Buda Castle found at position: 18
+Title List of religious sites found at position: 19
+Title Liverpool found at position: 20
+Title Munich found at position: 21
+Title Norway found at position: 22
+Title Solomon Burke found at position: 23
+Title Elijah found at position: 24
+Title History of France found at position: 25
+Question 81: rob reiner
+Title University of California, Los Angeles found at position: 1
+Title Kareem Abdul-Jabbar found at position: 2
+Title Jackie Robinson found at position: 3
+Title James Dean found at position: 4
+Title Steven Spielberg found at position: 5
+Title Ted Kennedy found at position: 6
+Title Hugh Grant found at position: 7
+Title Dennis Rodman found at position: 8
+Title Wayne Gretzky found at position: 9
+Title Corey Haim found at position: 10
+Title Stephen Colbert found at position: 11
+Title Hulk Hogan found at position: 12
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 13
+Title Walt Disney found at position: 14
+Title MTV found at position: 15
+Title Brad Pitt found at position: 16
+Title Yoko Ono found at position: 17
+Title Michael Jackson found at position: 18
+Title Janet Jackson found at position: 19
+Title Tom Green found at position: 20
+Title Bruce Lee found at position: 21
+Title Courtney Love found at position: 22
+Title Chloë Sevigny found at position: 23
+Title Nancy Reagan found at position: 24
+Title Humphrey Bogart found at position: 25
+Question 82: hogan's heroes
+Document hit for Hogan's Heroes at position: 1
+Title Hogan's Heroes found at position: 1
+Title Hulk Hogan found at position: 2
+Title NBC found at position: 3
+Title Scottsboro Boys found at position: 4
+Title Characters of Parks and Recreation found at position: 5
+Title Soap opera found at position: 6
+Title Cleveland found at position: 7
+Title Hamas found at position: 8
+Title CBS found at position: 9
+Title Get Carter found at position: 10
+Title Omaha, Nebraska found at position: 11
+Title Coronation Street found at position: 12
+Title Whitney Houston found at position: 13
+Title List of EastEnders characters (2010) found at position: 14
+Title Cold Feet found at position: 15
+Title 24 (TV series) found at position: 16
+Title Law & Order found at position: 17
+Title Janet Jackson found at position: 18
+Title Stephen Colbert found at position: 19
+Title Television in the United Kingdom found at position: 20
+Title Stargate SG-1 found at position: 21
+Title Bad Girls Club found at position: 22
+Title Country music found at position: 23
+Title Brookside found at position: 24
+Title The West Wing found at position: 25
+Question 83: calvin coolidge
+Title Giro d'Italia found at position: 1
+Title Jeff Gordon found at position: 2
+Title Characters of Parks and Recreation found at position: 3
+Title Chicago found at position: 4
+Title Joe Biden found at position: 5
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 6
+Title Charles de Gaulle found at position: 7
+Title Pakistan found at position: 8
+Title Culture of the United Kingdom found at position: 9
+Title Hamas found at position: 10
+Title Jean Chrétien found at position: 11
+Title Foreign relations of India found at position: 12
+Title Oakland, California found at position: 13
+Title 2011 in British music charts found at position: 14
+Title China found at position: 15
+Title Sleep deprivation found at position: 16
+Title Foreign relations of Israel found at position: 17
+Title South Korea found at position: 18
+Title Olympic Games found at position: 19
+Title Winston Churchill found at position: 20
+Title Santa's Little Helper found at position: 21
+Title Michael Bloomberg found at position: 22
+Title Liberation Tigers of Tamil Eelam found at position: 23
+Title Herbert Hoover found at position: 24
+Title Vladimir Putin found at position: 25
+Question 84: martin sheen
+Title CBS found at position: 1
+Title Meryl Streep found at position: 2
+Title Steven Spielberg found at position: 3
+Title Brad Pitt found at position: 4
+Title 24 (TV series) found at position: 5
+Title Nicole Kidman found at position: 6
+Title Ronald Reagan found at position: 7
+Title The West Wing found at position: 8
+Title George Clooney found at position: 9
+Title Ben Affleck found at position: 10
+Title Jessica Lange found at position: 11
+Title Natalie Portman found at position: 12
+Title Martin Scorsese found at position: 13
+Title Michael Sheen found at position: 14
+Title Jon Voight found at position: 15
+Title Henry Fonda found at position: 16
+Title Janet Jackson found at position: 17
+Title 2000s (decade) found at position: 18
+Title Kelsey Grammer found at position: 19
+Document hit for Martin Sheen at position: 20
+Title Martin Sheen found at position: 20
+Title Robert Downey, Jr. found at position: 21
+Title Julie Andrews found at position: 22
+Title Warren Beatty found at position: 23
+Title Ted Kennedy found at position: 24
+Title Drew Barrymore found at position: 25
+Question 85: janet jackson
+Document hit for Janet Jackson at position: 1
+Title Janet Jackson found at position: 1
+Title Hulk Hogan found at position: 2
+Title Citizen Kane found at position: 3
+Title George Michael found at position: 4
+Title Ferris Bueller's Day Off found at position: 5
+Title Helix (band) found at position: 6
+Title NBC found at position: 7
+Title Kylie Minogue found at position: 8
+Title Bette Davis found at position: 9
+Title Annie (musical) found at position: 10
+Title Romper Room found at position: 11
+Title Nancy Reagan found at position: 12
+Title Book of Love (band) found at position: 13
+Title Van Morrison found at position: 14
+Title Alan Moore found at position: 15
+Title Whitney Houston found at position: 16
+Title Courtney Love found at position: 17
+Title MTV found at position: 18
+Title Orchestral Manoeuvres in the Dark found at position: 19
+Title 2000s (decade) found at position: 20
+Title Jimi Hendrix found at position: 21
+Title CBS found at position: 22
+Title Corey Haim found at position: 23
+Title Michelle Pfeiffer found at position: 24
+Title Calvin and Hobbes found at position: 25
+Question 86: ottoman empire
+Title Kurdish people found at position: 1
+Document hit for Ottoman Empire at position: 2
+Title Ottoman Empire found at position: 2
+Title Cyprus dispute found at position: 3
+Title Cyprus found at position: 4
+Title History of Islam found at position: 5
+Title Macedonia (region) found at position: 6
+Title History of Armenia found at position: 7
+Title History of Russia found at position: 8
+Title Konrad Adenauer found at position: 9
+Title Miscegenation found at position: 10
+Title Sir Henry Wilson, 1st Baronet found at position: 11
+Title Kosovo (region) found at position: 12
+Title History of modern Greece found at position: 13
+Title Foreign relations of India found at position: 14
+Title Refugee found at position: 15
+Title Charles de Gaulle found at position: 16
+Title France found at position: 17
+Title Soviet Union found at position: 18
+Title Romania found at position: 19
+Title League of Nations found at position: 20
+Title Iraq found at position: 21
+Title Mau Mau Uprising found at position: 22
+Title Republic of Ireland found at position: 23
+Title History of Africa found at position: 24
+Title Croatia found at position: 25
+Question 87: procter & gamble
+Title Toothpaste found at position: 1
+Title Crest (toothpaste) found at position: 2
+Title Rangers F.C. found at position: 3
+Document hit for Procter & Gamble at position: 4
+Title Procter & Gamble found at position: 4
+Title CBS found at position: 5
+Title Chelsea F.C. found at position: 6
+Title Heraldry found at position: 7
+Title FC Barcelona found at position: 8
+Title West Ham United F.C. found at position: 9
+Title FC Bayern Munich found at position: 10
+Title Parma F.C. found at position: 11
+Title US Foods found at position: 12
+Title NBC found at position: 13
+Title United Artists found at position: 14
+Title Sony found at position: 15
+Title Real Madrid C.F. found at position: 16
+Title Canadian Pacific Railway found at position: 17
+Title Methodist Boys' School (Kuala Lumpur) found at position: 18
+Title Clan MacTavish found at position: 19
+Title Air India (football club) found at position: 20
+Title Marvel Comics found at position: 21
+Title Nyctosaurus found at position: 22
+Title Tottenham Hotspur F.C. found at position: 23
+Title KFC found at position: 24
+Title Saint Louis Athletica found at position: 25
+Question 88: otto von bismarck|von bismarck
+Title Konrad Adenauer found at position: 1
+Title Wilhelm II, German Emperor found at position: 2
+Document hit for Otto von Bismarck|Von Bismarck at position: 3
+Title Otto von Bismarck found at position: 3
+Title Joachim von Ribbentrop found at position: 4
+Title Suez Crisis found at position: 5
+Title Søren Kierkegaard found at position: 6
+Title Joseph Chamberlain found at position: 7
+Title Napoleon III found at position: 8
+Title John French, 1st Earl of Ypres found at position: 9
+Title Heinrich Himmler found at position: 10
+Title Criticism of Jehovah's Witnesses found at position: 11
+Title Charles de Gaulle found at position: 12
+Title Winston Churchill found at position: 13
+Title Other Losses found at position: 14
+Title Fear and Trembling found at position: 15
+Title Munich massacre found at position: 16
+Title Neville Chamberlain found at position: 17
+Title Enoch Powell found at position: 18
+Title Hermann Göring found at position: 19
+Title William Ewart Gladstone found at position: 20
+Title Weimar Republic found at position: 21
+Title Theoria found at position: 22
+Title Ronald Reagan found at position: 23
+Title Thérèse of Lisieux found at position: 24
+Title Idries Shah found at position: 25
+Question 89: william wordsworth
+Title Luis Cernuda found at position: 1
+Title Ezra Pound found at position: 2
+Title Kubla Khan found at position: 3
+Title Horace found at position: 4
+Title Irish poetry found at position: 5
+Title Samuel Johnson found at position: 6
+Title Ovid found at position: 7
+Title Lord Byron found at position: 8
+Title George Crabbe found at position: 9
+Title Tristan Tzara found at position: 10
+Title Roman Empire found at position: 11
+Title John Milton found at position: 12
+Title English poetry found at position: 13
+Title Bliss Carman found at position: 14
+Title Modernist poetry in English found at position: 15
+Title Irish literature found at position: 16
+Title Poetry found at position: 17
+Title Oliver Wendell Holmes, Sr. found at position: 18
+Title Seamus Heaney found at position: 19
+Title Dave Morice found at position: 20
+Title James Russell Lowell found at position: 21
+Title Giacomo Leopardi found at position: 22
+Title Oxfordian theory of Shakespeare authorship found at position: 23
+Title Stephen Crane found at position: 24
+Title W. H. Auden found at position: 25
+Question 90: khmer language
+Title Khmer Rouge found at position: 1
+Title Vietnam War found at position: 2
+Title History of Cambodia found at position: 3
+Document hit for Khmer language at position: 4
+Title Khmer language found at position: 4
+Title Rice found at position: 5
+Title Reincarnation found at position: 6
+Title Karma found at position: 7
+Title Roman Empire found at position: 8
+Title Politics of Cambodia found at position: 9
+Title Miscegenation found at position: 10
+Title France found at position: 11
+Title Romania found at position: 12
+Title Anglo-Saxons found at position: 13
+Title Ho Chi Minh City found at position: 14
+Title Economy of Cambodia found at position: 15
+Title England found at position: 16
+Title Advaita Vedanta found at position: 17
+Title Mekong found at position: 18
+Title Culture of Italy found at position: 19
+Title Puerto Rico found at position: 20
+Title Chiapas found at position: 21
+Title Sami people found at position: 22
+Title Culture of the United Kingdom found at position: 23
+Title Zoroastrianism found at position: 24
+Title African-American culture found at position: 25
+Question 91: rickshaw
+Title Khmer Rouge found at position: 1
+Title Vietnam War found at position: 2
+Title Cycle rickshaw found at position: 3
+Title Mekong found at position: 4
+Title History of Cambodia found at position: 5
+Title Khmer language found at position: 6
+Title Jakarta found at position: 7
+Title Miscegenation found at position: 8
+Title Honda Accord found at position: 9
+Title Economy of Cambodia found at position: 10
+Title Orlando, Florida found at position: 11
+Title Maldives found at position: 12
+Title Rice found at position: 13
+Title History of painting found at position: 14
+Title Foreign relations of India found at position: 15
+Title Florida found at position: 16
+Title Transport in India found at position: 17
+Title Manhattan found at position: 18
+Title Siem Reap found at position: 19
+Title Taiwan found at position: 20
+Title Winnipeg found at position: 21
+Title Wu-Tang Clan found at position: 22
+Title History of the United States found at position: 23
+Document hit for Rickshaw at position: 24
+Title Rickshaw found at position: 24
+Title Ethnic Malays found at position: 25
+Question 92: michael jackson
+Title Rock music found at position: 1
+Title Orchestral Manoeuvres in the Dark found at position: 2
+Title King Crimson found at position: 3
+Title Hulk Hogan found at position: 4
+Title Van Morrison found at position: 5
+Title Duran Duran found at position: 6
+Title Motörhead found at position: 7
+Title Helix (band) found at position: 8
+Title Punk rock found at position: 9
+Title The Who found at position: 10
+Title Janet Jackson found at position: 11
+Title MTV found at position: 12
+Title Def Leppard found at position: 13
+Title INXS found at position: 14
+Title The Moody Blues found at position: 15
+Title Glam metal found at position: 16
+Document hit for Michael Jackson at position: 17
+Title Michael Jackson found at position: 17
+Title Whitesnake found at position: 18
+Title Music of Japan found at position: 19
+Title The Runaways found at position: 20
+Title Hall & Oates found at position: 21
+Title Whitney Houston found at position: 22
+Title The Police found at position: 23
+Title Kate Bush found at position: 24
+Title New Order found at position: 25
+Question 93: jfk|john f. kennedy
+Title Richard Nixon found at position: 1
+Title George McGovern found at position: 2
+Title Vietnam War found at position: 3
+Title Jack Kemp found at position: 4
+Title Warren G. Harding found at position: 5
+Title Joe Biden found at position: 6
+Title American frontier found at position: 7
+Title Ted Kennedy found at position: 8
+Title Ronald Reagan found at position: 9
+Title William McKinley found at position: 10
+Title History of the United States (1945–64) found at position: 11
+Title History of the United States found at position: 12
+Title Barry Goldwater found at position: 13
+Title Woodrow Wilson found at position: 14
+Title Confederate States of America found at position: 15
+Title Herbert Hoover found at position: 16
+Title Vice President of the United States found at position: 17
+Title Vladimir Putin found at position: 18
+Title Hunter S. Thompson found at position: 19
+Title John Ford found at position: 20
+Title African-American Civil Rights Movement (1954–68) found at position: 21
+Title William Henry Harrison found at position: 22
+Title Texas annexation found at position: 23
+Title Fidel Castro found at position: 24
+Title Michael Bloomberg found at position: 25
+Question 94: b'nai b'rith
+Document hit for B'nai B'rith at position: 1
+Title B'nai B'rith found at position: 1
+Title Hamas found at position: 2
+Title Roman Empire found at position: 3
+Title Christianity and Judaism found at position: 4
+Title Hebron found at position: 5
+Title Paris found at position: 6
+Title Isaac Asimov found at position: 7
+Title History of Israel found at position: 8
+Title Culture of the United Kingdom found at position: 9
+Title The Church of Jesus Christ of Latter-day Saints found at position: 10
+Title Søren Kierkegaard found at position: 11
+Title Karl Marx found at position: 12
+Title Kabbalah found at position: 13
+Title Hasidic Judaism found at position: 14
+Title Jacob found at position: 15
+Title Miscegenation found at position: 16
+Title Women in Judaism found at position: 17
+Title Human rights found at position: 18
+Title Elijah found at position: 19
+Title Rotary International found at position: 20
+Title Ted Kennedy found at position: 21
+Title League of Nations found at position: 22
+Title Lilith found at position: 23
+Title Ludwig Wittgenstein found at position: 24
+Title African-American Civil Rights Movement (1954–68) found at position: 25
+Question 95: three's company
+Title Don Knotts found at position: 1
+Title Malta found at position: 2
+Document hit for Three's Company at position: 3
+Title Three's Company found at position: 3
+Title Sheffield found at position: 4
+Title Brookside found at position: 5
+Title James Reavis found at position: 6
+Title 1947 English cricket season found at position: 7
+Title Great Famine (Ireland) found at position: 8
+Title Gunfight at the O.K. Corral found at position: 9
+Title Ireland found at position: 10
+Title William the Conqueror found at position: 11
+Title List of Donald Duck universe characters found at position: 12
+Title Characters of Parks and Recreation found at position: 13
+Title Puerto Rico found at position: 14
+Title Henry I of England found at position: 15
+Title Miscegenation found at position: 16
+Title Killer whale found at position: 17
+Title History of Poland found at position: 18
+Title The Anarchy found at position: 19
+Title Tim Conway found at position: 20
+Title Phoenix, Arizona found at position: 21
+Title Oklahoma found at position: 22
+Title American frontier found at position: 23
+Title Orson Welles found at position: 24
+Title Cossacks found at position: 25
+Question 96: the six day war
+Title History of Israel found at position: 1
+Title Golan Heights found at position: 2
+Title Israeli–Palestinian conflict found at position: 3
+Title Foreign relations of Israel found at position: 4
+Title Refugee found at position: 5
+Title Yom Kippur War found at position: 6
+Title West Bank found at position: 7
+Title 1948 Arab–Israeli War found at position: 8
+Title Hamas found at position: 9
+Title Suez Crisis found at position: 10
+Title United Nations Partition Plan for Palestine found at position: 11
+Title Iran–Iraq War found at position: 12
+Title Foreign relations of India found at position: 13
+Title Konrad Adenauer found at position: 14
+Title Camp David Accords found at position: 15
+Title Israeli West Bank barrier found at position: 16
+Title Hezbollah found at position: 17
+Title Yasser Arafat found at position: 18
+Title History of Lebanon found at position: 19
+Title Charles de Gaulle found at position: 20
+Title Palestinian people found at position: 21
+Title Taiwan found at position: 22
+Title Gulf War found at position: 23
+Title History of Poland found at position: 24
+Title George McGovern found at position: 25
+Question 97: heather locklear
+Title University of California, Los Angeles found at position: 1
+Document hit for Heather Locklear at position: 2
+Title Heather Locklear found at position: 2
+Title Courtney Love found at position: 3
+Title Mandy Moore found at position: 4
+Title Michelle Pfeiffer found at position: 5
+Title Kate Beckinsale found at position: 6
+Title Melrose Place found at position: 7
+Title Janet Jackson found at position: 8
+Title Legally Blonde (musical) found at position: 9
+Title Jennifer Lopez found at position: 10
+Title The Taming of the Shrew found at position: 11
+Title Characters of Parks and Recreation found at position: 12
+Title Natalie Portman found at position: 13
+Title Lesbian found at position: 14
+Title Naomi Watts found at position: 15
+Title Product placement found at position: 16
+Title Jackie Robinson found at position: 17
+Title Heather Graham found at position: 18
+Title Jacqueline Kennedy Onassis found at position: 19
+Title American Beauty (film) found at position: 20
+Title Ted Kennedy found at position: 21
+Title Hairspray (musical) found at position: 22
+Title Romance (love) found at position: 23
+Title Keira Knightley found at position: 24
+Title Mickey Rooney found at position: 25
+Question 98: souvlaki
+Document hit for Souvlaki at position: 1
+Title Souvlaki found at position: 1
+Title Korean cuisine found at position: 2
+Title Breakfast found at position: 3
+Title Awadhi cuisine found at position: 4
+Title Sausage found at position: 5
+Title English cuisine found at position: 6
+Title Pomegranate found at position: 7
+Title Cuisine of the Midwestern United States found at position: 8
+Title Bengali cuisine found at position: 9
+Title John the Baptist found at position: 10
+Title Homs found at position: 11
+Title Roman Empire found at position: 12
+Title KFC found at position: 13
+Title Golden Eagle found at position: 14
+Title Curry found at position: 15
+Title Romania found at position: 16
+Title Mexican cuisine found at position: 17
+Title Chicago found at position: 18
+Title Carnival found at position: 19
+Title Hamburger found at position: 20
+Title Sheep found at position: 21
+Title List of EastEnders characters (2010) found at position: 22
+Title List of minor The Hitchhiker's Guide to the Galaxy characters found at position: 23
+Title Libya found at position: 24
+Title Ethiopian cuisine found at position: 25
+Question 99: 3m
+Title Banknotes of the pound sterling found at position: 1
+Title NBC found at position: 2
+Title CBS found at position: 3
+Title Parma F.C. found at position: 4
+Title Miscegenation found at position: 5
+Title Atlantic Records found at position: 6
+Title US Foods found at position: 7
+Title Exoplanet found at position: 8
+Title United Artists found at position: 9
+Title Sony found at position: 10
+Title Canadian Pacific Railway found at position: 11
+Title Marvel Comics found at position: 12
+Title Disney Channel found at position: 13
+Title KFC found at position: 14
+Title Nokia found at position: 15
+Title Lamborghini found at position: 16
+Title Amoco found at position: 17
+Title United Airlines found at position: 18
+Title Metro-Goldwyn-Mayer found at position: 19
+Title Coca-Cola found at position: 20
+Title Fox Broadcasting Company found at position: 21
+Title American Broadcasting Company found at position: 22
+Title Polaroid Corporation found at position: 23
+Title Chevron Corporation found at position: 24
+Title Volkswagen Group found at position: 25
+Question 100: robert downey, jr.
+Title Sherlock Holmes found at position: 1
+Document hit for Robert Downey, Jr. at position: 2
+Title Robert Downey, Jr. found at position: 2
+Title Meryl Streep found at position: 3
+Title Martin Scorsese found at position: 4
+Title Michael Sheen found at position: 5
+Title Irene Adler found at position: 6
+Title Nicole Kidman found at position: 7
+Title Stephen Fry found at position: 8
+Title Steven Spielberg found at position: 9
+Title Charlie Chaplin found at position: 10
+Title Brad Pitt found at position: 11
+Title Hans Zimmer found at position: 12
+Title Jessica Lange found at position: 13
+Title Basil Rathbone found at position: 14
+Title Ben Affleck found at position: 15
+Title George Clooney found at position: 16
+Title Warren Beatty found at position: 17
+Title Paul Newman found at position: 18
+Title Natalie Portman found at position: 19
+Title Jeremy Brett found at position: 20
+Title Julia Roberts found at position: 21
+Title Julie Andrews found at position: 22
+Title Colin Firth found at position: 23
+Title Vanessa Redgrave found at position: 24
+Title Darren Aronofsky found at position: 25
+Total hits in top 25 docs: 69
+P@1: 0.27
+Docs in position 1: 27
+Docs in position 2: 10
+Docs in position 3: 5
+Docs in position 4: 4
+Docs in position 5: 1
+Docs in position 6: 1
+Docs in position 7: 2
+Docs in position 8: 6
+Docs in position 9: 1
+Docs in position 10: 2
+Docs in position 11: 2
+Docs in position 12: 2
+Docs in position 13: 1
+Docs in position 14: 1
+Docs in position 15: 0
+Docs in position 16: 0
+Docs in position 17: 1
+Docs in position 18: 1
+Docs in position 19: 0
+Docs in position 20: 1
+Docs in position 21: 0
+Docs in position 22: 0
+Docs in position 23: 0
+Docs in position 24: 1
+Docs in position 25: 0
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.14 s - in [1mTest2[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  9.903 s
+[[1;34mINFO[m] Finished at: 2023-04-24T14:16:20-07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

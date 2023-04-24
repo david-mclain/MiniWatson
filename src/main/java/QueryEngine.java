@@ -18,8 +18,11 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.search.similarities.BasicStats;
+import org.apache.lucene.search.similarities.SimilarityBase;
 import java.io.File;
 import java.util.Scanner;
+import java.util.Hashtable;
 
 public class QueryEngine {
 
@@ -28,6 +31,7 @@ public class QueryEngine {
     public static void main(String[] args) throws IOException, ParseException {
         StandardAnalyzer analyzer = new StandardAnalyzer();
         Directory index = null;
+        Hashtable<Integer, Integer> hitsAtPositions = new Hashtable<>();
         // Open directory containing indexed files
         try {
             index = FSDirectory.open(new File("src/main/resources/standard-indexed-documents").toPath());
@@ -38,6 +42,8 @@ public class QueryEngine {
         Scanner input = null;
         IndexReader reader = DirectoryReader.open(index);
         IndexSearcher searcher = new IndexSearcher(reader);
+        // COMMENT BELOW LINE TO USE DEFAULT SCORING METHOD
+        searcher.setSimilarity(new TFIDFSimilarity());
         // Open file containing query clues and answers
         try {
             input = new Scanner(new File(ANSWERS));
@@ -55,26 +61,47 @@ public class QueryEngine {
             String queryString = clue.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase() + 
                 " " + category.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase();
             QueryParser queryParser = new QueryParser("body", analyzer);
-            int hitsPerPage = 20;
+            int hitsPerPage = 10;
             TopDocs docs = searcher.search(queryParser.parse(queryString), hitsPerPage);
             ScoreDoc[] hits = docs.scoreDocs;
             System.out.println("Question " + j + ": " + answer.toLowerCase());
-            // 4. display results
             for(int i = 0; i < hits.length; ++i) {
                 int docId = hits[i].doc;
                 Document d = searcher.doc(docId);
                 if ((d.get("title").replaceAll("\\[|\\]", "").toLowerCase().matches(answer.toLowerCase()))) {
                     System.out.println("Document hit for " + answer + " at position: " + (i + 1));
                     matches++;
+                    int temp = hitsAtPositions.getOrDefault(i + 1, 0);
+                    temp++;
+                    hitsAtPositions.put(i + 1, temp);
                     hitsAtOne = i == 0 ? hitsAtOne + 1 : hitsAtOne;
                 }
-                System.out.println("Title " + d.get("title") + " found at position: " + (i + 1));
-                //System.out.println((i + 1) + ". " + d.get("title") + "\t" + d.get("categories"));
+                // UNCOMMENT BELOW CODE TO SEE WHAT TITLES ARE FOUND AT WHAT POSITION
+                //System.out.println("Title " + d.get("title") + " found at position: " + (i + 1));
             }
             j++;
         }
-        System.out.println("Total hits in top 20 docs: " + matches);
+        System.out.println("Total hits in top 10 docs: " + matches);
         System.out.println("P@1: " + (hitsAtOne / 100.0));
+        for (int i = 1; i <= 10; i++) {
+            // UNCOMMENT BELOW LINE TO SEE WHAT POSITION RESULT IS IN
+            //System.out.println("Docs in position " + i + ": " + hitsAtPositions.getOrDefault(i, 0));
+        }
         reader.close();
+    }
+
+    private static class TFIDFSimilarity extends SimilarityBase {
+        @Override
+        protected float score(BasicStats stats, float termFreq, float docLength) {
+            double tf = 1 + (Math.log(termFreq) / Math.log(2));
+            double idf = Math.log((stats.getNumberOfDocuments() + 1) / stats.getDocFreq()) / Math.log(2);
+            float similarity = (float) (tf * idf);
+            return similarity;
+        }
+
+        @Override
+        public String toString() {
+            return "";
+        }
     }
 }

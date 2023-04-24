@@ -1,3 +1,4 @@
+IndexBuilder.class
 Indexer.class
 QueryEngine.class
-IndexBuilder.class
+QueryEngine$TFIDFSimilarity.class
