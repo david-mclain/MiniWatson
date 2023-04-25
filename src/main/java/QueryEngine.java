@@ -1,4 +1,5 @@
 import java.io.IOException;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -18,8 +19,6 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.search.similarities.BasicStats;
-import org.apache.lucene.search.similarities.SimilarityBase;
 import java.io.File;
 import java.util.Scanner;
 import java.util.Hashtable;
@@ -29,12 +28,13 @@ public class QueryEngine {
     private static final String ANSWERS = "src/main/resources/questions.txt"; // File path for clues and answers
     
     public static void main(String[] args) throws IOException, ParseException {
-        StandardAnalyzer analyzer = new StandardAnalyzer();
+        //StandardAnalyzer analyzer = new StandardAnalyzer();
+        CustomAnalyzer analyzer = new CustomAnalyzer();
         Directory index = null;
         Hashtable<Integer, Integer> hitsAtPositions = new Hashtable<>();
         // Open directory containing indexed files
         try {
-            index = FSDirectory.open(new File("src/main/resources/standard-indexed-documents").toPath());
+            index = FSDirectory.open(new File("src/main/resources/custom-indexed-documents").toPath());
         }
         catch(IOException e) {
             throw new RuntimeException(e);
@@ -43,7 +43,7 @@ public class QueryEngine {
         IndexReader reader = DirectoryReader.open(index);
         IndexSearcher searcher = new IndexSearcher(reader);
         // COMMENT BELOW LINE TO USE DEFAULT SCORING METHOD
-        searcher.setSimilarity(new TFIDFSimilarity());
+        //searcher.setSimilarity(new TFIDFSimilarity());
         // Open file containing query clues and answers
         try {
             input = new Scanner(new File(ANSWERS));
@@ -52,15 +52,16 @@ public class QueryEngine {
         int j = 1;
         int matches = 0;
         int hitsAtOne = 0;
-        // Loop through every clue and answer in file and print the results of each query with top 10 docs
+        // Loop through every clue and answer in file and print the hits where answer is in top 10 docs
         while (input.hasNextLine()) {
             String category = input.nextLine();
             String clue = input.nextLine();
             String answer = input.nextLine();
             input.nextLine();
-            String queryString = clue.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase() + 
-                " " + category.replaceAll("[^a-zA-Z0-9 ]", "").toLowerCase();
+            String queryString = clue.replaceAll("\\p{Cntrl}", "") + 
+                " " + category.replaceAll("\\p{Cntrl}", "");
             QueryParser queryParser = new QueryParser("body", analyzer);
+            queryString = QueryParser.escape(queryString);
             int hitsPerPage = 10;
             TopDocs docs = searcher.search(queryParser.parse(queryString), hitsPerPage);
             ScoreDoc[] hits = docs.scoreDocs;
@@ -85,23 +86,9 @@ public class QueryEngine {
         System.out.println("P@1: " + (hitsAtOne / 100.0));
         for (int i = 1; i <= 10; i++) {
             // UNCOMMENT BELOW LINE TO SEE WHAT POSITION RESULT IS IN
-            //System.out.println("Docs in position " + i + ": " + hitsAtPositions.getOrDefault(i, 0));
+            System.out.println("Docs in position " + i + ": " + hitsAtPositions.getOrDefault(i, 0));
         }
         reader.close();
     }
 
-    private static class TFIDFSimilarity extends SimilarityBase {
-        @Override
-        protected float score(BasicStats stats, float termFreq, float docLength) {
-            double tf = 1 + (Math.log(termFreq) / Math.log(2));
-            double idf = Math.log((stats.getNumberOfDocuments() + 1) / stats.getDocFreq()) / Math.log(2);
-            float similarity = (float) (tf * idf);
-            return similarity;
-        }
-
-        @Override
-        public String toString() {
-            return "";
-        }
-    }
 }

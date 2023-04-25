@@ -1,4 +1,4 @@
-IndexBuilder.class
-Indexer.class
 QueryEngine.class
-QueryEngine$TFIDFSimilarity.class
+TFIDFSimilarity.class
+IndexBuilder.class
+CustomAnalyzer.class

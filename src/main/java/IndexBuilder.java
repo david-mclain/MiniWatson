@@ -1,3 +1,4 @@
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -17,15 +18,18 @@ import java.util.Scanner;
 public class IndexBuilder {
     //private boolean indexExists = false;
     private static final String WIKI_DIRECTORY_PATH  = "src/main/resources/wiki-data";
-    private StandardAnalyzer analyzer;
+    // TO USE ENGLISH ANALYZER INSTEAD, CHANGE STANDARD TO ENGLISH AND DIRECTORY TO STEMMED
+    //private StandardAnalyzer analyzer;
+    private CustomAnalyzer analyzer;
     private static Directory index;
     private static IndexWriterConfig config;
     private static IndexWriter writer;
     private int docId;  // For the current document
     public IndexBuilder() {
         try {
-            analyzer = new StandardAnalyzer();
-            index = FSDirectory.open(new File("src/main/resources/standard-indexed-documents").toPath());
+            //analyzer = new StandardAnalyzer();
+            analyzer = new CustomAnalyzer();
+            index = FSDirectory.open(new File("src/main/resources/custom-indexed-documents").toPath());
             config = new IndexWriterConfig(analyzer);
         }
         catch(IOException e) {
@@ -34,7 +38,7 @@ public class IndexBuilder {
         // CODE FOR TESTING ON WIKI-EXAMPLE
         /*
         try {
-            writer = new IndexWriter(index, config);
+            riter = new IndexWriter(index, config);
             addToIndex(new File("src/main/resources/wiki-example.txt"));
         } catch (IOException e) {
             throw new RuntimeException(e);

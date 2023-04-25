@@ -1,0 +1,26 @@
+Error Analysis:
+------------------------------------------------------------
+Standard Analyzer (default scoring) -
+P@1: 20%
+Docs in top 10: 43
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Standard Analyzer (tf-idf scoring) -
+P@1: 28%
+Docs in top 10: 58
+------------------------------------------------------------
+EnglishAnalyzer (default scoring) -
+P@1: 22%
+Docs in top 10: 50
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+EnglishAnalyzer (tf-idf scoring) -
+P@1: 22%
+Docs in top 10: 56
+------------------------------------------------------------
+CustomAnalyzer (default scoring) -
+P@1: 22%
+Docs in top 10: 45
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+CustomAnalyzer (tf-idf scoring) -
+P@1: 23%
+Docs in top 10: 57
+------------------------------------------------------------
