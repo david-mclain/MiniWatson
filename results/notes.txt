@@ -7,6 +7,10 @@ Docs in top 10: 43
 Standard Analyzer (tf-idf scoring) -
 P@1: 28%
 Docs in top 10: 58
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Standard Analyzer (BM25 scoring; k1 = 1.4, b = 0.15)
+P@1: 36%
+Docs in top 10: 65
 ------------------------------------------------------------
 EnglishAnalyzer (default scoring) -
 P@1: 22%
@@ -15,6 +19,10 @@ Docs in top 10: 50
 EnglishAnalyzer (tf-idf scoring) -
 P@1: 22%
 Docs in top 10: 56
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+EnglishAnalyzer (BM25 scoring; k1 = 1.4, b = 0.15)
+P@1: 40%
+Docs in top 10: 63
 ------------------------------------------------------------
 CustomAnalyzer (default scoring) -
 P@1: 22%
@@ -23,4 +31,8 @@ Docs in top 10: 45
 CustomAnalyzer (tf-idf scoring) -
 P@1: 23%
 Docs in top 10: 57
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+CustomAnalyzer (BM25 scoring; k1 = 1.4, b = 0.15)
+P@1: 40%
+Docs in top 10: 64
 ------------------------------------------------------------

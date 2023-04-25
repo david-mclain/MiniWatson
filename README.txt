@@ -1,3 +1,5 @@
+ALL RESULTS ARE IN THE RESULTS DIRECTORY; NOTES INCLUDED
+
 To use EnglishAnalyzer, change directory to be stemmed-indexed-documents in files, as well as make sure analyzer used is EnglishAnalyzer
 
 To use CustomAnalyzer, change directory to be custom-indexed-documents in files, as well as make sure analyzer used is CustomAnalyzer

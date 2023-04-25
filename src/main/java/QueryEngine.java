@@ -16,6 +16,7 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.FSDirectory;
@@ -28,13 +29,13 @@ public class QueryEngine {
     private static final String ANSWERS = "src/main/resources/questions.txt"; // File path for clues and answers
     
     public static void main(String[] args) throws IOException, ParseException {
-        //StandardAnalyzer analyzer = new StandardAnalyzer();
-        CustomAnalyzer analyzer = new CustomAnalyzer();
+        StandardAnalyzer analyzer = new StandardAnalyzer();
+        //CustomAnalyzer analyzer = new CustomAnalyzer();
         Directory index = null;
         Hashtable<Integer, Integer> hitsAtPositions = new Hashtable<>();
         // Open directory containing indexed files
         try {
-            index = FSDirectory.open(new File("src/main/resources/custom-indexed-documents").toPath());
+            index = FSDirectory.open(new File("src/main/resources/standard-indexed-documents").toPath());
         }
         catch(IOException e) {
             throw new RuntimeException(e);
@@ -43,7 +44,7 @@ public class QueryEngine {
         IndexReader reader = DirectoryReader.open(index);
         IndexSearcher searcher = new IndexSearcher(reader);
         // COMMENT BELOW LINE TO USE DEFAULT SCORING METHOD
-        //searcher.setSimilarity(new TFIDFSimilarity());
+        //searcher.setSimilarity((new BM25Similarity((float)1.4, (float)0.15)));
         // Open file containing query clues and answers
         try {
             input = new Scanner(new File(ANSWERS));
