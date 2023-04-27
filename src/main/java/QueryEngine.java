@@ -48,7 +48,7 @@ public class QueryEngine {
 
     public static void main(String[] args) throws IOException, ParseException {
         try {
-            QueryEngine queryEngine = new QueryEngine("lemma", "tfidf");
+            QueryEngine queryEngine = new QueryEngine("custom", "bm25");
         }
         catch(Exception e) {
             System.out.println("Caught exception");

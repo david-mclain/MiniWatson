@@ -92,7 +92,6 @@ public class IndexBuilder {
         ///*
         File wikiFolder = new File(WIKI_DIRECTORY_PATH);
         File[] wikiFiles = wikiFolder.listFiles();
-        ExecutorService executor = Executors.newFixedThreadPool(wikiFiles.length);
         try {
             writer = new IndexWriter(index, config);
             for (File f : wikiFiles) {
@@ -103,9 +102,6 @@ public class IndexBuilder {
         } catch (IOException e) {
             System.out.println("Exception");
             throw new RuntimeException(e);
-        }
-        finally {
-            executor.shutdown();
         }
         //*/
     }
