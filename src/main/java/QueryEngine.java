@@ -45,6 +45,9 @@ public class QueryEngine {
     private POSTaggerME posTagger;
     private InputStream dictLemmatizer;
     private DictionaryLemmatizer lemmatizer;
+    private Scanner input;
+    private IndexReader reader;
+    private IndexSearcher searcher;
 
     public static void main(String[] args) throws IOException, ParseException {
         try {
@@ -55,7 +58,8 @@ public class QueryEngine {
         }
     }
 
-    public QueryEngine(String searchType, String scoringMethod) throws IOException, ParseException {
+    QueryEngine(String searchType, String scoringMethod) throws IOException, ParseException {
+        System.out.println("Constructing");
         directoryPath = "src/main/resources/";
         if (searchType.equals("lemma")) {
             directoryPath = directoryPath + "lemmatized-indexed-documents";
@@ -74,7 +78,6 @@ public class QueryEngine {
         else if (searchType.equals("custom")) {
             directoryPath = directoryPath + "custom-indexed-documents";
             analyzer = new CustomAnalyzer();
-            System.out.println("Indexing using custom analyzer");
         }
         else if (searchType.equals("porter")) {
             directoryPath = directoryPath + "stemmed-indexed-documents";
@@ -92,9 +95,9 @@ public class QueryEngine {
         catch(IOException e) {
             throw new RuntimeException(e);
         }
-        Scanner input = null;
-        IndexReader reader = DirectoryReader.open(index);
-        IndexSearcher searcher = new IndexSearcher(reader);
+        input = null;
+        reader = DirectoryReader.open(index);
+        searcher = new IndexSearcher(reader);
         if (scoringMethod.equals("bm25")) {
             searcher.setSimilarity((new BM25Similarity((float)1.4, (float)0.15)));
         }
@@ -105,11 +108,9 @@ public class QueryEngine {
             input = new Scanner(new File(ANSWERS));
         }
         catch(Exception e) {}
-        performQueries(input, reader, searcher);
-        reader.close();
     }
 
-    private void performQueries(Scanner input, IndexReader reader, IndexSearcher searcher) throws IOException, ParseException {
+    public void performQueries() throws IOException, ParseException {
         int j = 1;
         int matches = 0;
         int hitsAtOne = 0;
@@ -132,7 +133,7 @@ public class QueryEngine {
             int hitsPerPage = 10;
             TopDocs docs = searcher.search(query, hitsPerPage);
             ScoreDoc[] hits = docs.scoreDocs;
-            System.out.println("Question " + j + ": " + answer.toLowerCase());
+            System.out.println("Currently searching for: " + answer.toLowerCase());
             for(int i = 0; i < hits.length; ++i) {
                 int docId = hits[i].doc;
                 Document d = searcher.doc(docId);

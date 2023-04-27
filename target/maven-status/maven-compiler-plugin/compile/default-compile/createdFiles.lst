@@ -1,4 +1,5 @@
 TFIDFSimilarity.class
+Driver.class
 CustomAnalyzer.class
 QueryEngine.class
 IndexBuilder.class
