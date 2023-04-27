@@ -36,3 +36,15 @@ CustomAnalyzer (BM25 scoring; k1 = 1.4, b = 0.15)
 P@1: 40%
 Docs in top 10: 64
 ------------------------------------------------------------
+Lemmatized Standard (default scoring) -
+P@1: 21%
+Docs in top 10: 48
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Lemmatized Standard (tf-idf scoring) -
+P@1: 19%
+Docs in top 10: 55
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Lemmatized Standard (BM25 scoring; k1 = 1.4, b = 0.15)
+P@1: 34%
+Docs in top 10: 64
+------------------------------------------------------------

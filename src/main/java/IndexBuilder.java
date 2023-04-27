@@ -1,3 +1,9 @@
+import opennlp.tools.langdetect.*;
+import opennlp.tools.lemmatizer.DictionaryLemmatizer;
+import opennlp.tools.postag.POSModel;
+import opennlp.tools.postag.POSTaggerME;
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -11,25 +17,64 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import java.io.File;
-import java.io.IOException;
+import org.apache.lucene.search.similarities.ClassicSimilarity;
+import java.io.*;
 import java.util.Scanner;
 
 public class IndexBuilder {
-    //private boolean indexExists = false;
     private static final String WIKI_DIRECTORY_PATH  = "src/main/resources/wiki-data";
-    // TO USE ENGLISH ANALYZER INSTEAD, CHANGE STANDARD TO ENGLISH AND DIRECTORY TO STEMMED
-    //private StandardAnalyzer analyzer;
-    private CustomAnalyzer analyzer;
+    private String directoryPath = "src/main/resources/";
+    private Analyzer analyzer;
     private static Directory index;
     private static IndexWriterConfig config;
     private static IndexWriter writer;
-    private int docId;  // For the current document
-    public IndexBuilder() {
+    private int docId;
+    private boolean lemmatize = false;
+    private InputStream posModelIn;
+    private POSModel posModel;
+    private POSTaggerME posTagger;
+    private InputStream dictLemmatizer;
+    private DictionaryLemmatizer lemmatizer;
+    
+    public static void main(String args[]) {
         try {
-            //analyzer = new StandardAnalyzer();
+            IndexBuilder builder = new IndexBuilder("lemma");
+        }
+        catch(Exception e) {
+        
+        }
+    }
+    
+    public IndexBuilder(String indexType) throws IOException, FileNotFoundException {
+        if (indexType.equals("lemma")) {
+            directoryPath = directoryPath + "lemmatized-indexed-documents";
+            analyzer = new StandardAnalyzer();
+            lemmatize = true;
+            posModelIn = new FileInputStream("src/main/resources/dictionary/en-pos-maxent.bin");
+            dictLemmatizer = new FileInputStream("src/main/resources/dictionary/en-lemmatizer.dict");
+            posModel = new POSModel(posModelIn);
+            posTagger = new POSTaggerME(posModel);
+            lemmatizer = new DictionaryLemmatizer(dictLemmatizer);
+        }
+        else if (indexType.equals("standard")) {
+            directoryPath = directoryPath + "standard-indexed-documents";
+            analyzer = new StandardAnalyzer();
+        }
+        else if (indexType.equals("custom")) {
+            directoryPath = directoryPath + "custom-indexed-documents";
             analyzer = new CustomAnalyzer();
-            index = FSDirectory.open(new File("src/main/resources/custom-indexed-documents").toPath());
+        }
+        else if (indexType.equals("porter")) {
+            directoryPath = directoryPath + "stemmed-indexed-documents";
+            analyzer = new EnglishAnalyzer();
+        }
+        else {
+            System.err.println("Error! Must specify type of search desired");
+            throw new RuntimeException();
+        }
+
+        try {
+            index = FSDirectory.open(new File(directoryPath).toPath());
             config = new IndexWriterConfig(analyzer);
         }
         catch(IOException e) {
@@ -38,42 +83,33 @@ public class IndexBuilder {
         // CODE FOR TESTING ON WIKI-EXAMPLE
         /*
         try {
-            riter = new IndexWriter(index, config);
+            writer = new IndexWriter(index, config);
             addToIndex(new File("src/main/resources/wiki-example.txt"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        */
+        //*/
+        ///*
         File wikiFolder = new File(WIKI_DIRECTORY_PATH);
         File[] wikiFiles = wikiFolder.listFiles();
+        ExecutorService executor = Executors.newFixedThreadPool(wikiFiles.length);
         try {
             writer = new IndexWriter(index, config);
             for (File f : wikiFiles) {
-                System.out.println("***********INDEXING FILE: " + f.getName() + "***********");
+                System.out.println("*****Indexing document: " + f.getName() + "*****");
                 addToIndex(f);
             }
             writer.close();
         } catch (IOException e) {
+            System.out.println("Exception");
             throw new RuntimeException(e);
         }
-    }
-
-    /**
-     * For testing purposes only.
-     * @param args
-     */
-    public static void main(String args[]) {
-        IndexBuilder builder = new IndexBuilder();
-
-        // Uncomment below code to print the index
-        /*
-        try {
-            printIndex();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        finally {
+            executor.shutdown();
         }
-        */
+        //*/
     }
+
     void addToIndex(File wikiFile) throws IOException {
         // template for each document
         Document doc = new Document();
@@ -111,9 +147,6 @@ public class IndexBuilder {
 
             if (isCategory(line)) {
                 line = line.substring("CATEGORIES: ".length(), line.length());
-                body = body.equals("") ? line : body + "\n" + line;
-                //categories = line;
-                //doc.add(new TextField("categories", categories, Field.Store.YES));
             }
 
             // remove markers from subsection headings
@@ -126,9 +159,7 @@ public class IndexBuilder {
         }
 
         // Add the last document
-        doc.add(new TextField("body", body, Field.Store.YES));
-        writer.addDocument(doc);
-
+        addBodyAndWrite(doc, body, writer);
         writer.commit();
         sc.close();
     }
@@ -150,8 +181,30 @@ public class IndexBuilder {
     }
 
     void addBodyAndWrite(Document doc, String body, IndexWriter writer) throws IOException {
+        if (lemmatize) {
+            body = lemmatizeString(body);
+        }
         doc.add(new TextField("body", body, Field.Store.YES));
         writer.addDocument(doc);
+    }
+
+    private String lemmatizeString(String str) {
+        String[] tokens = str.split("[\\s@&.?$+-/=]+");
+        String tags[] = posTagger.tag(tokens);
+        String[] lemmas = lemmatizer.lemmatize(tokens, tags);
+        String ret = "";
+        for (int i = 0; i < lemmas.length; i++) {
+            if (lemmas[i].equals("O")) {
+                ret = ret + tokens[i];
+            }
+            else {
+                ret = ret + lemmas[i];
+            }
+            if (i != lemmas.length - 1) {
+                ret = ret + " ";
+            }
+        }
+        return ret;
     }
 
     static void printIndex() throws IOException {
@@ -162,12 +215,10 @@ public class IndexBuilder {
             String docId = doc.get("docId");
             String title = doc.get("title");
             String body = doc.get("body");
-            String categories = doc.get("categories");
 
             System.out.println("DOC_ID: " + docId);
             System.out.println("TITLE: " + title);
             System.out.println("BODY:\n" + body);
-            System.out.println("CATEGORIES: " + categories);
             System.out.println("============================================================");
         }
     }

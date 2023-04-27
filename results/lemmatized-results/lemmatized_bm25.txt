@@ -1,0 +1,176 @@
+Question 1: the washington post
+Document hit for The Washington Post at position: 10
+Question 2: taiwan
+Document hit for Taiwan at position: 1
+Question 3: the wall street journal
+Document hit for The Wall Street Journal at position: 1
+Question 4: my funny valentine
+Question 5: the salvation army|salvation army
+Document hit for The Salvation Army|Salvation Army at position: 1
+Question 6: florida
+Question 7: tintoretto
+Document hit for Tintoretto at position: 1
+Question 8: jackie joyner-kersee
+Document hit for Jackie Joyner-Kersee at position: 1
+Question 9: rotary international
+Question 10: cairo
+Document hit for Cairo at position: 1
+Question 11: charles de gaulle|de gaulle
+Document hit for Charles de Gaulle|de Gaulle at position: 5
+Question 12: ohio
+Question 13: arlington national cemetery|arlington cemetery
+Question 14: heath ledger
+Document hit for Heath Ledger at position: 1
+Question 15: iberia|iberian peninsula
+Question 16: panda|giant panda
+Question 17: george michael
+Document hit for George Michael at position: 8
+Question 18: the help
+Question 19: knights of columbus
+Document hit for Knights of Columbus at position: 1
+Question 20: world wide fund|world wide fund for nature
+Question 21: komodo dragon
+Document hit for Komodo dragon at position: 2
+Question 22: richard byrd|richard e. byrd
+Question 23: boot hill
+Document hit for Boot Hill at position: 1
+Question 24: france
+Question 25: confucius
+Question 26: o'hare|o'hare international airport
+Question 27: jordan
+Document hit for Jordan at position: 8
+Question 28: ben affleck
+Document hit for Ben Affleck at position: 2
+Question 29: roe v. wade
+Document hit for Roe v. Wade at position: 2
+Question 30: knights templar
+Document hit for Knights Templar at position: 2
+Question 31: new mexico
+Question 32: casablanca
+Document hit for Casablanca at position: 3
+Question 33: kraft foods
+Question 34: kelsey grammer
+Question 35: animal house
+Document hit for Animal House at position: 1
+Question 36: mayim bialik
+Document hit for Mayim Bialik at position: 1
+Question 37: aaron burr
+Document hit for Aaron Burr at position: 1
+Question 38: vladimir putin|putin
+Document hit for Vladimir Putin|Putin at position: 1
+Question 39: michelle obama
+Document hit for Michelle Obama at position: 1
+Question 40: edna st. vincent millay
+Question 41: helsinki
+Document hit for Helsinki at position: 10
+Question 42: hasbro
+Document hit for Hasbro at position: 2
+Question 43: the alien and sedition acts
+Question 44: michael jackson
+Question 45: anna paquin
+Document hit for Anna Paquin at position: 2
+Question 46: henry kissinger
+Document hit for Henry Kissinger at position: 1
+Question 47: edinburgh
+Document hit for Edinburgh at position: 5
+Question 48: james dean
+Document hit for James Dean at position: 1
+Question 49: mattel
+Document hit for Mattel at position: 3
+Question 50: richard nixon|nixon
+Question 51: henry wadsworth longfellow
+Document hit for Henry Wadsworth Longfellow at position: 1
+Question 52: game change
+Document hit for Game Change at position: 1
+Question 53: ncis
+Question 54: cape town
+Document hit for Cape Town at position: 1
+Question 55: the faerie queene
+Question 56: lord byron
+Question 57: ouzo
+Document hit for Ouzo at position: 1
+Question 58: slavery|slavery in the united states
+Document hit for Slavery|Slavery in the United States at position: 2
+Question 59: governor general of canada
+Document hit for Governor General of Canada at position: 1
+Question 60: george martin
+Document hit for George Martin at position: 2
+Question 61: san francisco
+Question 62: kangaroo
+Document hit for Kangaroo at position: 2
+Question 63: feta
+Document hit for Feta at position: 1
+Question 64: jack dempsey
+Document hit for Jack Dempsey at position: 1
+Question 65: duce
+Document hit for Duce at position: 1
+Question 66: michigan
+Question 67: idaho
+Question 68: joe tinker
+Document hit for Joe Tinker at position: 1
+Question 69: william henry harrison
+Document hit for William Henry Harrison at position: 2
+Question 70: joan of arc|jeanne d'arc
+Document hit for Joan of Arc|Jeanne d'Arc at position: 1
+Question 71: madison
+Question 72: the atlanta journal-constitution
+Document hit for The Atlanta Journal-Constitution at position: 1
+Question 73: monrovia
+Document hit for Monrovia at position: 2
+Question 74: mercedes-benz superdome|the superdome
+Document hit for Mercedes-Benz Superdome|The Superdome at position: 1
+Question 75: alec baldwin
+Document hit for Alec Baldwin at position: 1
+Question 76: rosa parks
+Document hit for Rosa Parks at position: 1
+Question 77: harrison ford
+Document hit for Harrison Ford at position: 2
+Question 78: dome of the rock
+Question 79: michael jackson
+Question 80: budapest
+Document hit for Budapest at position: 6
+Question 81: rob reiner
+Document hit for Rob Reiner at position: 3
+Question 82: hogan's heroes
+Document hit for Hogan's Heroes at position: 1
+Question 83: calvin coolidge
+Question 84: martin sheen
+Question 85: janet jackson
+Question 86: ottoman empire
+Document hit for Ottoman Empire at position: 4
+Question 87: procter & gamble
+Document hit for Procter & Gamble at position: 3
+Question 88: otto von bismarck|von bismarck
+Document hit for Otto von Bismarck|Von Bismarck at position: 2
+Question 89: william wordsworth
+Document hit for William Wordsworth at position: 8
+Question 90: khmer language
+Document hit for Khmer language at position: 4
+Question 91: rickshaw
+Document hit for Rickshaw at position: 6
+Question 92: michael jackson
+Question 93: jfk|john f. kennedy
+Question 94: b'nai b'rith
+Document hit for B'nai B'rith at position: 1
+Question 95: three's company
+Document hit for Three's Company at position: 2
+Question 96: the six day war
+Question 97: heather locklear
+Document hit for Heather Locklear at position: 1
+Question 98: souvlaki
+Document hit for Souvlaki at position: 1
+Question 99: 3m
+Question 100: robert downey, jr.
+Document hit for Robert Downey, Jr. at position: 2
+Total hits in top 10 docs: 64
+P@1: 0.34
+Docs in position 1: 34
+Docs in position 2: 15
+Docs in position 3: 4
+Docs in position 4: 2
+Docs in position 5: 2
+Docs in position 6: 2
+Docs in position 7: 0
+Docs in position 8: 3
+Docs in position 9: 0
+Docs in position 10: 2
