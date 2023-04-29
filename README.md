@@ -25,6 +25,5 @@ Docs in position 9: 0
 Docs in position 10: 2  
 *------------------------------------------------------------------------*  
 ### Usage
-Before you can Query you will need to download all of the indexed documents, which can be done by running `./getIndexedDocs`, which will download all of the indexed documents, and place them where they should be in the directory.
-To run the query engine you will need to use a bash shell and have maven installed and run `./runQueries {optional_index_type} {optional_scoring_method}`  
-If no parameters are passed in, the program will default to custom index type with bm25 scoring  
+Before you can Query you will need to download all of the indexed documents, which can be done by running `./getIndexedDocs`, which will download all of the indexed documents, and place them where they should be in the directory.  
+To run the query engine you will need to use a bash shell and have maven installed and run `./runQueries {optional_index_type} {optional_scoring_method}`. If no parameters are passed in, the program will default to custom index type with bm25 scoring  
