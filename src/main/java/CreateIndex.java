@@ -1,6 +1,5 @@
 public class CreateIndex {
     public static void main(String[] args) {
-        System.out.println("indexing");
         IndexBuilder indexBuilder = null;
         try {
             if (args.length == 1) {

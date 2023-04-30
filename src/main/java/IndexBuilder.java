@@ -90,7 +90,6 @@ public class IndexBuilder {
             }
             writer.close();
         } catch (IOException e) {
-            System.out.println("Exception");
             throw new RuntimeException(e);
         }
     }

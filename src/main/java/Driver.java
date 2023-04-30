@@ -10,7 +10,7 @@ public class Driver {
                 queryEngine = new QueryEngine(args[0], args[1]);
             }
             else {
-                queryEngine = new QueryEngine("custom", "bm25");
+                queryEngine = new QueryEngine("positional", "bm25");
             }
             queryEngine.performQueries();
         }

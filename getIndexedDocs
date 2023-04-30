@@ -1,5 +1,9 @@
 #! /usr/bin/env bash
 
+echo 'Getting positional documents'
+wget -O positional-documents.tar.gz https://www.dropbox.com/s/zbuahibux6mincb/positional-documents.tar.gz?dl=0
+tar -xzvf positional-documents.tar.gz -C src/main/resources
+
 echo 'Getting lemmatized documents'
 wget -O lemmatized-documents.tar.gz https://www.dropbox.com/s/hefnphenrnpcac2/lemmatized-documents.tar.gz?dl=0
 tar -xzvf lemmatized-documents.tar.gz -C src/main/resources
