@@ -47,6 +47,9 @@ public class QueryEngine {
     private POSTaggerME posTagger;
     private InputStream dictLemmatizer;
     private DictionaryLemmatizer lemmatizer;
+    private Scanner input;
+    private IndexReader reader;
+    private IndexSearcher searcher;
 
     public static void main(String[] args) throws IOException, ParseException {
         try {
@@ -99,9 +102,9 @@ public class QueryEngine {
         catch(IOException e) {
             throw new RuntimeException(e);
         }
-        Scanner input = null;
-        IndexReader reader = DirectoryReader.open(index);
-        IndexSearcher searcher = new IndexSearcher(reader);
+        input = null;
+        reader = DirectoryReader.open(index);
+        searcher = new IndexSearcher(reader);
         if (scoringMethod.equals("bm25")) {
             searcher.setSimilarity((new BM25Similarity((float)1.4, (float)0.15)));
         }
@@ -112,11 +115,9 @@ public class QueryEngine {
             input = new Scanner(new File(ANSWERS));
         }
         catch(Exception e) {}
-        performQueries(input, reader, searcher);
-        reader.close();
     }
 
-    private void performQueries(Scanner input, IndexReader reader, IndexSearcher searcher) throws IOException, ParseException {
+    public void performQueries() throws IOException, ParseException {
         int j = 1;
         int matches = 0;
         int hitsAtOne = 0;

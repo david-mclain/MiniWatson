@@ -37,15 +37,6 @@ public class IndexBuilder {
     private DictionaryLemmatizer lemmatizer;
     private IndexOptions indexOptions;
 
-    public static void main(String args[]) {
-        try {
-            IndexBuilder builder = new IndexBuilder("positional");
-        }
-        catch(Exception e) {
-
-        }
-    }
-
     public IndexBuilder(String indexType) throws IOException, FileNotFoundException {
         if (indexType.equals("lemma")) {
             directoryPath = directoryPath + "lemmatized-indexed-documents";
@@ -86,16 +77,9 @@ public class IndexBuilder {
         catch(IOException e) {
             throw new RuntimeException(e);
         }
-        // CODE FOR TESTING ON WIKI-EXAMPLE
-        /*
-        try {
-            writer = new IndexWriter(index, config);
-            addToIndex(new File("src/main/resources/wiki-example.txt"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        //*/
-        ///*
+    }
+
+    public void indexWiki() {
         File wikiFolder = new File(WIKI_DIRECTORY_PATH);
         File[] wikiFiles = wikiFolder.listFiles();
         try {
@@ -109,10 +93,9 @@ public class IndexBuilder {
             System.out.println("Exception");
             throw new RuntimeException(e);
         }
-        //*/
     }
 
-    void addToIndex(File wikiFile) throws IOException {
+    private void addToIndex(File wikiFile) throws IOException {
         // template for each document
         Document doc = new Document();
 
@@ -166,18 +149,19 @@ public class IndexBuilder {
         sc.close();
     }
 
-    boolean isTitle(String line) {
+    private boolean isTitle(String line) {
         return line.startsWith("[[") && !line.startsWith("[[File:") && line.endsWith("]]");
     }
 
-    boolean isCategory(String line) {
+    private boolean isCategory(String line) {
         return line.startsWith("CATEGORIES:");
     }
 
-    boolean isSubsectionHeader(String line) {
+    private boolean isSubsectionHeader(String line) {
         return line.startsWith("=") && line.endsWith("=");
     }
-    void addDocIdAndTitle(Document doc, int docId, String title) {
+    
+    private void addDocIdAndTitle(Document doc, int docId, String title) {
         if (positional) {
             FieldType fieldType = new FieldType();
             fieldType.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
@@ -190,7 +174,7 @@ public class IndexBuilder {
         }
     }
 
-    void addBodyAndWrite(Document doc, String body, IndexWriter writer) throws IOException {
+    private void addBodyAndWrite(Document doc, String body, IndexWriter writer) throws IOException {
         if (lemmatize) {
             body = lemmatizeString(body);
         }
@@ -225,19 +209,4 @@ public class IndexBuilder {
         return ret;
     }
 
-    static void printIndex() throws IOException {
-        IndexReader reader = DirectoryReader.open(index);
-
-        for (int i = 0; i < reader.maxDoc(); i++) {
-            Document doc = reader.document(i);
-            String docId = doc.get("docId");
-            String title = doc.get("title");
-            String body = doc.get("body");
-
-            System.out.println("DOC_ID: " + docId);
-            System.out.println("TITLE: " + title);
-            System.out.println("BODY:\n" + body);
-            System.out.println("============================================================");
-        }
-    }
 }

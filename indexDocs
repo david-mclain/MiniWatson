@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+args=${@}
+mvn compile exec:java -Dexec.mainClass="CreateIndex" -Dexec.args="${args}"
