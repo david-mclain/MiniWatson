@@ -10,15 +10,14 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.document.FieldType;
+import org.apache.lucene.index.*;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.search.similarities.ClassicSimilarity;
 import java.io.*;
+import java.text.FieldPosition;
 import java.util.Scanner;
 
 public class IndexBuilder {
@@ -30,21 +29,23 @@ public class IndexBuilder {
     private static IndexWriter writer;
     private int docId;
     private boolean lemmatize = false;
+    private boolean positional = false;
     private InputStream posModelIn;
     private POSModel posModel;
     private POSTaggerME posTagger;
     private InputStream dictLemmatizer;
     private DictionaryLemmatizer lemmatizer;
-    
+    private IndexOptions indexOptions;
+
     public static void main(String args[]) {
         try {
-            IndexBuilder builder = new IndexBuilder("lemma");
+            IndexBuilder builder = new IndexBuilder("positional");
         }
         catch(Exception e) {
-        
+
         }
     }
-    
+
     public IndexBuilder(String indexType) throws IOException, FileNotFoundException {
         if (indexType.equals("lemma")) {
             directoryPath = directoryPath + "lemmatized-indexed-documents";
@@ -67,6 +68,11 @@ public class IndexBuilder {
         else if (indexType.equals("porter")) {
             directoryPath = directoryPath + "stemmed-indexed-documents";
             analyzer = new EnglishAnalyzer();
+        }
+        else if (indexType.equals("positional")) {
+            directoryPath = directoryPath + "positional-indexed-documents";
+            analyzer = new EnglishAnalyzer();
+            positional = true;
         }
         else {
             System.err.println("Error! Must specify type of search desired");
@@ -172,15 +178,31 @@ public class IndexBuilder {
         return line.startsWith("=") && line.endsWith("=");
     }
     void addDocIdAndTitle(Document doc, int docId, String title) {
-        doc.add(new StringField("docId", Integer.toString(docId), Field.Store.YES));
-        doc.add(new TextField("title", title, Field.Store.YES));
+        if (positional) {
+            FieldType fieldType = new FieldType();
+            fieldType.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
+            fieldType.setStored(true);
+            doc.add(new Field("docID", Integer.toString(docId), fieldType));
+            doc.add(new Field("title", title, fieldType));
+        } else {
+            doc.add(new StringField("docId", Integer.toString(docId), Field.Store.YES));
+            doc.add(new TextField("title", title, Field.Store.YES));
+        }
     }
 
     void addBodyAndWrite(Document doc, String body, IndexWriter writer) throws IOException {
         if (lemmatize) {
             body = lemmatizeString(body);
         }
-        doc.add(new TextField("body", body, Field.Store.YES));
+        if (positional) {
+            FieldType fieldType = new FieldType();
+            fieldType.setStored(true);
+            fieldType.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
+            doc.add(new Field("body", body, fieldType));
+
+        } else {
+            doc.add(new TextField("body", body, Field.Store.YES));
+        }
         writer.addDocument(doc);
     }
 
