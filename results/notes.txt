@@ -48,3 +48,15 @@ Lemmatized Standard (BM25 scoring; k1 = 1.4, b = 0.15)
 P@1: 34%
 Docs in top 10: 64
 ------------------------------------------------------------
+Positional English (default scoring) -
+P@1: 22%
+Docs in top 10: 51
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Positional English (tf-idf scoring) -
+P@1: 26%
+Docs in top 10: 61
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Positional English (BM25 scoring; k1 = 1.4, b = 0.15)
+P@1: 42%
+Docs in top 10: 65
+------------------------------------------------------------
