@@ -1,24 +1,28 @@
 #! /usr/bin/env bash
 
 echo 'Getting positional documents'
-wget -O positional-documents.tar.gz https://www.dropbox.com/s/zbuahibux6mincb/positional-documents.tar.gz?dl=0
-tar -xzvf positional-documents.tar.gz -C src/main/resources
+wget -O positional-multifield.tar.gz https://www.dropbox.com/s/jfx9dv78dl16mhg/positional-multifield-documents.tar.gz?dl=0
+tar -xzvf positional-multifield.tar.gz -C src/main/resources
 
-echo 'Getting lemmatized documents'
-wget -O lemmatized-documents.tar.gz https://www.dropbox.com/s/hefnphenrnpcac2/lemmatized-documents.tar.gz?dl=0
-tar -xzvf lemmatized-documents.tar.gz -C src/main/resources
+################################################################################
+# UNCOMMENT BELOW LINES TO HAVE SCRIPT DOWNLOAD ALL DIFFERENT TYPES OF INDEXES #
+################################################################################
 
-echo 'Getting custom documents'
-wget -O custom-documents.tar.gz https://www.dropbox.com/s/e0eg0vuw7w9j1ft/custom-documents.tar.gz?dl=0
-tar -xzvf custom-documents.tar.gz -C src/main/resources
+#echo 'Getting lemmatized documents'
+#wget -O lemmatized-documents.tar.gz https://www.dropbox.com/s/hefnphenrnpcac2/lemmatized-documents.tar.gz?dl=0
+#tar -xzvf lemmatized-documents.tar.gz -C src/main/resources
 
-echo 'Getting standard documents'
-wget -O standard-documents.tar.gz https://www.dropbox.com/s/kg49b6h42fu4rbd/standard-documents.tar.gz?dl=0
-tar -xzvf standard-documents.tar.gz -C src/main/resources
+#echo 'Getting custom documents'
+#wget -O custom-documents.tar.gz https://www.dropbox.com/s/e0eg0vuw7w9j1ft/custom-documents.tar.gz?dl=0
+#tar -xzvf custom-documents.tar.gz -C src/main/resources
 
-echo 'Getting stemmed documents'
-wget -O stemmed-documents.tar.gz https://www.dropbox.com/s/98fuk6qekwpr65j/stemmed-documents.tar.gz?dl=0
-tar -xzvf stemmed-documents.tar.gz -C src/main/resources
+#echo 'Getting standard documents'
+#wget -O standard-documents.tar.gz https://www.dropbox.com/s/kg49b6h42fu4rbd/standard-documents.tar.gz?dl=0
+#tar -xzvf standard-documents.tar.gz -C src/main/resources
+
+#echo 'Getting stemmed documents'
+#wget -O stemmed-documents.tar.gz https://www.dropbox.com/s/98fuk6qekwpr65j/stemmed-documents.tar.gz?dl=0
+#tar -xzvf stemmed-documents.tar.gz -C src/main/resources
 
 echo 'Got all documents'
 

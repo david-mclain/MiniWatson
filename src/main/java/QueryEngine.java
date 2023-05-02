@@ -39,15 +39,6 @@ public class QueryEngine {
     private IndexReader reader;
     private IndexSearcher searcher;
 
-    public static void main(String[] args) throws IOException, ParseException {
-        try {
-            QueryEngine queryEngine = new QueryEngine("positional", "bm25");
-        }
-        catch(Exception e) {
-            System.out.println("Caught exception");
-        }
-    }
-
     public QueryEngine(String searchType, String scoringMethod) throws IOException, ParseException {
         directoryPath = "src/main/resources/";
         if (searchType.equals("lemma")) {
