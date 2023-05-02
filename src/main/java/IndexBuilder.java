@@ -1,9 +1,7 @@
-import opennlp.tools.langdetect.*;
 import opennlp.tools.lemmatizer.DictionaryLemmatizer;
 import opennlp.tools.postag.POSModel;
 import opennlp.tools.postag.POSTaggerME;
 import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -12,12 +10,9 @@ import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.document.FieldType;
 import org.apache.lucene.index.*;
-import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.search.similarities.ClassicSimilarity;
 import java.io.*;
-import java.text.FieldPosition;
 import java.util.Scanner;
 
 public class IndexBuilder {
@@ -35,8 +30,7 @@ public class IndexBuilder {
     private POSTaggerME posTagger;
     private InputStream dictLemmatizer;
     private DictionaryLemmatizer lemmatizer;
-    private IndexOptions indexOptions;
-
+    
     public IndexBuilder(String indexType) throws IOException, FileNotFoundException {
         if (indexType.equals("lemma")) {
             directoryPath = directoryPath + "lemmatized-indexed-documents";
@@ -61,7 +55,7 @@ public class IndexBuilder {
             analyzer = new EnglishAnalyzer();
         }
         else if (indexType.equals("positional")) {
-            directoryPath = directoryPath + "positional-indexed-documents";
+            directoryPath = directoryPath + "positional-multiquery-indexed-documents";
             analyzer = new EnglishAnalyzer();
             positional = true;
         }
@@ -129,8 +123,13 @@ public class IndexBuilder {
                 continue;
             }
 
+            // extracts categories from article, adds it to category field of doc
             if (isCategory(line)) {
-                line = line.substring("CATEGORIES: ".length(), line.length());
+                categories = line.substring("CATEGORIES: ".length(), line.length());
+                FieldType fieldType = new FieldType();
+                fieldType.setStored(true);
+                fieldType.setIndexOptions(IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
+                doc.add(new Field("categories", categories, fieldType));
             }
 
             // remove markers from subsection headings

@@ -1,4 +1,3 @@
-import opennlp.tools.langdetect.*;
 import opennlp.tools.lemmatizer.DictionaryLemmatizer;
 import opennlp.tools.postag.POSModel;
 import opennlp.tools.postag.POSTaggerME;
@@ -6,30 +5,19 @@ import java.io.IOException;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.StringField;
-import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.*;
+import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.similarities.BM25Similarity;
-import org.apache.lucene.search.similarities.ClassicSimilarity;
-import org.apache.lucene.search.spans.SpanNearQuery;
-import org.apache.lucene.search.spans.SpanOrQuery;
-import org.apache.lucene.search.spans.SpanQuery;
-import org.apache.lucene.search.spans.SpanTermQuery;
 import org.apache.lucene.store.Directory;
-import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.FSDirectory;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Hashtable;
 
@@ -86,7 +74,7 @@ public class QueryEngine {
             analyzer = new EnglishAnalyzer();
         }
         else if (searchType.equals("positional")) {
-            directoryPath = directoryPath + "positional-indexed-documents";
+            directoryPath = directoryPath + "positional-multiquery-indexed-documents";
             analyzer = new EnglishAnalyzer();
             positional = true;
         }
@@ -134,7 +122,11 @@ public class QueryEngine {
             if (lemmatize) {
                 queryString = lemmatizeString(queryString);
             }
-
+	            
+	        // category query
+	        QueryParser catQP = new QueryParser("categories", analyzer);
+	        Query catQuery = catQP.parse(QueryParser.escape(category));
+            
             // if clue contains at least one quote, do phrase searches on quotes
             TopDocs docs;
             if (queryStringNoCat.contains("\"") && positional == true) {
@@ -157,41 +149,72 @@ public class QueryEngine {
                     boolBuilder.add(phraseQueries.get(i), BooleanClause.Occur.SHOULD);
                 }
 
-                // building the complete query (all phrase queries and the full question query)
+                // building the complete query (all phrase queries + full question query + category query)
                 queryString = QueryParser.escape(queryString);
                 Query fullQuery = queryParser.parse(queryString);
-                boolBuilder.add(fullQuery, BooleanClause.Occur.SHOULD);
+                boolBuilder.add(fullQuery, Occur.SHOULD);
+                boolBuilder.add(catQuery, Occur.SHOULD);
                 BooleanQuery completeQuery = boolBuilder.build();
 
-                int hitsPerPage = 10;
+                int hitsPerPage = 20;
                 docs = searcher.search(completeQuery, hitsPerPage);
 
                 // normal query
             } else {
                 QueryParser queryParser = new QueryParser("body", analyzer);
                 queryString = QueryParser.escape(queryString);
-                Query query = queryParser.parse(queryString);
-                int hitsPerPage = 10;
-                docs = searcher.search(query, hitsPerPage);
+                Query bodyQuery = queryParser.parse(queryString);
+                int hitsPerPage = 20;
+                BooleanQuery completeQuery = new BooleanQuery.Builder()	// combines body and category queries
+            		    .add(catQuery, BooleanClause.Occur.SHOULD)
+            		    .add(bodyQuery, BooleanClause.Occur.SHOULD)
+            		    .build();
+                docs = searcher.search(completeQuery, hitsPerPage);
             }
 
-            ScoreDoc[] hits = docs.scoreDocs;
+            ScoreDoc[] hits = filterDuplicates(docs.scoreDocs);
+            boolean matchFound = false;
             System.out.println("Question " + j + ": " + answer.toLowerCase());
             for(int i = 0; i < hits.length; ++i) {
                 int docId = hits[i].doc;
                 Document d = searcher.doc(docId);
-                if ((d.get("title").replaceAll("\\[|\\]", "").toLowerCase().matches(answer.toLowerCase()))) {
+                if ((d.get("title").replaceAll("\\[|\\]", "").toLowerCase().matches(answer.toLowerCase())) && !matchFound) {
                     System.out.println("Document hit for " + answer + " at position: " + (i + 1));
                     matches++;
                     int temp = hitsAtPositions.getOrDefault(i + 1, 0);
                     temp++;
                     hitsAtPositions.put(i + 1, temp);
                     hitsAtOne = i == 0 ? hitsAtOne + 1 : hitsAtOne;
+                    matchFound = true;
                 }
             }
             j++;
         }
         printStats(matches, hitsAtOne);
+    }
+    
+    // returns a list of the top 10 unique documents from the 20 given results
+    private ScoreDoc[] filterDuplicates(ScoreDoc[] results) {
+    	ScoreDoc[] filtered = new ScoreDoc[10];
+    	HashSet<String> usedTitles = new HashSet<String>();	// keeps track of unique titles
+    	int j = 0;
+    	for (int i = 0; i < filtered.length; i++) {
+    		String title;
+			try {
+				title = searcher.doc(results[j].doc).get("title");
+				if (!usedTitles.contains(title)) {	// if title is unique, add it to filtered list
+	    			usedTitles.add(title);
+	    			filtered[i] = results[j];
+	    			j++;
+	    		} else {		// if title has already been added, skip the document
+	    			i--; j++;
+	    		}
+				
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+    	}
+    	return filtered;
     }
 
     private String lemmatizeString(String str) {
