@@ -12,8 +12,28 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.standard.StandardFilter;
 import org.apache.lucene.analysis.standard.StandardTokenizer;
 
+/**
+ * A custom tokenizer created with the intent of improving accuracy
+ * of queries.
+ * 
+ * The following method is overriden:
+ * - createComponents - creates a tokenizer stream output
+ */
 public class CustomAnalyzer extends Analyzer {
 
+    /**
+     * Creates a tokenizer stream to be used in the construction
+     * of the index. It first delimits words by whitespace
+     * and punctuation. Then it converts all words to lower case.
+     * It then removes stop words and applies another filter
+     * to convert to lowercase form. It utilizes the KSTEM 
+     * algorithm for stemming to convert the tokens to their root 
+     * form.
+     *              
+     * @param fieldName - String, input stream to parse and tokenize.
+     * @return  a TokenStreamComponents instance, which contains the final 
+     *          tokenized stream once processed.
+     */
     @Override
     protected TokenStreamComponents createComponents(String fieldName) {
         StandardTokenizer tokenizer = new StandardTokenizer();

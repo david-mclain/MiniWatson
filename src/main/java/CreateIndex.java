@@ -1,4 +1,17 @@
+/**
+ * Creates an index of the batch of wikipedia documents.
+ */
+
 public class CreateIndex {
+
+    /**
+     * Constructs the index with the given specifications and
+     * indexes the entire set of wikipedia documents.
+     * 
+     * @param args  - String Array, determines what type of index 
+     *              specifications to use, or defaults to a positinal 
+     *              index if none were given.
+     */
     public static void main(String[] args) {
         IndexBuilder indexBuilder = null;
         try {

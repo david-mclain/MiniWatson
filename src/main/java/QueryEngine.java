@@ -184,6 +184,12 @@ public class QueryEngine {
         printStats(matches, hitsAtOne);
     }
     
+    /**
+     * 
+     * 
+     * @param results
+     * @return
+     */
     // returns a list of the top 10 unique documents from the 20 given results
     private ScoreDoc[] filterDuplicates(ScoreDoc[] results) {
     	ScoreDoc[] filtered = new ScoreDoc[10];
@@ -208,6 +214,12 @@ public class QueryEngine {
     	return filtered;
     }
 
+    /**
+     * Lemmatizes a given word using the OpenNLP library
+     * 
+     * @param str - String, the word to lemmatize.
+     * @return ret - String, the string once lemmatized.
+     */
     private String lemmatizeString(String str) {
         String[] tokens = str.split("[\\s@&.?$+-/=]+");
         String tags[] = posTagger.tag(tokens);
@@ -227,6 +239,15 @@ public class QueryEngine {
         return ret;
     }
 
+    /**
+     * Prints out an analysis of the query results:
+     *  - the total hits in the top 10 documents
+     *  - the precision at one (P@1) metric.
+     * 
+     * @param matches - the number of matches for a given query.
+     * @param hitsAtOne - the number of hits that appeared at the top 
+     *                  position.
+     */
     private void printStats(int matches, int hitsAtOne) {
         System.out.println("Total hits in top 10 docs: " + matches);
         System.out.printf("P@1: %.2f\n", (hitsAtOne / 100.0));

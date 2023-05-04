@@ -1,5 +1,18 @@
+/**
+ * The main program meant to handle the querying process.
+ * 
+ */
 public class Driver {
 
+   /**
+    * Constructs the appropriate query engine and performs a set of
+    * predetermined queries.
+    * 
+    * 
+    * @param args - String Array, dictates what type of query engine to 
+    *               construct.
+    * @return None
+    */
     public static void main(String[] args) {
         QueryEngine queryEngine = null;
         try {
